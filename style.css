@@ -257,3 +257,38 @@ main { min-height: 58vh; padding: 48px 0; } h1, h2 { color: #163b65; line-height
     font-size: 12px;
   }
 }
+
+/* Refined CWRU header logo */
+.cwru-logo {
+    display: block;
+    width: 440px;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+
+    /* Preserve the original logo colors */
+    filter: none !important;
+
+    /* White background keeps the original blue logo visible */
+    background: #ffffff;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+
+/* Remove the separate School of Medicine label */
+.header-affiliation-school {
+    display: none !important;
+}
+
+/* Slightly refine the lab name */
+.site-header .brand {
+    font-size: 26px;
+}
+
+/* Mobile adjustment */
+@media (max-width: 700px) {
+    .cwru-logo {
+        width: 100%;
+        max-width: 380px;
+    }
+}
