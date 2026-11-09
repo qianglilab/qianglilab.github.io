@@ -270,3 +270,43 @@ footer {
   .site-nav { column-gap: 14px; }
   .site-nav a { font-size: 13px; }
 }
+
+
+/* Qiang Li profile and Join Us pages */
+.profile-layout {
+  display: grid;
+  grid-template-columns: 230px minmax(0, 1fr);
+  gap: 36px;
+  align-items: start;
+  max-width: 1000px;
+  margin: 10px auto 30px;
+}
+.profile-portrait {
+  display: block;
+  width: 100%;
+  max-width: 230px;
+  height: auto;
+  object-fit: cover;
+  object-position: center 10%;
+  border-radius: 12px;
+  box-shadow: 0 4px 18px rgba(22, 59, 101, .12);
+}
+.lead-text { color: #526171; font-size: 17px; line-height: 1.8; }
+.content-section {
+  max-width: 1000px;
+  margin: 30px auto 0;
+  padding: 24px 28px;
+  background: #F2F6FA;
+  border: 1px solid #E1EAF3;
+  border-left: 4px solid #163b65;
+  border-radius: 12px;
+}
+.content-section h2 { margin-top: 0; }
+.page-intro { max-width: 900px; color: #526174; font-size: 18px; line-height: 1.8; }
+.profile-link { color: #245b8f; font-weight: 700; text-decoration: none; }
+.profile-link:hover { text-decoration: underline; }
+@media (max-width: 700px) {
+  .profile-layout { grid-template-columns: 1fr; gap: 22px; }
+  .profile-portrait { max-width: 190px; }
+  .content-section { padding: 22px 20px; }
+}
