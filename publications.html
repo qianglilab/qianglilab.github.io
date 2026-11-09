@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,85 +5,75 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Publications | Qiang Li, PhD</title>
   <link rel="stylesheet" href="style.css">
-
   <style>
     .publications-intro {
-      margin-bottom: 30px;
+      max-width: 900px;
+      margin-bottom: 2rem;
+      color: #526174;
       line-height: 1.7;
     }
 
-    .publications-intro a,
-    .journal-link,
-    .publication-links a {
-      color: #1d5f91;
-      text-decoration: none;
-    }
-
-    .publications-intro a:hover,
-    .journal-link:hover,
-    .publication-links a:hover {
-      text-decoration: underline;
-    }
-
-    .year-section {
-      margin-top: 32px;
-    }
-
-    .year-section h2 {
-      color: #17365d;
-      font-size: 1.5rem;
+    .publication-year {
+      margin: 2.2rem 0 1rem;
+      padding-bottom: .45rem;
+      color: #153a63;
       border-bottom: 2px solid #dce5ee;
-      padding-bottom: 8px;
-      margin-bottom: 18px;
+      font-size: 1.45rem;
     }
 
     .publication-list {
-      padding-left: 25px;
+      list-style: none;
       margin: 0;
+      padding: 0;
     }
 
-    .publication-list li {
-      margin-bottom: 18px;
-      line-height: 1.75;
-      padding-left: 5px;
+    .publication-item {
+      margin: 0 0 1.15rem;
+      padding: 0 0 1.15rem 1rem;
+      border-bottom: 1px solid #e7edf2;
+      border-left: 3px solid #dce5ee;
+      line-height: 1.7;
     }
 
-    .publication-list li::marker {
-      color: #1d5f91;
+    .publication-item strong {
+      color: #183b60;
     }
 
-    .journal-link {
+    .publication-item a {
+      color: #245b8f;
       font-weight: 600;
+      text-decoration: none;
+    }
+
+    .publication-item a:hover {
+      text-decoration: underline;
     }
 
     .publication-links {
       display: inline;
-      font-size: 0.95em;
-      margin-left: 4px;
-    }
-
-    .publication-links a {
-      margin-right: 8px;
-      white-space: nowrap;
+      white-space: normal;
     }
 
     @media (max-width: 700px) {
-      .publication-list {
-        padding-left: 20px;
-      }
-
-      .publication-list li {
-        margin-bottom: 16px;
+      .publication-item {
+        padding-left: .75rem;
       }
     }
   </style>
 </head>
-
 <body>
-
-<header class="site-header">
+  <header class="site-header">
   <a class="brand" href="index.html">Li Lab</a>
-  <nav aria-label="Main navigation">
+
+  <a class="header-affiliation" href="https://case.edu/medicine/"
+     target="_blank" rel="noopener noreferrer"
+     aria-label="Case Western Reserve University School of Medicine">
+    <img class="cwru-logo"
+         src="CWRU_Two-line%20horizontal%20(Primary)%20logo_White.png"
+         alt="Case Western Reserve University">
+  </a>
+
+  <nav class="site-nav" aria-label="Main navigation">
     <a href="index.html">HOME</a>
     <a href="research.html">RESEARCH</a>
     <a href="publications.html" aria-current="page">PUBLICATIONS</a>
@@ -93,305 +82,309 @@
   </nav>
 </header>
 
-<main>
-  <h1>Publications</h1>
+  <main>
+    <h1>Publications</h1>
+    <p class="publications-intro">
+      Publications by Qiang Li. Journal articles and preprints are listed by year,
+      with the most recent work first. Publication titles and available journal
+      and highlight links are clickable.
+    </p>
 
-  <p class="publications-intro">
-    For a complete and updated list of publications, please visit my
-    <a href="https://scholar.google.com/citations?user=mFPQe-MAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Google Scholar profile</a>.
-    <br>
-    <sup>#</sup> Equal contribution.
-  </p>
-
-  <!-- 2026 -->
-  <section class="year-section">
-    <h2>2026</h2>
+    <h2 class="publication-year">2026</h2>
     <ul class="publication-list">
-
-      <li>
-        <strong>Li, Q.</strong>, Lunshof, J. and Jia Liu J.
-        Toward adaptive cyborg tissues.
-        <a class="journal-link" href="https://www.cell.com/trends/biotechnology/abstract/S0167-7799(26)00379-3" target="_blank" rel="noopener noreferrer"><em>Trends in Biotechnology</em></a>, September 30, 2026.
+      <li class="publication-item">
+        <strong>Li, Q.</strong>, Lunshof, J. and Jia Liu J. Toward adaptive cyborg tissues.
+        <strong><em>Trends in Biotechnology</em></strong>, September 30, 2026.
       </li>
-
-      <li>
-        <strong>Li, Q.</strong><sup>#</sup>, Liu, R.<sup>#</sup>, Lin, Z.<sup>#</sup>, Zhang, X.<sup>#</sup>, Wang, W.<sup>#</sup>, Galiica-Silva, I.M., Liu, M., Gao, Z., Pollock, S.D., Alvarez-Dominguez, J.R., and Liu, J.
+      <li class="publication-item">
+        <strong>Li, Q.</strong><sup>#</sup>, Liu, R.<sup>#</sup>, Lin, Z.<sup>#</sup>,
+        Zhang, X.<sup>#</sup>, Wang, W.<sup>#</sup>, Galiica-Silva, I.M., Liu, M.,
+        Gao, Z., Pollock, S.D., Alvarez-Dominguez, J.R., and Liu, J.
         Implanted flexible electronics reveal principles of human islet cell electrical maturation.
-        <a class="journal-link" href="https://www.science.org/doi/10.1126/science.aeb3295" target="_blank" rel="noopener noreferrer"><em>Science</em></a> 391, eaeb3295 (2026).
+        <strong><em>Science</em> 391</strong>, eaeb3295 (2026).
         <span class="publication-links">
-          <a href="https://www.science.org/doi/10.1126/science.aef2219" target="_blank" rel="noopener noreferrer">[Perspective highlight]</a>
+          [<a href="https://www.science.org/doi/10.1126/science.aeb3295" target="_blank" rel="noopener noreferrer">Article</a>];
+          Perspective highlight in <strong><em>Science</em></strong>
+          [<a href="https://www.science.org/doi/10.1126/science.aef2219" target="_blank" rel="noopener noreferrer">Cyborg pancreatic islet organoids</a>].
         </span>
       </li>
-
-      <li>
-        Lee, J.<sup>#</sup>, Wang, W.<sup>#</sup>, <strong>Li, Q.</strong>, Lin, Z., Liu, R., Tang, Z., Aoyama, J., Lee, R.T., Wang, X., and Liu, J.
-        In situ graphene-seq: spatial transcriptomics and chronic electrophysiological characterization of tissue microenvironments.
-        <a class="journal-link" href="https://www.nature.com/articles/s41467-026-73883-7" target="_blank" rel="noopener noreferrer"><em>Nature Communications</em></a> 17, 8382 (2026).
-      </li>
-
     </ul>
-  </section>
 
-  <!-- 2025 -->
-  <section class="year-section">
-    <h2>2025</h2>
+    <h2 class="publication-year">2025</h2>
     <ul class="publication-list">
-
-      <li>
-        Sheng, H.<sup>#</sup>, Liu, R.<sup>#</sup>, <strong>Li, Q.</strong><sup>#</sup>, Lin, Z.<sup>#</sup>, He, Y., Blum, T., Zhao, H., Tang, X., Wang, W., Jin, L., Wang, Z., Hsiao, E., Le Floch, P., Shen, H., Lee, A.J., Jonas-Closs, R.A., Briggs, J., Liu, S., Solomon, D., Wang, X., Whited, J.L., Lu, N., and Liu, J.
+      <li class="publication-item">
+        Sheng, H.<sup>#</sup>, Liu, R.<sup>#</sup>, <strong>Li, Q.<sup>#</sup></strong>,
+        Lin, Z.<sup>#</sup>, He, Y., Blum, T., Zhao, H., Tang, X., Wang, W., Jin, L.,
+        Wang, Z., Hsiao, E., Le Floch, P., Shen, H., Lee, AJ., Jonas-Closs, RA.,
+        Briggs, J., Liu, S., Solomon, D., Wang, X., Whited, JL., Lu, N., Liu, J.
         Brain implantation of soft bioelectronics via embryonic development.
-        <a class="journal-link" href="https://www.nature.com/articles/s41586-025-09106-8" target="_blank" rel="noopener noreferrer"><em>Nature</em></a> 642, 954–964 (2025).
-        <span class="publication-links">
-          <a href="https://www.nature.com/nature/volumes/642/issues/8069" target="_blank" rel="noopener noreferrer">[Cover highlight]</a>
-        </span>
+        <strong><em>Nature</em> 642</strong>, 954–964 (2025).
+        [<a href="https://www.nature.com/articles/s41586-025-09106-8" target="_blank" rel="noopener noreferrer">Article</a>];
+        Cover highlight in <strong><em>Nature</em></strong>
+        [<a href="https://www.nature.com/nature/volumes/642/issues/8069" target="_blank" rel="noopener noreferrer">Issue cover</a>].
       </li>
-
-      <li>
-        Lin, Z.<sup>#</sup>, Wang, W.<sup>#</sup>, Liu, R.<sup>#</sup>, <strong>Li, Q.</strong><sup>#</sup>, Lee, J., Hirschler, C., and Liu, J.
-        Cyborg organoids integrated with stretchable nanoelectronics can be functionally mapped during development.
-        <a class="journal-link" href="https://www.nature.com/articles/s41596-025-01147-7#citeas" target="_blank" rel="noopener noreferrer"><em>Nature Protocols</em></a> (2025).
+      <li class="publication-item">
+        Lin, Z.<sup>#</sup>, Wang, W.<sup>#</sup>, Liu, R.<sup>#</sup>, <strong>Li, Q.</strong><sup>#</sup>,
+        Lee, J., Hirschler, C., Liu, J. Cyborg organoids integrated with stretchable
+        nanoelectronics can be functionally mapped during development.
+        <strong><em>Nature Protocols</em></strong> (2025).
+        [<a href="https://www.nature.com/articles/s41596-025-01147-7#citeas" target="_blank" rel="noopener noreferrer">Article</a>]
       </li>
-
-      <li>
-        Lin, Z.<sup>#</sup>, Wang, W.<sup>#</sup>, Marin-Llobet, A., <strong>Li, Q.</strong>, Pollock, S.D., Sui, X., Almir Aljovic, A., Lee, J., Baek, J., Liang, N., Zhang, X., Wang, C.K., Huang, J., Liu, M., Gao, Z., Sheng, H., Du, J., Lee, S.J., Wang, B., He, Y., Ding, J., Wang, X., Alvarez-Dominguez, J.R., and Liu, J.
+      <li class="publication-item">
+        Lin, Z.<sup>#</sup>, Wang, W.<sup>#</sup>, Marin-Llobet, A., <strong>Li, Q.</strong>,
+        Pollock, S.D., Sui, X., Almir Aljovic, A., Lee, J., Baek, J., Liang, N.,
+        Zhang, X., Wang, CK., Huang, J., Liu, M., Gao, Z., Sheng, H., Du, J., Lee, SJ.,
+        Wang, B., He, Y., Ding, J., Wang, X., Alvarez-Dominguez, J.R., Liu, J.
         Spatial transcriptomics AI agent charts hPSC-pancreas maturation in vivo.
-        <a class="journal-link" href="https://www.biorxiv.org/content/10.1101/2024.03.18.585551v1.full.pdf" target="_blank" rel="noopener noreferrer"><em>bioRxiv</em></a> preprint (2025).
+        <strong><em>bioRxiv</em></strong> preprint (2025).
+        [<a href="https://www.biorxiv.org/content/10.1101/2024.03.18.585551v1.full.pdf" target="_blank" rel="noopener noreferrer">Preprint</a>]
       </li>
-
+      <li class="publication-item">
+        Lee, J.<sup>#</sup>, Wang, W.<sup>#</sup>, <strong>Li, Q.</strong>, Lin, Z.,
+        Liu, R., Tang, Z., Aoyama, J., Lee, RT., Wang, X., Liu, J.
+        <em>In situ</em> graphene-seq: spatial transcriptomics and chronic electrophysiological
+        characterization of tissue microenvironments.
+        <strong><em>bioRxiv</em></strong> preprint (2025).
+        [<a href="https://www.biorxiv.org/content/10.1101/2025.03.25.645278v1.abstract" target="_blank" rel="noopener noreferrer">Preprint</a>]
+      </li>
     </ul>
-  </section>
 
-  <!-- 2024 -->
-  <section class="year-section">
-    <h2>2024</h2>
+    <h2 class="publication-year">2024</h2>
     <ul class="publication-list">
-
-      <li>
-        Liu, R.<sup>#</sup>, Ren, Z.<sup>#</sup>, Zhang, X.<sup>#</sup>, <strong>Li, Q.</strong>, Wang, W., Lin, Z., Lee, R., Ding, J., Li, N., and Liu, J.
+      <li class="publication-item">
+        Liu, R.<sup>#</sup>, Ren, Z.<sup>#</sup>, Zhang, X.<sup>#</sup>, <strong>Li, Q.</strong>,
+        Wang, W., Lin, Z., Lee, R., Ding, J., Li, N., Liu, J.
         An AI-cyborg system for adaptive intelligent modulation of organoid maturation.
-        <a class="journal-link" href="https://www.biorxiv.org/content/10.1101/2024.12.07.627355v1.abstract" target="_blank" rel="noopener noreferrer"><em>bioRxiv</em></a> preprint (2024).
+        <strong><em>bioRxiv</em></strong> preprint (2024).
+        [<a href="https://www.biorxiv.org/content/10.1101/2024.12.07.627355v1.abstract" target="_blank" rel="noopener noreferrer">Preprint</a>]
       </li>
-
     </ul>
-  </section>
 
-  <!-- 2023 -->
-  <section class="year-section">
-    <h2>2023</h2>
+    <h2 class="publication-year">2023</h2>
     <ul class="publication-list">
-
-      <li>
-        <strong>Li, Q.</strong><sup>#</sup>, Lin, Z.<sup>#</sup>, Liu, R.<sup>#</sup>, Tang, X.<sup>#</sup>, Huang, J., He, Y., Sui, X., Tian, W., Shen, H., Zhou, H., Sheng, H., Shi, H., Xiao, L., Wang, X., and Liu, J.
+      <li class="publication-item">
+        <strong>Li, Q.</strong><sup>#</sup>, Lin, Z.<sup>#</sup>, Liu, R.<sup>#</sup>,
+        Tang, X.<sup>#</sup>, Huang, J., He, Y., Sui, X., Tian, W., Shen, H., Zhou, H.,
+        Sheng H., Shi H., Xiao L., Wang X., Liu J.
         Multimodal charting of molecular and functional cell states via in situ electro-sequencing.
-        <a class="journal-link" href="https://www.cell.com/cell/fulltext/S0092-8674(23)00286-6" target="_blank" rel="noopener noreferrer"><em>Cell</em></a> 186(9), 2002–2017 (2023).
-        <span class="publication-links">
-          <a href="https://www.cell.com/cell/issue?pii=S0092-8674(22)X0010-X" target="_blank" rel="noopener noreferrer">[Cover highlight]</a>
-          <a href="https://www.nature.com/articles/s41592-023-01922-y" target="_blank" rel="noopener noreferrer">[Nature Methods perspective]</a>
-        </span>
+        <strong><em>Cell</em> 186</strong>(9), 2002–2017 (2023).
+        [<a href="https://www.cell.com/cell/fulltext/S0092-8674(23)00286-6" target="_blank" rel="noopener noreferrer">Article</a>];
+        Cover highlight in <strong><em>Cell</em></strong>
+        [<a href="https://www.cell.com/cell/issue?pii=S0092-8674(22)X0010-X" target="_blank" rel="noopener noreferrer">Issue</a>];
+        Perspective highlight in <strong><em>Nature Methods</em></strong>
+        [<a href="https://www.nature.com/articles/s41592-023-01922-y" target="_blank" rel="noopener noreferrer">Perspective</a>].
       </li>
-
-      <li>
-        Ren, J., Zhou, H., Zeng, H., Wang, C.K., Huang, J., Qiu, X., Sui, X., <strong>Li, Q.</strong>, Wu, X., Lin, Z., Lo, J.A., Maher, K., He, Y., Tang, X., Lam, J., Chen, H., Li, B., Fisher, D.E., Liu, J., and Wang, X.
+      <li class="publication-item">
+        Ren, J., Zhou, H., Zeng, H., Wang, C.K., Huang, J., Qiu, X., Sui, X.,
+        <strong>Li, Q.</strong>, Wu, X., Lin, Z., Lo, JA., Maher, K., He, Y., Tang, X.,
+        Lam, J., Chen, H., Li, B., Fisher, DE., Liu, J., Wang, X.
         Spatiotemporally resolved transcriptomics reveals the subcellular RNA kinetic landscape.
-        <a class="journal-link" href="https://www.nature.com/articles/s41592-023-01829-8" target="_blank" rel="noopener noreferrer"><em>Nature Methods</em></a> 20, 695–705 (2023).
+        <strong><em>Nature Methods</em> 20</strong>, 695–705 (2023).
+        [<a href="https://www.nature.com/articles/s41592-023-01829-8" target="_blank" rel="noopener noreferrer">Article</a>]
       </li>
-
-      <li>
-        Lin, Z., Garbern, J.C., Liu, R., <strong>Li, Q.</strong>, Mancheño Juncosa, E., Elwell, H.L., Sokol, M., Aoyama, J., Deumer, U.S., Hsiao, E., Sheng, H., Lee, R.T., and Liu, J.
-        Tissue-embedded stretchable nanoelectronics reveal endothelial cell-mediated electrical maturation of human 3D cardiac microtissues.
-        <a class="journal-link" href="https://www.science.org/doi/10.1126/sciadv.ade8513" target="_blank" rel="noopener noreferrer"><em>Science Advances</em></a> 9(10), eade8513 (2023).
+      <li class="publication-item">
+        Lin, Z., Garbern, J.C., Liu, R., <strong>Li, Q.</strong>, Mancheño Juncosa, E.,
+        Elwell, H.L., Sokol, M., Aoyama, J., Deumer, US., Hsiao, E., Sheng, H.,
+        Lee RT., Liu J. Tissue-embedded stretchable nanoelectronics reveal endothelial
+        cell-mediated electrical maturation of human 3D cardiac microtissues.
+        <strong><em>Science Advances</em> 9</strong>(10), eade8513 (2023).
+        [<a href="https://www.science.org/doi/10.1126/sciadv.ade8513" target="_blank" rel="noopener noreferrer">Article</a>]
       </li>
-
     </ul>
-  </section>
 
-  <!-- 2022 -->
-  <section class="year-section">
-    <h2>2022</h2>
+    <h2 class="publication-year">2022</h2>
     <ul class="publication-list">
-
-      <li>
-        Le Floch, P.<sup>#</sup>, <strong>Li, Q.</strong><sup>#</sup>, Lin, Z.<sup>#</sup>, Zhao, S., Liu, R., Tasnim, K., Jiang, H., and Liu, J.
-        Stretchable mesh nanoelectronics for three-dimensional single-cell chronic electrophysiology from developing brain organoids.
-        <a class="journal-link" href="https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202106829" target="_blank" rel="noopener noreferrer"><em>Advanced Materials</em></a> 34, 2106829 (2022).
+      <li class="publication-item">
+        Le Floch, P.<sup>#</sup>, <strong>Li, Q.</strong><sup>#</sup>, Lin, Z.<sup>#</sup>,
+        Zhao, S., Liu, R., Tasnim, K., Jiang, H., and Liu, J.
+        Stretchable mesh nanoelectronics for three-dimensional single-cell chronic
+        electrophysiology from developing brain organoids.
+        <strong><em>Advanced Materials</em> 34</strong>, 2106829 (2022).
+        [<a href="https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202106829" target="_blank" rel="noopener noreferrer">Article</a>]
       </li>
-
-      <li>
-        He, Y., Tang, X., Huang, J., Zhou, H., Chen, K., Liu, A., Ren, J., Shi, H., Lin, Z., <strong>Li, Q.</strong>, Aditham, A., Ounadjela, J., Grody, E.I., Shu, J., Liu, J., and Wang, X.
-        ClusterMap for multi-scale clustering analysis of spatial gene expression.
-        <a class="journal-link" href="https://www.nature.com/articles/s41467-021-26044-x#citeas" target="_blank" rel="noopener noreferrer"><em>Nature Communications</em></a> 12, 5909 (2022).
+      <li class="publication-item">
+        He, Y., Tang, X., Huang, J., Zhou, H., Chen, K., Liu, A., Ren, J., Shi, H.,
+        Lin, Z., <strong>Li, Q.</strong>, Aditham, A., Ounadjela, J., Grody, EI.,
+        Shu, J., Liu, J., Wang, X. ClusterMap for multi-scale clustering analysis
+        of spatial gene expression.
+        <strong><em>Nature Communications</em> 12</strong>, 5909 (2022).
+        [<a href="https://www.nature.com/articles/s41467-021-26044-x#citeas" target="_blank" rel="noopener noreferrer">Article</a>]
       </li>
-
-      <li>
-        <strong>Li, Q.</strong><sup>#</sup>, Pan, Y.<sup>#</sup>, Han, L.<sup>#</sup>, Yang, Y., Wu, X., and Lei, Y.
-        Improving three-dimensional human pluripotent cell culture efficiency via surface molecule coating.
-        <a class="journal-link" href="https://www.frontiersin.org/journals/chemical-engineering/articles/10.3389/fceng.2022.1031395/full" target="_blank" rel="noopener noreferrer"><em>Frontiers in Chemical Engineering</em></a> 4, 1031395 (2022).
+      <li class="publication-item">
+        <strong>Li, Q.</strong><sup>#</sup>, Pan, Y.<sup>#</sup>, Han, L.<sup>#</sup>,
+        Yang, Y., Wu, X., and Lei, Y. Improving three-dimensional human pluripotent
+        cell culture efficiency via surface molecule coating.
+        <strong><em>Frontiers in Chemical Engineering</em> 4</strong>, 1031395 (2022).
+        [<a href="https://www.frontiersin.org/journals/chemical-engineering/articles/10.3389/fceng.2022.1031395/full" target="_blank" rel="noopener noreferrer">Article</a>]
       </li>
-
     </ul>
-  </section>
 
-  <!-- 2019 -->
-  <section class="year-section">
-    <h2>2019</h2>
+    <h2 class="publication-year">2019</h2>
     <ul class="publication-list">
-
-      <li>
-        <strong>Li, Q.</strong><sup>#</sup>, Nan, K.<sup>#</sup>, Le Floch, P.<sup>#</sup>, Lin, Z., Sheng, H., Blum, T.S., and Liu, J.
-        Cyborg organoids: implantation of nanoelectronics via organogenesis for tissue-wide electrophysiology.
-        <a class="journal-link" href="https://pubs.acs.org/doi/10.1021/acs.nanolett.9b02512" target="_blank" rel="noopener noreferrer"><em>Nano Letters</em></a> 19(8), 5781–5789 (2019).
+      <li class="publication-item">
+        <strong>Li, Q.</strong><sup>#</sup>, Nan, K.<sup>#</sup>, Le Floch, P.<sup>#</sup>,
+        Lin, Z., Sheng, H., Blum, T.S., and Liu, J.
+        Cyborg organoids: implantation of nanoelectronics via organogenesis for
+        tissue-wide electrophysiology.
+        <strong><em>Nano Letters</em> 19</strong>(8), 5781–5789 (2019).
+        [<a href="https://pubs.acs.org/doi/10.1021/acs.nanolett.9b02512" target="_blank" rel="noopener noreferrer">Article</a>]
       </li>
-
-      <li>
-        Chu, J., Wang, W., Feng, J., Lao, C.Y., Xi, K., Xing, L., Han, K., <strong>Li, Q.</strong>, Song, L., Li, P., et al.
-        Deeply nesting zinc sulfide dendrites in tertiary hierarchical structure for potassium ion batteries: an enhanced conductivity from interior to exterior.
-        <a class="journal-link" href="https://pubs.acs.org/doi/10.1021/acsnano.9b01773" target="_blank" rel="noopener noreferrer"><em>ACS Nano</em></a> 13(6), 6906–6916 (2019).
+      <li class="publication-item">
+        Chu, J., Wang, W., Feng, J., Lao, C.Y., Xi, K., Xing, L., Han, K.,
+        <strong>Li, Q.</strong>, Song, L., Li, P., et al. Deeply nesting zinc sulfide
+        dendrites in tertiary hierarchical structure for potassium ion batteries:
+        an enhanced conductivity from interior to exterior.
+        <strong><em>ACS Nano</em> 13</strong>(6), 6906–6916 (2019).
+        [<a href="https://pubs.acs.org/doi/10.1021/acsnano.9b01773" target="_blank" rel="noopener noreferrer">Article</a>]
       </li>
-
-      <li>
-        Lin, H., Qiu, X., Du, Q., <strong>Li, Q.</strong>, Wang, O., Akert, L., Wang, Z., Anderson, D., Liu, K., Gu, L., et al.
-        Engineered microenvironment for manufacturing human pluripotent stem cell-derived vascular smooth muscle cells.
-        <a class="journal-link" href="https://www.cell.com/stem-cell-reports/fulltext/S2213-6711(18)30477-6" target="_blank" rel="noopener noreferrer"><em>Stem Cell Reports</em></a> 12(1), 84–97 (2019).
+      <li class="publication-item">
+        Lin, H., Qiu, X., Du, Q., <strong>Li, Q.</strong>, Wang, O., Akert, L.,
+        Wang, Z., Anderson, D., Liu, K., Gu, L., et al.
+        Engineered microenvironment for manufacturing human pluripotent stem
+        cell-derived vascular smooth muscle cells.
+        <strong><em>Stem Cell Reports</em> 12</strong>(1), 84–97 (2019).
+        [<a href="https://www.cell.com/stem-cell-reports/fulltext/S2213-6711(18)30477-6" target="_blank" rel="noopener noreferrer">Article</a>]
       </li>
-
-      <li>
-        Lin, H., Du, Q, <strong>Li, Q.</strong>, Wang, O., Wang, Z., Liu, K., Akert, L., Zhang, C., Chung, S., Duan, B., et al.
-        Differentiating human pluripotent stem cells into vascular smooth muscle cells in three dimensional thermoreversible hydrogels.
-        <a class="journal-link" href="https://pubs.rsc.org/en/content/articlelanding/2019/bm/c8bm01128a" target="_blank" rel="noopener noreferrer"><em>Biomaterials Science</em></a> 7(1), 347–361 (2019).
+      <li class="publication-item">
+        Lin, H., Du, Q., <strong>Li, Q.</strong>, Wang, O., Wang, Z., Liu, K.,
+        Akert, L., Zhang, C., Chung, S., Duan, B., et al.
+        Differentiating human pluripotent stem cells into vascular smooth muscle
+        cells in three dimensional thermoreversible hydrogels.
+        <strong><em>Biomaterials Science</em> 7</strong>(1), 347–361 (2019).
+        [<a href="https://pubs.rsc.org/en/content/articlelanding/2019/bm/c8bm01128a" target="_blank" rel="noopener noreferrer">Article</a>]
       </li>
-
-      <li>
-        Lin, H., Du, Q., <strong>Li, Q.</strong>, Wang, O., Wang, Z., Elowsky, C., Liu, K., Zhang, C., Chung, S., Duan, B., et al.
-        Manufacturing human pluripotent stem cells derived endothelial cells in scalable and cell-friendly microenvironments.
-        <a class="journal-link" href="https://pubs.rsc.org/en/content/articlelanding/2019/bm/c8bm01095a" target="_blank" rel="noopener noreferrer"><em>Biomaterials Science</em></a> 7(1), 373–388 (2019).
+      <li class="publication-item">
+        Lin, H., Du, Q., <strong>Li, Q.</strong>, Wang, O., Wang, Z., Elowsky, C.,
+        Liu, K., Zhang, C., Chung, S., Duan, B., et al.
+        Manufacturing human pluripotent stem cells derived endothelial cells in
+        scalable and cell-friendly microenvironments.
+        <strong><em>Biomaterials Science</em> 7</strong>(1), 373–388 (2019).
+        [<a href="https://pubs.rsc.org/en/content/articlelanding/2019/bm/c8bm01095a" target="_blank" rel="noopener noreferrer">Article</a>]
       </li>
-
-      <li>
-        Lin, H., <strong>Li, Q.</strong>, Du, Q., Wang, O., Wang, Z., Akert, L., Carlson, M., Zhang, C., Subramanian, A., Lunning, M., et al.
+      <li class="publication-item">
+        Lin, H., <strong>Li, Q.</strong>, Du, Q., Wang, O., Wang, Z., Akert, L.,
+        Carlson, M., Zhang, C., Subramanian, A., Lunning, M., et al.
         Integrated generation of induced pluripotent stem cells in a low-cost device.
-        <a class="journal-link" href="https://www.sciencedirect.com/science/article/abs/pii/S0142961218307415?via%3Dihub" target="_blank" rel="noopener noreferrer"><em>Biomaterials</em></a> 189, 23–36 (2019).
+        <strong><em>Biomaterials</em> 189</strong>, 23–36 (2019).
+        [<a href="https://www.sciencedirect.com/science/article/abs/pii/S0142961218307415?via%3Dihub" target="_blank" rel="noopener noreferrer">Article</a>]
       </li>
-
     </ul>
-  </section>
 
-  <!-- 2018 -->
-  <section class="year-section">
-    <h2>2018</h2>
+    <h2 class="publication-year">2018</h2>
     <ul class="publication-list">
-
-      <li>
-        Lin, H.<sup>#</sup>, <strong>Li, Q.</strong><sup>#</sup>, Wang, O., Rauch, J., Harm, B., Viljoen, H., Zhang, C., Van Wyk, E., Zhang, C., and Lei, Y.
-        Expanding primary human T cells in scalable and cell-friendly hydrogel micro-tubes for adoptive immunotherapy.
-        <a class="journal-link" href="https://advanced.onlinelibrary.wiley.com/doi/10.1002/adhm.201701297" target="_blank" rel="noopener noreferrer"><em>Advanced Healthcare Materials</em></a>, 1701297 (2018).
+      <li class="publication-item">
+        Lin, H.<sup>#</sup>, <strong>Li, Q.</strong><sup>#</sup>, Wang, O., Rauch, J.,
+        Harm, B., Viljoen, H., Zhang, C., Van Wyk, E., Zhang, C., and Lei, Y.
+        Expanding primary human T cells in scalable and cell-friendly hydrogel
+        micro-tubes for adoptive immunotherapy.
+        <strong><em>Advanced Healthcare Materials</em></strong>, 1701297 (2018).
+        [<a href="https://advanced.onlinelibrary.wiley.com/doi/10.1002/adhm.201701297" target="_blank" rel="noopener noreferrer">Article</a>]
       </li>
-
-      <li>
-        <strong>Li, Q.</strong>, Lin, H., Rauch, J., Deleyrolle, L.P., Reynolds, B.A., Viljoen, H.J., Zhang, C., Gu, L., Van Wyk, E., and Lei, Y.
-        Scalable culturing of primary human glioblastoma tumor-initiating cells with a cell-friendly culture system.
-        <a class="journal-link" href="https://www.nature.com/articles/s41598-018-21927-4#citeas" target="_blank" rel="noopener noreferrer"><em>Scientific Reports</em></a> 8, 3532 (2018).
+      <li class="publication-item">
+        <strong>Li, Q.</strong>, Lin, H., Rauch, J., Deleyrolle, LP., Reynolds, BA.,
+        Viljoen, HJ., Zhang, C., Gu, L., Van Wyk, E., and Lei, Y.
+        Scalable culturing of primary human glioblastoma tumor-initiating cells
+        with a cell-friendly culture system.
+        <strong><em>Scientific Reports</em> 8</strong>, 3532 (2018).
+        [<a href="https://www.nature.com/articles/s41598-018-21927-4#citeas" target="_blank" rel="noopener noreferrer">Article</a>]
       </li>
-
-      <li>
-        <strong>Li, Q.</strong>, Lin, H., Du, Q., Liu, K., Wang, O., Evans, C., Christian, H., Zhang, C., and Lei, Y.
-        Scalable and physiologically relevant microenvironments for human pluripotent stem cell expansion and differentiation.
-        <a class="journal-link" href="https://iopscience.iop.org/article/10.1088/1758-5090/aaa6b5" target="_blank" rel="noopener noreferrer"><em>Biofabrication</em></a> 10, 025006 (2018).
+      <li class="publication-item">
+        <strong>Li, Q.</strong>, Lin, H., Du, Q., Liu, K., Wang, O., Evans, C.,
+        Christian, H., Zhang, C., and Lei, Y.
+        Scalable and physiologically relevant microenvironments for human
+        pluripotent stem cell expansion and differentiation.
+        <strong><em>Biofabrication</em> 10</strong>, 025006 (2018).
+        [<a href="https://iopscience.iop.org/article/10.1088/1758-5090/aaa6b5" target="_blank" rel="noopener noreferrer">Article</a>]
       </li>
-
-      <li>
-        <strong>Li, Q.</strong><sup>#</sup>, Wang, Q.<sup>#</sup>, Wang, O., Shao, K., Lin, H., and Lei, Y.
-        A simple and scalable hydrogel-based 3D method for producing mammalian biologics.
-        <a class="journal-link" href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0190364" target="_blank" rel="noopener noreferrer"><em>PLoS ONE</em></a> 13(1), e0190364 (2018).
+      <li class="publication-item">
+        <strong>Li, Q.</strong><sup>#</sup>, Wang, Q.<sup>#</sup>, Wang, O., Shao, K.,
+        Lin, H., and Lei, Y. A simple and scalable hydrogel-based 3D method for
+        producing mammalian biologics.
+        <strong><em>PLoS ONE</em> 13</strong>(1), e0190364 (2018).
+        [<a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0190364" target="_blank" rel="noopener noreferrer">Article</a>]
       </li>
-
-      <li>
-        Lin, H., Du, Q., <strong>Li, Q.</strong>, Wang, O., Wang, Z., Sahu, N., Elowsky, C., Liu, K., Zhang, C., Chung, S., et al.
-        A scalable and efficient bioprocess for manufacturing human pluripotent stem cell-derived endothelial cells.
-        <a class="journal-link" href="https://www.cell.com/stem-cell-reports/fulltext/S2213-6711(18)30306-0" target="_blank" rel="noopener noreferrer"><em>Stem Cell Reports</em></a> 11, 1–16 (2018).
+      <li class="publication-item">
+        Lin, H., Du, Q., <strong>Li, Q.</strong>, Wang, O., Wang, Z., Sahu, N.,
+        Elowsky, C., Liu, K., Zhang, C., Chung, S., et al.
+        A scalable and efficient bioprocess for manufacturing human pluripotent
+        stem cell-derived endothelial cells.
+        <strong><em>Stem Cell Reports</em> 11</strong>, 1–16 (2018).
+        [<a href="https://www.cell.com/stem-cell-reports/fulltext/S2213-6711(18)30306-0" target="_blank" rel="noopener noreferrer">Article</a>]
       </li>
-
-      <li>
-        Lin, H., Du, Q., <strong>Li, Q.</strong>, Wang, O., Wang, Z., Liu, K., Elowsky, C., Zhang, C., and Lei, Y.
-        Hydrogel-based bioprocess for scalable manufacturing of human pluripotent stem cells-derived neural stem cells.
-        <a class="journal-link" href="https://pubs.acs.org/doi/10.1021/acsami.8b05780" target="_blank" rel="noopener noreferrer"><em>ACS Applied Materials &amp; Interfaces</em></a> 10(35), 29238–29250 (2018).
+      <li class="publication-item">
+        Lin, H., Du, Q., <strong>Li, Q.</strong>, Wang, O., Wang, Z., Liu, K.,
+        Elowsky, C., Zhang, C., and Lei, Y.
+        Hydrogel-based bioprocess for scalable manufacturing of human pluripotent
+        stem cells-derived neural stem cells.
+        <strong><em>ACS Applied Materials &amp; Interfaces</em> 10</strong>(35),
+        29238–29250 (2018).
+        [<a href="https://pubs.acs.org/doi/10.1021/acsami.8b05780" target="_blank" rel="noopener noreferrer">Article</a>]
       </li>
-
-      <li>
-        Wang, O., Ismail, A., Sanabria, F., Lin, H., <strong>Li, Q.</strong>, Elowsky, C., Carlson, M.A., Burgess, W., Velander, W.H., Kidambi, S., et al.
+      <li class="publication-item">
+        Wang, O., Ismail, A., Sanabria, F., Lin, H., <strong>Li, Q.</strong>,
+        Elowsky, C., Carlson, MA., Burgess, W., Velander, WH., Kidambi, S., et al.
         A Totally recombinant fibrin matrix for mesenchymal stem cell culture and delivery.
-        <a class="journal-link" href="https://onlinelibrary.wiley.com/doi/10.1002/jbm.a.36508" target="_blank" rel="noopener noreferrer"><em>Journal of Biomedical Materials Research Part A</em></a>, 00A:1–8 (2018).
+        <strong><em>Journal of Biomedical Materials Research Part A</em></strong>,
+        00A:1–8 (2018).
+        [<a href="https://onlinelibrary.wiley.com/doi/10.1002/jbm.a.36508" target="_blank" rel="noopener noreferrer">Article</a>]
       </li>
-
     </ul>
-  </section>
 
-  <!-- 2017 -->
-  <section class="year-section">
-    <h2>2017</h2>
+    <h2 class="publication-year">2017</h2>
     <ul class="publication-list">
-
-      <li>
+      <li class="publication-item">
         Lin, H.<sup>#</sup>, <strong>Li, Q.</strong><sup>#</sup>, and Lei, Y.
-        Three-dimensional tissues using human pluripotent stem cell spheroids as biofabrication building blocks.
-        <a class="journal-link" href="https://iopscience.iop.org/article/10.1088/1758-5090/aa663b" target="_blank" rel="noopener noreferrer"><em>Biofabrication</em></a> 9(2), 025007 (2017).
+        Three-dimensional tissues using human pluripotent stem cell spheroids as
+        biofabrication building blocks.
+        <strong><em>Biofabrication</em> 9</strong>(2), 025007 (2017).
+        [<a href="https://iopscience.iop.org/article/10.1088/1758-5090/aa663b" target="_blank" rel="noopener noreferrer">Article</a>]
       </li>
-
-      <li>
+      <li class="publication-item">
         Lin, H., <strong>Li, Q.</strong>, and Lei, Y.
-        An integrated miniature bioprocessing for personalized human induced pluripotent stem cell expansion and differentiation into neural stem cells.
-        <a class="journal-link" href="https://www.nature.com/articles/srep40191" target="_blank" rel="noopener noreferrer"><em>Scientific Reports</em></a> 7, 40191 (2017).
+        An integrated miniature bioprocessing for personalized human induced
+        pluripotent stem cell expansion and differentiation into neural stem cells.
+        <strong><em>Scientific Reports</em> 7</strong>, 40191 (2017).
+        [<a href="https://www.nature.com/articles/srep40191" target="_blank" rel="noopener noreferrer">Article</a>]
       </li>
-
     </ul>
-  </section>
 
-  <!-- 2016 -->
-  <section class="year-section">
-    <h2>2016</h2>
+    <h2 class="publication-year">2016</h2>
     <ul class="publication-list">
-
-      <li>
-        <strong>Li, Q.</strong><sup>#</sup>, Lin, H.<sup>#</sup>, Wang, O., Qiu, X., Srivatsan, K., Deleyrolle, L.P., Reynolds, B.A., and Lei, Y.
-        Scalable production of glioblastoma tumor-initiating cells in 3 dimension thermoreversible hydrogels.
-        <a class="journal-link" href="https://www.nature.com/articles/srep31915#citeas" target="_blank" rel="noopener noreferrer"><em>Scientific Reports</em></a> 6, 31915 (2016).
+      <li class="publication-item">
+        <strong>Li, Q.</strong><sup>#</sup>, Lin, H.<sup>#</sup>, Wang, O., Qiu, X.,
+        Srivatsan, K., Deleyrolle, LP., Reynolds, BA., and Lei, Y.
+        Scalable production of glioblastoma tumor-initiating cells in 3 dimension
+        thermoreversible hydrogels.
+        <strong><em>Scientific Reports</em> 6</strong>, 31915 (2016).
+        [<a href="https://www.nature.com/articles/srep31915#citeas" target="_blank" rel="noopener noreferrer">Article</a>]
       </li>
-
     </ul>
-  </section>
 
-  <!-- 2010 -->
-  <section class="year-section">
-    <h2>2010</h2>
+    <h2 class="publication-year">2010</h2>
     <ul class="publication-list">
-
-      <li>
+      <li class="publication-item">
         <strong>Li, Q.</strong>, Zhou, X., and Xing, D.
-        Rapid and highly sensitive detection of mercury ion (Hg2+) by magnetic beads-based electrochemiluminescence assay.
-        <a class="journal-link" href="https://www.sciencedirect.com/science/article/abs/pii/S0956566310004732?via%3Dihub" target="_blank" rel="noopener noreferrer"><em>Biosensors and Bioelectronics</em></a> 26, 859–862 (2010).
+        Rapid and highly sensitive detection of mercury ion (Hg2+) by magnetic
+        beads-based electrochemiluminescence assay.
+        <strong><em>Biosensors and Bioelectronics</em> 26</strong>, 859–862 (2010).
+        [<a href="https://www.sciencedirect.com/science/article/abs/pii/S0956566310004732?via%3Dihub" target="_blank" rel="noopener noreferrer">Article</a>]
       </li>
-
     </ul>
-  </section>
 
-  <!-- 2009 -->
-  <section class="year-section">
-    <h2>2009</h2>
+    <h2 class="publication-year">2009</h2>
     <ul class="publication-list">
-
-      <li>
+      <li class="publication-item">
         <strong>Li, Q.</strong> and Zhou, X.
-        Sensitive detection and quantitation of EZH2 expression in cancer cell by an electrochemiluminescent method.
-        <a class="journal-link" href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/7519/1/Sensitive-detection-and-quantitation-of-EZH2-expression-in-cancer-cell/10.1117/12.843394.short" target="_blank" rel="noopener noreferrer"><em>Proc. SPIE - Int. Soc. Opt. Eng.</em></a> 7519, 1–7 (2009).
+        Sensitive detection and quantitation of EZH2 expression in cancer cell
+        by an electrochemiluminescent method.
+        <strong><em>Proc. SPIE - Int. Soc. Opt. Eng.</em> 7519</strong>, 1–7 (2009).
+        [<a href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/7519/1/Sensitive-detection-and-quantitation-of-EZH2-expression-in-cancer-cell/10.1117/12.843394.short" target="_blank" rel="noopener noreferrer">Article</a>]
       </li>
-
     </ul>
-  </section>
+  </main>
 
-</main>
-
-<footer>
-  © Qiang Li
-</footer>
-
+  <footer>
+    © Qiang Li
+  </footer>
 </body>
 </html>
