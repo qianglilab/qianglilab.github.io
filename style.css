@@ -310,3 +310,43 @@ footer {
   .profile-portrait { max-width: 190px; }
   .content-section { padding: 22px 20px; }
 }
+```css
+/* =====================================
+   PI Profile: Education and Contact
+   ===================================== */
+
+.profile-details-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.profile-details-grid h2 {
+  margin-bottom: 18px;
+}
+
+.profile-details-grid ul {
+  padding-left: 20px;
+}
+
+.profile-details-grid li {
+  margin-bottom: 12px;
+  line-height: 1.7;
+}
+
+.profile-details-grid p {
+  line-height: 1.8;
+}
+
+/* Responsive layout for mobile devices */
+
+@media (max-width: 700px) {
+
+  .profile-details-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+}
+```
