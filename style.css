@@ -137,34 +137,38 @@ main { min-height: 58vh; padding: 48px 0; } h1, h2 { color: #163b65; line-height
   max-width: 100%;
 }
 
-/* CWRU official logo */
+
+/* CWRU logo on blue header */
+.header-affiliation {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background: transparent;
+    padding: 0;
+}
+
 .cwru-logo {
-  display: block;
-
-  width: 480px;
-  max-width: 100%;
-
-  height: auto;
-
-  object-fit: contain;
-
-  /* Convert blue artwork to white for the blue background */
-  filter: brightness(0) invert(1);
+    display: block;
+    width: 440px;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    background: transparent;
+    padding: 0;
+    border-radius: 0;
+    filter: brightness(0) invert(1) !important;
 }
 
-/* School of Medicine */
 .header-affiliation-school {
-  display: block;
-
-  color: #ffffff;
-
-  font-size: 18px;
-  font-weight: 700;
-
-  letter-spacing: 2px;
-
-  margin-top: 10px;
+    display: none !important;
 }
+
+@media (max-width: 700px) {
+    .cwru-logo {
+        width: 300px;
+    }
+}
+
 
 /* Navigation */
 .site-header nav {
