@@ -9,12 +9,14 @@ html { scroll-behavior: smooth; }
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 0 28px;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0;
   line-height: 1.7;
   color: #263238;
-  background: #ffffff;
+  background: #F2F6FA;
+  overflow-x: hidden;
 }
 
 a { color: #163b65; }
@@ -29,8 +31,9 @@ a { color: #163b65; }
   align-items: center;
   column-gap: 28px;
   row-gap: 10px;
-  margin: 0 -28px;
-  padding: 20px 32px 15px;
+  width: 100%;
+  margin: 0;
+  padding: 22px clamp(22px, 4vw, 56px) 17px;
   color: #ffffff;
   background: linear-gradient(110deg, #174a9b 0%, #003071 100%);
 }
@@ -57,7 +60,7 @@ a { color: #163b65; }
 /* Use the uploaded official white logo directly; do not recolor it. */
 .cwru-logo {
   display: block;
-  width: 390px;
+  width: 420px;
   max-width: 100%;
   height: auto;
   object-fit: contain;
@@ -73,17 +76,17 @@ a { color: #163b65; }
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 7px 25px;
-  margin-top: 7px;
+  gap: 8px 32px;
+  margin-top: 10px;
 }
 
 .site-nav a {
   color: #ffffff;
   text-decoration: none;
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 700;
-  letter-spacing: .35px;
-  padding: 5px 0;
+  letter-spacing: .45px;
+  padding: 6px 0;
   border-bottom: 2px solid transparent;
 }
 
@@ -99,8 +102,15 @@ a { color: #163b65; }
 }
 
 main {
+  width: calc(100% - 48px);
+  max-width: 1200px;
   min-height: 58vh;
-  padding: 42px 0 48px;
+  margin: 32px auto;
+  padding: 42px 36px 48px;
+  background: #FFFFFF;
+  border: 1px solid #E1EAF3;
+  border-radius: 14px;
+  box-shadow: 0 5px 22px rgba(22, 59, 101, .045);
 }
 
 h1, h2, h3 {
@@ -151,9 +161,10 @@ section + section { margin-top: 36px; }
   max-width: 900px;
   margin: 24px auto 0;
   padding: 28px 36px;
-  background: #f0f5fa;
+  background: #F2F6FA;
+  border: 1px solid #E1EAF3;
+  border-left: 4px solid #163b65;
   border-radius: 12px;
-  border-top: 3px solid #163b65;
 }
 
 .welcome-section h2 { margin: 0 0 14px; font-size: 26px; }
@@ -169,7 +180,7 @@ section + section { margin-top: 36px; }
   margin: 15px auto 0;
 }
 
-.contact-info { margin: 0; padding: 0; }
+.contact-info { margin: 0; padding: 26px 28px; background: #FFFFFF; border: 1px solid #E1EAF3; border-radius: 12px; }
 .contact-info h1 { margin-bottom: 18px; }
 .contact-info h2 { margin-top: 0; color: #153a63; }
 .contact-info p { line-height: 1.8; margin-bottom: 20px; }
@@ -179,8 +190,10 @@ section + section { margin-top: 36px; }
   width: 100%;
   height: 420px;
   margin: 0;
-  padding: 0;
-  border-radius: 10px;
+  padding: 8px;
+  background: #FFFFFF;
+  border: 1px solid #E1EAF3;
+  border-radius: 12px;
   overflow: hidden;
 }
 .map-container iframe {
@@ -191,8 +204,10 @@ section + section { margin-top: 36px; }
 }
 
 footer {
+  max-width: 1200px;
+  margin: 0 auto;
   border-top: 1px solid #dce3e9;
-  padding: 22px 0;
+  padding: 22px 28px;
   color: #777777;
   font-size: 14px;
 }
@@ -229,22 +244,22 @@ footer {
 .publication-links { display: inline; white-space: normal; }
 
 @media (max-width: 760px) {
-  body { padding: 0 20px; }
   .site-header {
     grid-template-columns: 1fr;
     grid-template-areas: "brand" "affiliation" "nav";
     row-gap: 12px;
-    margin: 0 -20px;
-    padding: 19px 20px 15px;
+    padding: 19px 20px 16px;
   }
   .site-header .brand { font-size: 24px; }
   .header-affiliation { justify-content: flex-start; }
-  .cwru-logo { width: min(100%, 360px); }
-  .site-nav { gap: 7px 17px; margin-top: 3px; }
-  .site-nav a { font-size: 12px; }
-  main { padding: 32px 0 38px; }
+  .cwru-logo { width: min(100%, 340px); }
+  .site-nav { gap: 8px 20px; margin-top: 3px; }
+  .site-nav a { font-size: 14px; }
+  main { width: calc(100% - 28px); margin: 18px auto; padding: 30px 20px 36px; }
+  footer { padding: 20px; }
   h1 { font-size: 30px; }
-  .contact-layout { grid-template-columns: 1fr; gap: 25px; }
+  .contact-layout { grid-template-columns: 1fr; gap: 20px; }
+  .contact-info { padding: 22px 20px; }
   .map-container { height: 340px; }
   .welcome-section { padding: 24px 20px; }
   .welcome-section p { font-size: 16px; }
@@ -252,6 +267,6 @@ footer {
 }
 
 @media (max-width: 380px) {
-  .site-nav { column-gap: 12px; }
-  .site-nav a { font-size: 11px; }
+  .site-nav { column-gap: 14px; }
+  .site-nav a { font-size: 13px; }
 }
