@@ -1,48 +1,153 @@
+/* =========================================================
+   LI LAB WEBSITE — SHARED STYLESHEET
+   CWRU blue header + responsive page layout
+   ========================================================= */
+
 * { box-sizing: border-box; }
-body { font-family: Arial, sans-serif; max-width: 1400px; margin: 0 auto; padding: 0 28px; line-height: 1.7; color: #263238; background: #fafafa; }
-a { color: #163b65; } .site-header { padding: 30px 0 22px; border-bottom: 1px solid #dce3e9; } .brand { font-size: 22px; font-weight: bold; text-decoration: none; }
-nav { display: flex; flex-wrap: wrap; gap: 8px 24px; margin-top: 18px; } nav a { text-decoration: none; font-size: 13px; font-weight: bold; padding: 6px 0; border-bottom: 2px solid transparent; } nav a:hover, nav a[aria-current="page"] { border-bottom-color: #163b65; } a:focus-visible { outline: 2px solid #163b65; outline-offset: 4px; }
-main { min-height: 58vh; padding: 48px 0; } h1, h2 { color: #163b65; line-height: 1.3; } h1 { font-size: 36px; margin-top: 0; } h2 { font-size: 24px; } section + section { margin-top: 40px; } .intro { display: flex; align-items: center; gap: 36px; } .portrait { width: 180px; height: 180px; flex-shrink: 0; object-fit: cover; object-position: center 10%; border-radius: 50%; } .affiliation { color: #58636b; } footer { border-top: 1px solid #dce3e9; padding: 22px 0; color: #777; font-size: 14px; }
-@media (max-width: 600px) { body { padding: 0 20px; } .intro { flex-direction: column; align-items: flex-start; gap: 24px; } h1 { font-size: 30px; } nav { gap: 8px 16px; } main { padding: 32px 0; } }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 28px;
+  line-height: 1.7;
+  color: #263238;
+  background: #ffffff;
+}
+
+a { color: #163b65; }
+
+/* Shared CWRU header */
+.site-header {
+  display: grid;
+  grid-template-columns: minmax(160px, 1fr) auto;
+  grid-template-areas:
+    "brand affiliation"
+    "nav nav";
+  align-items: center;
+  column-gap: 28px;
+  row-gap: 10px;
+  margin: 0 -28px;
+  padding: 20px 32px 15px;
+  color: #ffffff;
+  background: linear-gradient(110deg, #174a9b 0%, #003071 100%);
+}
+
+.site-header .brand {
+  grid-area: brand;
+  color: #ffffff;
+  font-size: 27px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.header-affiliation {
+  grid-area: affiliation;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  min-width: 0;
+  text-decoration: none;
+}
+
+/* Use the uploaded official white logo directly; do not recolor it. */
+.cwru-logo {
+  display: block;
+  width: 390px;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  background: transparent;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  filter: none;
+}
+
+.site-nav {
+  grid-area: nav;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 7px 25px;
+  margin-top: 7px;
+}
+
+.site-nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: .35px;
+  padding: 5px 0;
+  border-bottom: 2px solid transparent;
+}
+
+.site-nav a:hover,
+.site-nav a[aria-current="page"] {
+  color: #ffffff;
+  border-bottom-color: #ffffff;
+}
+
+.site-header a:focus-visible {
+  outline: 2px solid #ffffff;
+  outline-offset: 4px;
+}
+
+main {
+  min-height: 58vh;
+  padding: 42px 0 48px;
+}
+
+h1, h2, h3 {
+  color: #163b65;
+  line-height: 1.3;
+}
+
+h1 { font-size: 36px; margin: 0 0 24px; }
+h2 { font-size: 24px; }
+section + section { margin-top: 36px; }
+
+/* Homepage profile */
 .intro {
-  min-height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
-  gap: 20px;
-}
-/* Homepage profile */
-.intro {
-  min-height: auto;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+  justify-content: center;
   gap: 16px;
-  padding: 0 20px 28px;
+  padding: 0 20px 26px;
+  text-align: center;
 }
 
-.intro .portrait {
+.portrait {
+  display: block;
   width: 170px;
   height: 170px;
-  border: 4px solid white;
-  box-shadow: 0 4px 18px rgba(22, 59, 101, 0.12);
+  flex: 0 0 auto;
+  object-fit: cover;
+  object-position: center 10%;
+  border: 4px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 4px 18px rgba(22, 59, 101, .12);
 }
 
 .intro h1 {
   font-size: clamp(28px, 4vw, 36px);
-  margin: 0 0 12px;
+  margin: 0 0 10px;
 }
 
 .intro .affiliation {
-  font-size: 16px;
-  line-height: 1.65;
   margin: 0;
   color: #526171;
+  font-size: 16px;
+  line-height: 1.65;
 }
 
-/* Homepage welcome section */
-.intro + section {
+.welcome-section {
   max-width: 900px;
   margin: 24px auto 0;
   padding: 28px 36px;
@@ -51,248 +156,102 @@ main { min-height: 58vh; padding: 48px 0; } h1, h2 { color: #163b65; line-height
   border-top: 3px solid #163b65;
 }
 
-.intro + section h2 {
-  margin: 0 0 14px;
-  font-size: 26px;
-}
+.welcome-section h2 { margin: 0 0 14px; font-size: 26px; }
+.welcome-section p { margin: 0; font-size: 18px; line-height: 1.85; }
 
-.intro + section p {
-  margin: 0;
-  font-size: 18px;
-  line-height: 1.85;
-  text-align: left;
-}
-
-/* Comfortable spacing on phones */
-@media (max-width: 600px) {
-  .intro + section {
-    padding: 24px 20px;
-  }
-
-  .intro + section p {
-    font-size: 16px;
-  }
-}
-
-
-/* ============================================
-   CASE WESTERN RESERVE UNIVERSITY HEADER
-   Shared by all website pages
-   ============================================ */
-
-/* Main header */
-.site-header {
+/* Contact page */
+.contact-layout {
   display: grid;
-
-  grid-template-columns: minmax(0, 1fr) auto;
-
-  grid-template-areas:
-    "brand affiliation"
-    "nav nav";
-
-  align-items: center;
-
-  gap: 0 30px;
-
-  background: linear-gradient(
-    110deg,
-    #2455d6 0%,
-    #1747ad 50%,
-    #073783 100%
-  );
-
-  color: #ffffff;
-
-  margin: 0 -28px;
-  padding: 28px 35px 18px;
-
-  border: none;
-  border-radius: 0;
+  grid-template-columns: .8fr 1.2fr;
+  gap: 40px;
+  align-items: start;
+  max-width: 1200px;
+  margin: 15px auto 0;
 }
 
-/* Lab name */
-.site-header .brand {
-  grid-area: brand;
+.contact-info { margin: 0; padding: 0; }
+.contact-info h1 { margin-bottom: 18px; }
+.contact-info h2 { margin-top: 0; color: #153a63; }
+.contact-info p { line-height: 1.8; margin-bottom: 20px; }
+.contact-info a { color: #153a63; }
 
-  color: #ffffff;
-  font-size: 28px;
-  font-weight: 700;
+.map-container {
+  width: 100%;
+  height: 420px;
+  margin: 0;
+  padding: 0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.map-container iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
 
+footer {
+  border-top: 1px solid #dce3e9;
+  padding: 22px 0;
+  color: #777777;
+  font-size: 14px;
+}
+
+/* Publications page */
+.publications-intro {
+  max-width: 900px;
+  margin-bottom: 2rem;
+  color: #526174;
+  line-height: 1.7;
+}
+.publication-year {
+  margin: 2.2rem 0 1rem;
+  padding-bottom: .45rem;
+  color: #153a63;
+  border-bottom: 2px solid #dce5ee;
+  font-size: 1.45rem;
+}
+.publication-list { list-style: none; margin: 0; padding: 0; }
+.publication-item {
+  margin: 0 0 1.15rem;
+  padding: 0 0 1.15rem 1rem;
+  border-bottom: 1px solid #e7edf2;
+  border-left: 3px solid #dce5ee;
+  line-height: 1.7;
+}
+.publication-item strong { color: #183b60; }
+.publication-item a {
+  color: #245b8f;
+  font-weight: 600;
   text-decoration: none;
 }
+.publication-item a:hover { text-decoration: underline; }
+.publication-links { display: inline; white-space: normal; }
 
-/* CWRU branding */
-.header-affiliation {
-  grid-area: affiliation;
-
-  display: flex;
-  flex-direction: column;
-
-  align-items: flex-end;
-  text-align: right;
-
-  text-decoration: none;
-  color: #ffffff;
-
-  max-width: 100%;
-}
-
-
-/* CWRU logo on blue header */
-.header-affiliation {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    background: transparent;
-    padding: 0;
-}
-
-.cwru-logo {
-    display: block;
-    width: 440px;
-    max-width: 100%;
-    height: auto;
-    object-fit: contain;
-    background: transparent;
-    padding: 0;
-    border-radius: 0;
-    filter: brightness(0) invert(1) !important;
-}
-
-.header-affiliation-school {
-    display: none !important;
-}
-
-@media (max-width: 700px) {
-    .cwru-logo {
-        width: 300px;
-    }
-}
-
-
-/* Navigation */
-.site-header nav {
-  grid-area: nav;
-
-  display: flex;
-  flex-wrap: wrap;
-
-  align-items: center;
-
-  gap: 8px 26px;
-
-  margin-top: 22px;
-}
-
-/* Navigation links */
-.site-header nav a {
-  color: #ffffff;
-
-  text-decoration: none;
-
-  font-size: 13px;
-  font-weight: 700;
-
-  padding: 6px 0;
-
-  border-bottom: 2px solid transparent;
-}
-
-/* Hover and active page */
-.site-header nav a:hover,
-.site-header nav a[aria-current="page"] {
-  color: #ffffff;
-  border-bottom-color: #ffffff;
-}
-
-/* Keyboard accessibility */
-.site-header a:focus-visible {
-  outline: 2px solid #ffffff;
-  outline-offset: 4px;
-}
-
-/* ============================================
-   MOBILE RESPONSIVE HEADER
-   ============================================ */
-
-@media (max-width: 700px) {
-
+@media (max-width: 760px) {
+  body { padding: 0 20px; }
   .site-header {
     grid-template-columns: 1fr;
-
-    grid-template-areas:
-      "brand"
-      "affiliation"
-      "nav";
-
-    gap: 15px;
-
-    padding: 22px 20px 16px;
-
+    grid-template-areas: "brand" "affiliation" "nav";
+    row-gap: 12px;
     margin: 0 -20px;
+    padding: 19px 20px 15px;
   }
-
-  .site-header .brand {
-    font-size: 23px;
-  }
-
-  .header-affiliation {
-    align-items: flex-start;
-    text-align: left;
-  }
-
-  .cwru-logo {
-    width: 100%;
-    max-width: 420px;
-  }
-
-  .header-affiliation-school {
-    font-size: 13px;
-    letter-spacing: 1.5px;
-    margin-top: 7px;
-  }
-
-  .site-header nav {
-    gap: 8px 16px;
-    margin-top: 5px;
-  }
-
-  .site-header nav a {
-    font-size: 12px;
-  }
+  .site-header .brand { font-size: 24px; }
+  .header-affiliation { justify-content: flex-start; }
+  .cwru-logo { width: min(100%, 360px); }
+  .site-nav { gap: 7px 17px; margin-top: 3px; }
+  .site-nav a { font-size: 12px; }
+  main { padding: 32px 0 38px; }
+  h1 { font-size: 30px; }
+  .contact-layout { grid-template-columns: 1fr; gap: 25px; }
+  .map-container { height: 340px; }
+  .welcome-section { padding: 24px 20px; }
+  .welcome-section p { font-size: 16px; }
+  .publication-item { padding-left: .75rem; }
 }
 
-/* Refined CWRU header logo */
-.cwru-logo {
-    display: block;
-    width: 440px;
-    max-width: 100%;
-    height: auto;
-    object-fit: contain;
-
-    /* Preserve the original logo colors */
-    filter: none !important;
-
-    /* White background keeps the original blue logo visible */
-    background: #ffffff;
-    padding: 8px 12px;
-    border-radius: 4px;
-}
-
-/* Remove the separate School of Medicine label */
-.header-affiliation-school {
-    display: none !important;
-}
-
-/* Slightly refine the lab name */
-.site-header .brand {
-    font-size: 26px;
-}
-
-/* Mobile adjustment */
-@media (max-width: 700px) {
-    .cwru-logo {
-        width: 100%;
-        max-width: 380px;
-    }
+@media (max-width: 380px) {
+  .site-nav { column-gap: 12px; }
+  .site-nav a { font-size: 11px; }
 }
