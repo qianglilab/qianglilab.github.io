@@ -12,7 +12,139 @@
   <title>Qiang Li | Li Lab</title>
 
   <link rel="stylesheet" href="style.css">
+
+  <!-- Page-specific styling -->
+  <style>
+
+    /* ==================================================
+       FULL-WIDTH BLUE HEADER
+       ================================================== */
+
+    .site-header {
+      width: 100vw;
+      max-width: none;
+      margin-left: calc(50% - 50vw);
+      box-sizing: border-box;
+
+      padding-top: 34px;
+      padding-bottom: 30px;
+
+      background: #003071;
+      color: #ffffff;
+    }
+
+    .site-header .site-nav a {
+      color: #ffffff;
+    }
+
+    .site-header .site-nav a:hover {
+      color: #dceaff;
+    }
+
+
+    /* ==================================================
+       PRINCIPAL INVESTIGATOR PROFILE
+       ================================================== */
+
+    .profile-layout {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 35px;
+
+      max-width: 1000px;
+      width: 100%;
+      margin: 35px auto 45px;
+    }
+
+    /* Profile photograph on the left */
+
+    .profile-portrait {
+      display: block;
+
+      width: 210px;
+      height: auto;
+      max-width: 210px;
+
+      object-fit: contain;
+      flex-shrink: 0;
+
+      margin: 0;
+      border-radius: 4px;
+    }
+
+    /* Information on the right */
+
+    .profile-layout > div {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .profile-layout h2 {
+      margin-top: 0;
+      margin-bottom: 12px;
+    }
+
+    .profile-layout .lead-text {
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
+
+    .profile-layout p {
+      line-height: 1.7;
+    }
+
+
+    /* ==================================================
+       EDUCATION AND CONTACT
+       ================================================== */
+
+    .profile-details-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 45px;
+
+      max-width: 1000px;
+      margin: 35px auto;
+    }
+
+
+    /* ==================================================
+       MOBILE RESPONSIVE LAYOUT
+       ================================================== */
+
+    @media (max-width: 700px) {
+
+      .site-header {
+        padding: 24px 20px 22px;
+      }
+
+      .profile-layout {
+        flex-direction: column;
+        align-items: flex-start;
+
+        gap: 22px;
+        margin: 25px auto 35px;
+        padding: 0 18px;
+      }
+
+      .profile-portrait {
+        width: 180px;
+        max-width: 180px;
+      }
+
+      .profile-details-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        padding: 0 18px;
+      }
+
+    }
+
+  </style>
+
 </head>
+
 
 <body>
 
@@ -33,28 +165,49 @@
   </a>
 
   <nav class="site-nav" aria-label="Main navigation">
+
     <a href="index.html">HOME</a>
+
     <a href="research.html">RESEARCH</a>
+
     <a href="qiang-li.html" aria-current="page">QIANG LI</a>
+
     <a href="lab-members.html">LAB MEMBERS</a>
+
     <a href="publications.html">PUBLICATIONS</a>
+
     <a href="join-us.html">JOIN US</a>
+
     <a href="contact.html">CONTACT</a>
+
   </nav>
 
 </header>
 
+
 <main>
 
-  <!-- Principal Investigator -->
-  <h1 style="text-align: center;">Principal Investigator</h1>
+  <!-- ================================================
+       PRINCIPAL INVESTIGATOR
+       ================================================ -->
+
+  <h1 style="text-align: center;">
+    Principal Investigator
+  </h1>
+
 
   <section class="profile-layout">
 
-    <!-- Updated profile photograph -->
-    <img class="profile-portrait"
-         src="Qiang%25Li_CWRU.jpg"
-         alt="Qiang Li">
+    <!-- Profile photo: LEFT -->
+
+    <img
+      class="profile-portrait"
+      src="Qiang%25Li_CWRU.jpg"
+      alt="Qiang Li"
+    >
+
+
+    <!-- Personal information: RIGHT -->
 
     <div>
 
@@ -67,12 +220,14 @@
         Case Western Reserve University
       </p>
 
+
       <p>
         Qiang Li leads the Li Laboratory at Case Western Reserve University.
         His research focuses on organoid intelligence and translational
         medicine, combining stem-cell-derived organoid models with advanced
         bioelectronics and computational approaches.
       </p>
+
 
       <p>
         <a class="profile-link"
@@ -88,17 +243,24 @@
   </section>
 
 
-  <!-- Education and Contact Information -->
+
+  <!-- ================================================
+       EDUCATION AND CONTACT INFORMATION
+       ================================================ -->
+
   <section class="content-section">
 
     <div class="profile-details-grid">
 
-      <!-- Education -->
+
+      <!-- EDUCATION -->
+
       <div>
 
         <h2>Education</h2>
 
         <ul>
+
           <li>
             <strong>Ph.D.</strong>,
             University of Nebraska–Lincoln, 2018
@@ -108,25 +270,31 @@
             <strong>Postdoctoral Fellow</strong>,
             Harvard University, 2026
           </li>
+
         </ul>
 
       </div>
 
 
-      <!-- Contact Information -->
+
+      <!-- CONTACT INFORMATION -->
+
       <div>
 
         <h2>Contact Information</h2>
 
         <p>
           <strong>Email:</strong>
+
           <a href="mailto:qxl465@case.edu">
             qxl465@case.edu
           </a>
         </p>
 
+
         <p>
           <strong>Phone:</strong>
+
           <a href="tel:+16173085658">
             617-308-5658
           </a>
@@ -134,12 +302,16 @@
 
       </div>
 
+
     </div>
 
   </section>
 
 </main>
 
+
+
+<!-- FOOTER -->
 
 <footer>
   © Qiang Li
