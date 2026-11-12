@@ -1,27 +1,36 @@
+
 /* =========================================================
    LI LAB WEBSITE — SHARED STYLESHEET
-   CWRU blue header + responsive page layout
+   Original CWRU header preserved
+   Unified light blue content background
    ========================================================= */
 
-* { box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+}
 
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  width: 100%;
-  max-width: none;
-  margin: 0;
-  padding: 0;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 28px;
   line-height: 1.7;
   color: #263238;
-  background: #F2F6FA;
-  overflow-x: hidden;
+  background: #EAF3FA;
 }
 
-a { color: #163b65; }
+a {
+  color: #163b65;
+}
 
-/* Shared CWRU header */
+/* =========================================================
+   HEADER — KEEP EXISTING STYLE UNCHANGED
+   ========================================================= */
+
 .site-header {
   display: grid;
   grid-template-columns: minmax(160px, 1fr) auto;
@@ -31,9 +40,8 @@ a { color: #163b65; }
   align-items: center;
   column-gap: 28px;
   row-gap: 10px;
-  width: 100%;
-  margin: 0;
-  padding: 22px clamp(22px, 4vw, 56px) 17px;
+  margin: 0 -28px;
+  padding: 20px 32px 15px;
   color: #ffffff;
   background: linear-gradient(110deg, #174a9b 0%, #003071 100%);
 }
@@ -57,10 +65,9 @@ a { color: #163b65; }
   text-decoration: none;
 }
 
-/* Use the uploaded official white logo directly; do not recolor it. */
 .cwru-logo {
   display: block;
-  width: 420px;
+  width: 390px;
   max-width: 100%;
   height: auto;
   object-fit: contain;
@@ -76,17 +83,17 @@ a { color: #163b65; }
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 8px 32px;
-  margin-top: 10px;
+  gap: 7px 25px;
+  margin-top: 7px;
 }
 
 .site-nav a {
   color: #ffffff;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 13px;
   font-weight: 700;
-  letter-spacing: .45px;
-  padding: 6px 0;
+  letter-spacing: .35px;
+  padding: 5px 0;
   border-bottom: 2px solid transparent;
 }
 
@@ -101,16 +108,14 @@ a { color: #163b65; }
   outline-offset: 4px;
 }
 
+/* =========================================================
+   GLOBAL CONTENT AREA
+   ========================================================= */
+
 main {
-  width: calc(100% - 48px);
-  max-width: 1200px;
   min-height: 58vh;
-  margin: 32px auto;
-  padding: 42px 36px 48px;
-  background: #FFFFFF;
-  border: 1px solid #E1EAF3;
-  border-radius: 14px;
-  box-shadow: 0 5px 22px rgba(22, 59, 101, .045);
+  padding: 42px 0 48px;
+  background: #EAF3FA;
 }
 
 h1, h2, h3 {
@@ -118,11 +123,65 @@ h1, h2, h3 {
   line-height: 1.3;
 }
 
-h1 { font-size: 36px; margin: 0 0 24px; }
-h2 { font-size: 24px; }
-section + section { margin-top: 36px; }
+h1 {
+  font-size: 36px;
+  margin: 0 0 24px;
+}
 
-/* Homepage profile */
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+p {
+  color: #263238;
+}
+
+section + section {
+  margin-top: 36px;
+}
+
+/* =========================================================
+   REMOVE SEPARATE WHITE CONTENT PANELS
+   ========================================================= */
+
+.welcome-section,
+.content-box,
+.content-card,
+.white-box,
+.page-card,
+.page-content-box {
+  background: transparent !important;
+  box-shadow: none !important;
+  border-radius: 0;
+}
+
+/* Homepage welcome section */
+.welcome-section {
+  max-width: 900px;
+  margin: 24px auto 0;
+  padding: 28px 0;
+  border-top: 1px solid #c5d8e8;
+}
+
+.welcome-section h2 {
+  margin: 0 0 14px;
+  font-size: 26px;
+}
+
+.welcome-section p {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.85;
+}
+
+/* =========================================================
+   HOMEPAGE PROFILE
+   ========================================================= */
+
 .intro {
   display: flex;
   flex-direction: column;
@@ -157,20 +216,10 @@ section + section { margin-top: 36px; }
   line-height: 1.65;
 }
 
-.welcome-section {
-  max-width: 900px;
-  margin: 24px auto 0;
-  padding: 28px 36px;
-  background: #F2F6FA;
-  border: 1px solid #E1EAF3;
-  border-left: 4px solid #163b65;
-  border-radius: 12px;
-}
+/* =========================================================
+   CONTACT PAGE
+   ========================================================= */
 
-.welcome-section h2 { margin: 0 0 14px; font-size: 26px; }
-.welcome-section p { margin: 0; font-size: 18px; line-height: 1.85; }
-
-/* Contact page */
 .contact-layout {
   display: grid;
   grid-template-columns: .8fr 1.2fr;
@@ -180,22 +229,38 @@ section + section { margin-top: 36px; }
   margin: 15px auto 0;
 }
 
-.contact-info { margin: 0; padding: 26px 28px; background: #FFFFFF; border: 1px solid #E1EAF3; border-radius: 12px; }
-.contact-info h1 { margin-bottom: 18px; }
-.contact-info h2 { margin-top: 0; color: #153a63; }
-.contact-info p { line-height: 1.8; margin-bottom: 20px; }
-.contact-info a { color: #153a63; }
+.contact-info {
+  margin: 0;
+  padding: 0;
+}
+
+.contact-info h1 {
+  margin-bottom: 18px;
+}
+
+.contact-info h2 {
+  margin-top: 0;
+  color: #153a63;
+}
+
+.contact-info p {
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.contact-info a {
+  color: #153a63;
+}
 
 .map-container {
   width: 100%;
   height: 420px;
   margin: 0;
-  padding: 8px;
-  background: #FFFFFF;
-  border: 1px solid #E1EAF3;
-  border-radius: 12px;
+  padding: 0;
+  border-radius: 10px;
   overflow: hidden;
 }
+
 .map-container iframe {
   display: block;
   width: 100%;
@@ -203,176 +268,185 @@ section + section { margin-top: 36px; }
   border: 0;
 }
 
-footer {
-  max-width: 1200px;
-  margin: 0 auto;
-  border-top: 1px solid #dce3e9;
-  padding: 22px 28px;
-  color: #777777;
-  font-size: 14px;
-}
+/* =========================================================
+   PUBLICATIONS PAGE
+   ========================================================= */
 
-/* Publications page */
 .publications-intro {
   max-width: 900px;
   margin-bottom: 2rem;
   color: #526174;
   line-height: 1.7;
 }
+
 .publication-year {
   margin: 2.2rem 0 1rem;
   padding-bottom: .45rem;
   color: #153a63;
-  border-bottom: 2px solid #dce5ee;
+  border-bottom: 2px solid #c5d8e8;
   font-size: 1.45rem;
 }
-.publication-list { list-style: none; margin: 0; padding: 0; }
+
+.publication-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 .publication-item {
   margin: 0 0 1.15rem;
   padding: 0 0 1.15rem 1rem;
-  border-bottom: 1px solid #e7edf2;
-  border-left: 3px solid #dce5ee;
+  border-bottom: 1px solid #cbdce9;
+  border-left: 3px solid #b5cde0;
   line-height: 1.7;
 }
-.publication-item strong { color: #183b60; }
+
+.publication-item strong {
+  color: #183b60;
+}
+
 .publication-item a {
   color: #245b8f;
   font-weight: 600;
   text-decoration: none;
 }
-.publication-item a:hover { text-decoration: underline; }
-.publication-links { display: inline; white-space: normal; }
+
+.publication-item a:hover {
+  text-decoration: underline;
+}
+
+.publication-links {
+  display: inline;
+  white-space: normal;
+}
+
+/* =========================================================
+   LAB MEMBERS AND JOIN US
+   ========================================================= */
+
+section h2 {
+  color: #163b65;
+}
+
+section h3 {
+  color: #245b8f;
+}
+
+/* Remove subsection background boxes */
+.postdoc,
+.graduate,
+.undergraduate,
+.intern,
+.lab-member-section,
+.recruitment-section {
+  background: transparent !important;
+  box-shadow: none !important;
+  border-radius: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* Consistent left alignment */
+.postdoc,
+.graduate,
+.undergraduate,
+.intern,
+.lab-member-section,
+.recruitment-section {
+  text-align: left;
+}
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+footer {
+  border-top: 1px solid #c5d8e8;
+  padding: 22px 0;
+  color: #526171;
+  font-size: 14px;
+  background: transparent;
+}
+
+/* =========================================================
+   RESPONSIVE DESIGN
+   ========================================================= */
 
 @media (max-width: 760px) {
+
+  body {
+    padding: 0 20px;
+  }
+
   .site-header {
     grid-template-columns: 1fr;
-    grid-template-areas: "brand" "affiliation" "nav";
+    grid-template-areas:
+      "brand"
+      "affiliation"
+      "nav";
     row-gap: 12px;
-    padding: 19px 20px 16px;
+    margin: 0 -20px;
+    padding: 19px 20px 15px;
   }
-  .site-header .brand { font-size: 24px; }
-  .header-affiliation { justify-content: flex-start; }
-  .cwru-logo { width: min(100%, 340px); }
-  .site-nav { gap: 8px 20px; margin-top: 3px; }
-  .site-nav a { font-size: 14px; }
-  main { width: calc(100% - 28px); margin: 18px auto; padding: 30px 20px 36px; }
-  footer { padding: 20px; }
-  h1 { font-size: 30px; }
-  .contact-layout { grid-template-columns: 1fr; gap: 20px; }
-  .contact-info { padding: 22px 20px; }
-  .map-container { height: 340px; }
-  .welcome-section { padding: 24px 20px; }
-  .welcome-section p { font-size: 16px; }
-  .publication-item { padding-left: .75rem; }
+
+  .site-header .brand {
+    font-size: 24px;
+  }
+
+  .header-affiliation {
+    justify-content: flex-start;
+  }
+
+  .cwru-logo {
+    width: min(100%, 360px);
+  }
+
+  .site-nav {
+    gap: 7px 17px;
+    margin-top: 3px;
+  }
+
+  .site-nav a {
+    font-size: 12px;
+  }
+
+  main {
+    padding: 32px 0 38px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  .contact-layout {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .map-container {
+    height: 340px;
+  }
+
+  .welcome-section {
+    padding: 24px 0;
+  }
+
+  .welcome-section p {
+    font-size: 16px;
+  }
+
+  .publication-item {
+    padding-left: .75rem;
+  }
 }
 
 @media (max-width: 380px) {
-  .site-nav { column-gap: 14px; }
-  .site-nav a { font-size: 13px; }
-}
 
-
-/* Qiang Li profile and Join Us pages */
-.profile-layout {
-  display: grid;
-  grid-template-columns: 230px minmax(0, 1fr);
-  gap: 36px;
-  align-items: start;
-  max-width: 1000px;
-  margin: 10px auto 30px;
-}
-.profile-portrait {
-  display: block;
-  width: 100%;
-  max-width: 230px;
-  height: auto;
-  object-fit: cover;
-  object-position: center 10%;
-  border-radius: 12px;
-  box-shadow: 0 4px 18px rgba(22, 59, 101, .12);
-}
-.lead-text { color: #526171; font-size: 17px; line-height: 1.8; }
-.content-section {
-  max-width: 1000px;
-  margin: 30px auto 0;
-  padding: 24px 28px;
-  background: #F2F6FA;
-  border: 1px solid #E1EAF3;
-  border-left: 4px solid #163b65;
-  border-radius: 12px;
-}
-.content-section h2 { margin-top: 0; }
-.page-intro { max-width: 900px; color: #526174; font-size: 18px; line-height: 1.8; }
-.profile-link { color: #245b8f; font-weight: 700; text-decoration: none; }
-.profile-link:hover { text-decoration: underline; }
-@media (max-width: 700px) {
-  .profile-layout { grid-template-columns: 1fr; gap: 22px; }
-  .profile-portrait { max-width: 190px; }
-  .content-section { padding: 22px 20px; }
-}
-```css
-/* =====================================
-   PI Profile: Education and Contact
-   ===================================== */
-
-.profile-details-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
-  margin-top: 20px;
-}
-
-.profile-details-grid h2 {
-  margin-bottom: 18px;
-}
-
-.profile-details-grid ul {
-  padding-left: 20px;
-}
-
-.profile-details-grid li {
-  margin-bottom: 12px;
-  line-height: 1.7;
-}
-
-.profile-details-grid p {
-  line-height: 1.8;
-}
-
-/* Responsive layout for mobile devices */
-
-@media (max-width: 700px) {
-
-  .profile-details-grid {
-    grid-template-columns: 1fr;
-    gap: 20px;
+  .site-nav {
+    column-gap: 12px;
   }
 
-}
-```
-
-/* Restore the original CWRU navy-blue header */
-.site-header {
-    background-color: #003071 !important;
-    color: #ffffff !important;
-}
-
-/* Lab name */
-.site-header .brand {
-    color: #ffffff !important;
-}
-
-/* Navigation links */
-.site-header nav a,
-.site-header nav a:visited,
-.site-header nav a:hover,
-.site-header nav a:focus,
-.site-header nav a[aria-current="page"] {
-    color: #ffffff !important;
-}
-
-/* White navigation underline */
-.site-header nav a:hover,
-.site-header nav a[aria-current="page"] {
-    border-bottom-color: #ffffff;
+  .site-nav a {
+    font-size: 11px;
+  }
 }
