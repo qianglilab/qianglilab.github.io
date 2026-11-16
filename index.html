@@ -15,30 +15,31 @@
 
   <style>
     /* =====================================================
-       HOMEPAGE STYLES
+       HOMEPAGE CONTENT ONLY
+       The shared header, navigation, footer, and style.css
+       are intentionally preserved.
        ===================================================== */
-
-    /* Hero section */
 
     .home-hero {
       display: grid;
       grid-template-columns: 1.05fr 1fr;
       align-items: center;
       gap: 2rem;
-      padding: 2rem 0;
+      padding: 1.8rem 0;
     }
 
     .hero-text h1 {
       color: #003b70;
       font-size: 2.4rem;
       line-height: 1.2;
-      margin-bottom: 0.8rem;
+      margin: 0 0 0.8rem;
     }
 
     .hero-text p {
       font-size: 1rem;
       line-height: 1.65;
       color: #444;
+      margin: 0;
     }
 
     .hero-image img {
@@ -49,55 +50,53 @@
       border-radius: 9px;
     }
 
-    /* General section spacing */
-
     .home-section {
-      padding: 1.6rem 0;
+      padding: 1.35rem 0;
     }
 
     .home-section h2,
     .home-simple-section h2 {
       color: #003b70;
       font-size: 1.7rem;
-      margin-bottom: 0.65rem;
+      margin: 0 0 0.65rem;
     }
 
     .section-intro {
       max-width: 950px;
-      margin-bottom: 1.2rem;
+      margin: 0 0 1.1rem;
       line-height: 1.65;
       color: #444;
     }
 
-    /* Scientific program cards */
+    /* Scientific programs */
 
     .program-grid {
       display: grid;
       grid-template-columns: repeat(4, minmax(0, 1fr));
       gap: 1rem;
-      margin-top: 1.2rem;
+      margin-top: 1.1rem;
     }
 
     .program-card {
       background: #fff;
       border-radius: 8px;
-      padding: 1.2rem;
+      padding: 1.15rem;
       border-top: 3px solid #0066a4;
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
     }
 
     .program-number {
       color: #0075b8;
-      font-size: 1.5rem;
+      font-size: 1.45rem;
       font-weight: 700;
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.45rem;
     }
 
     .program-card h3 {
       color: #003b70;
-      font-size: 1.05rem;
-      line-height: 1.35;
-      margin-bottom: 0.5rem;
+      font-size: 1.02rem;
+      line-height: 1.4;
+      margin: 0 0 0.5rem;
     }
 
     .program-card p {
@@ -113,7 +112,7 @@
       display: grid;
       grid-template-columns: repeat(4, minmax(0, 1fr));
       gap: 1rem;
-      margin-top: 1.2rem;
+      margin-top: 1.1rem;
       align-items: stretch;
     }
 
@@ -124,6 +123,7 @@
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
       display: flex;
       flex-direction: column;
+      min-width: 0;
     }
 
     .publication-image-link {
@@ -144,7 +144,7 @@
     }
 
     .publication-info {
-      padding: 1rem;
+      padding: 0.9rem;
       display: flex;
       flex-direction: column;
       flex: 1;
@@ -154,38 +154,38 @@
       color: #003b70;
       font-size: 0.95rem;
       line-height: 1.45;
-      margin: 0 0 0.6rem;
+      margin: 0 0 0.55rem;
     }
 
     .publication-info p {
       color: #555;
-      font-size: 0.85rem;
+      font-size: 0.84rem;
       line-height: 1.5;
       margin: 0 0 0.7rem;
     }
 
-    .publication-info a.article-link {
+    .publication-info .article-link {
       color: #0066a4;
       font-weight: 600;
       text-decoration: none;
       margin-top: auto;
     }
 
-    .publication-info a.article-link:hover {
+    .publication-info .article-link:hover {
       text-decoration: underline;
     }
 
     /* Meet the Team and Join Our Lab */
 
     .home-simple-section {
-      padding: 1.4rem 0;
+      padding: 1.2rem 0;
     }
 
     .home-simple-section p {
       max-width: 950px;
       color: #444;
       line-height: 1.65;
-      margin-bottom: 0.6rem;
+      margin: 0 0 0.55rem;
     }
 
     .home-simple-section a {
@@ -210,7 +210,7 @@
     @media (max-width: 700px) {
       .home-hero {
         grid-template-columns: 1fr;
-        padding: 1.5rem 0;
+        padding: 1.4rem 0;
       }
 
       .hero-text h1 {
@@ -224,18 +224,17 @@
 
       .home-section,
       .home-simple-section {
-        padding: 1.2rem 0;
+        padding: 1rem 0;
       }
     }
-
   </style>
 </head>
-
 
 <body>
 
   <!-- =====================================================
-       HEADER
+       ORIGINAL SITE HEADER
+       Keep the shared header styling in style.css.
        ===================================================== -->
 
   <header class="site-header">
@@ -244,22 +243,16 @@
 
       <div class="brand-text">
         <a href="index.html">Li Laboratory</a>
-
-        <div class="header-affiliation">
-          Department of Physiology and Biophysics<br>
-          Case Western Reserve University
-        </div>
       </div>
 
       <a href="https://case.edu/" target="_blank" rel="noopener">
         <img
           class="cwru-logo"
-          src="CWRU_Two-line%20horizontal%20(Primary)%20logo_White.png"
+          src="CWRU_Two-line%20horizontal%20(Primary)%20logo_CMYK%20Blue.png"
           alt="Case Western Reserve University">
       </a>
 
     </div>
-
 
     <nav class="site-nav" aria-label="Main navigation">
       <a href="index.html" aria-current="page">HOME</a>
@@ -276,8 +269,8 @@
   <main>
 
     <!-- =====================================================
-         HERO SECTION
-         AI-generated brain organoid image
+         HERO
+         AI-generated image, separate from Brain organoids.jpg
          ===================================================== -->
 
     <section class="home-hero">
@@ -296,17 +289,13 @@
 
       </div>
 
-
       <div class="hero-image">
-
         <img
           src="Glowing%20Brain%20Organoid%20on%20Neural%20Chip.png"
           alt="AI-generated illustration of a brain organoid integrated with a neural bioelectronic chip">
-
       </div>
 
     </section>
-
 
 
     <!-- =====================================================
@@ -325,83 +314,56 @@
         of new therapeutic strategies.
       </p>
 
-
       <div class="program-grid">
 
-
         <article class="program-card">
-
           <div class="program-number">01</div>
-
           <h3>Organoid Intelligence</h3>
-
           <p>
             Engineering human stem cell-derived organoids with
             integrated bioelectronic systems to study tissue
             development and functional maturation.
           </p>
-
         </article>
 
-
-
         <article class="program-card">
-
           <div class="program-number">02</div>
-
           <h3>Bioelectronics and Gene-to-Function Mapping</h3>
-
           <p>
             Combining flexible nanoelectronics, electrophysiology,
             and spatial molecular profiling to connect gene
             expression with cellular function.
           </p>
-
         </article>
 
-
-
         <article class="program-card">
-
           <div class="program-number">03</div>
-
           <h3>Human Disease Modeling</h3>
-
           <p>
             Developing human organoid models to investigate disease
             mechanisms, including Parkinson's disease and other
             human disorders.
           </p>
-
         </article>
 
-
-
         <article class="program-card">
-
           <div class="program-number">04</div>
-
           <h3>Translational Organoid Medicine</h3>
-
           <p>
             Integrating human organoid models, animal studies,
             and computational approaches to advance therapeutic
             discovery and translational medicine.
           </p>
-
         </article>
-
 
       </div>
 
     </section>
 
 
-
     <!-- =====================================================
          FEATURED PUBLICATIONS
-         First three cards: text only for now.
-         Fourth card: uploaded Brain organoids.jpg image.
+         All four publication images restored.
          ===================================================== -->
 
     <section class="home-section">
@@ -413,13 +375,22 @@
         human organoid systems, and functional mapping of cellular states.
       </p>
 
-
       <div class="publication-grid">
 
-
-        <!-- Publication 1 -->
+        <!-- 1. Science -->
 
         <article class="publication-card">
+
+          <a class="publication-image-link"
+             href="https://www.science.org/doi/10.1126/science.aeb3295"
+             target="_blank"
+             rel="noopener">
+
+            <img
+              src="Science.png"
+              alt="Science publication cover">
+
+          </a>
 
           <div class="publication-info">
 
@@ -445,10 +416,20 @@
         </article>
 
 
-
-        <!-- Publication 2 -->
+        <!-- 2. Nature -->
 
         <article class="publication-card">
+
+          <a class="publication-image-link"
+             href="https://www.nature.com/articles/s41586-025-09106-8"
+             target="_blank"
+             rel="noopener">
+
+            <img
+              src="Nature%20cover.png"
+              alt="Nature publication cover">
+
+          </a>
 
           <div class="publication-info">
 
@@ -474,10 +455,20 @@
         </article>
 
 
-
-        <!-- Publication 3 -->
+        <!-- 3. Cell -->
 
         <article class="publication-card">
+
+          <a class="publication-image-link"
+             href="https://www.cell.com/cell/fulltext/S0092-8674(23)00286-6"
+             target="_blank"
+             rel="noopener">
+
+            <img
+              src="Cell%20cover.jpg"
+              alt="Cell publication cover">
+
+          </a>
 
           <div class="publication-info">
 
@@ -503,8 +494,7 @@
         </article>
 
 
-
-        <!-- Publication 4 -->
+        <!-- 4. Advanced Materials -->
 
         <article class="publication-card">
 
@@ -519,7 +509,6 @@
 
           </a>
 
-
           <div class="publication-info">
 
             <h3>
@@ -529,9 +518,8 @@
             </h3>
 
             <p>
-              Le Floch, P.#, <strong>Li, Q.</strong>#,
-              Lin, Z.#, Zhao, S., Liu, R., Tasnim, K.,
-              Jiang, H., and Liu, J.
+              Le Floch, P.#, <strong>Li, Q.</strong>#, Lin, Z.#,
+              Zhao, S., Liu, R., Tasnim, K., Jiang, H., and Liu, J.
               <em>Advanced Materials</em> 34, 2106829 (2022).
             </p>
 
@@ -546,11 +534,9 @@
 
         </article>
 
-
       </div>
 
     </section>
-
 
 
     <!-- =====================================================
@@ -572,7 +558,6 @@
       </p>
 
     </section>
-
 
 
     <!-- =====================================================
@@ -598,19 +583,13 @@
   </main>
 
 
-
   <!-- =====================================================
-       FOOTER
+       ORIGINAL SITE FOOTER
        ===================================================== -->
 
   <footer class="site-footer">
-
-    <p>
-      © Qiang Li | Case Western Reserve University
-    </p>
-
+    <p>© Qiang Li</p>
   </footer>
-
 
 </body>
 </html>
