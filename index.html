@@ -4,12 +4,97 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Li Laboratory | Organoid Intelligence for Translational Medicine</title>
+
   <link rel="stylesheet" href="style.css">
 
   <style>
-    /* Homepage-specific styles.
-       The shared header, navigation, and footer remain controlled by style.css. */
+    /* =====================================================
+       LI LABORATORY HOMEPAGE
+       ===================================================== */
+
+
+    /* ---------- HEADER: MATCH RESEARCH PAGE ---------- */
+
+    .site-header {
+      background: #073575 !important;
+      color: #ffffff !important;
+      min-height: 153px;
+      padding: 25px 3.5% 24px !important;
+      display: flex !important;
+      flex-direction: column !important;
+      justify-content: space-between;
+      box-sizing: border-box;
+    }
+
+    .site-header .brand {
+      display: flex !important;
+      flex-direction: row !important;
+      justify-content: space-between !important;
+      align-items: center !important;
+      width: 100%;
+      gap: 20px;
+    }
+
+    .site-header .brand-name {
+      color: #ffffff !important;
+      font-size: 27px;
+      font-weight: 700;
+      text-decoration: none;
+      line-height: 1.2;
+    }
+
+    .site-header .cwru-logo {
+      display: block;
+      width: 400px;
+      max-width: 100%;
+      height: auto;
+      filter: none !important;
+    }
+
+    .site-header .site-nav {
+      display: flex !important;
+      flex-direction: row !important;
+      align-items: center;
+      justify-content: flex-start !important;
+      flex-wrap: wrap;
+      gap: 27px;
+      margin-top: 24px;
+      padding: 0;
+    }
+
+    .site-header .site-nav a {
+      color: #ffffff !important;
+      text-decoration: none;
+      font-weight: 700;
+      padding-bottom: 8px;
+    }
+
+    .site-header .site-nav a:hover {
+      color: #dcecff !important;
+    }
+
+    .site-header .site-nav a[aria-current="page"] {
+      border-bottom: 2px solid #ffffff;
+    }
+
+
+    /* ---------- MAIN CONTENT ---------- */
+
+    .home-main {
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .home-main *,
+    .home-main *::before,
+    .home-main *::after {
+      box-sizing: border-box;
+    }
+
+
+    /* ---------- HERO ---------- */
 
     .home-hero {
       display: grid;
@@ -38,6 +123,9 @@
       border-radius: 10px;
     }
 
+
+    /* ---------- SECTION SPACING ---------- */
+
     .home-section {
       padding: 1.8rem 0;
     }
@@ -51,6 +139,9 @@
       line-height: 1.7;
       margin: 0 0 1.4rem;
     }
+
+
+    /* ---------- SCIENTIFIC PROGRAMS ---------- */
 
     .program-grid {
       display: grid;
@@ -84,6 +175,9 @@
       margin: 0;
     }
 
+
+    /* ---------- FEATURED PUBLICATIONS ---------- */
+
     .publication-grid {
       display: grid;
       grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -95,10 +189,12 @@
       min-width: 0;
     }
 
+    /* Taller images, with the top of each image prioritized */
+
     .publication-image-link {
       display: block;
       width: 100%;
-      height: 180px;
+      height: 250px;
       overflow: hidden;
       background: #f3f5f7;
       border-radius: 6px;
@@ -131,10 +227,40 @@
       margin-bottom: 0.35rem !important;
     }
 
+    .publication-card a {
+      color: #174f82;
+    }
+
+    .all-publications-link {
+      margin-top: 1.2rem;
+    }
+
+
+    /* ---------- MEET THE TEAM ---------- */
+
+    .team-section {
+      padding: 1.8rem 0;
+    }
+
+    .team-section h2 {
+      margin-bottom: 0.7rem;
+    }
+
+    .team-section p {
+      max-width: 950px;
+      line-height: 1.7;
+    }
+
+
+    /* ---------- JOIN OUR LAB ---------- */
+
+    /* No white card or background box */
+
     .home-cta {
-      background: #f5f8fc;
-      padding: 1.5rem;
-      border-radius: 8px;
+      background: transparent !important;
+      padding: 1.5rem 0;
+      border: none;
+      border-radius: 0;
       margin: 1rem 0 2rem;
     }
 
@@ -147,12 +273,22 @@
       margin-bottom: 0.8rem;
     }
 
-    .home-cta a,
-    .publication-card a {
+    .home-cta a {
       color: #174f82;
     }
 
+
+    /* ---------- FOOTER ---------- */
+
+    .site-footer {
+      margin-top: 2rem;
+    }
+
+
+    /* ---------- TABLET ---------- */
+
     @media (max-width: 900px) {
+
       .program-grid,
       .publication-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -161,9 +297,42 @@
       .home-hero {
         gap: 1.5rem;
       }
+
     }
 
+
+    /* ---------- MOBILE ---------- */
+
+    @media (max-width: 700px) {
+
+      .site-header {
+        min-height: auto;
+        padding: 22px 5% 24px !important;
+      }
+
+      .site-header .brand {
+        gap: 15px;
+      }
+
+      .site-header .brand-name {
+        font-size: 23px;
+      }
+
+      .site-header .cwru-logo {
+        width: 220px;
+      }
+
+      .site-header .site-nav {
+        flex-wrap: wrap;
+        gap: 15px 20px;
+        margin-top: 24px;
+      }
+
+    }
+
+
     @media (max-width: 600px) {
+
       .home-hero {
         grid-template-columns: 1fr;
         padding: 1.8rem 0;
@@ -179,28 +348,33 @@
       }
 
       .publication-image-link {
-        height: 220px;
+        height: 280px;
       }
 
       .home-section {
         padding: 1.3rem 0;
       }
+
     }
+
   </style>
 </head>
 
+
 <body>
 
-  <!-- ORIGINAL CWRU HEADER -->
+
+  <!-- =====================================================
+       HEADER
+       ===================================================== -->
+
   <header class="site-header">
+
     <div class="brand">
-      <div class="brand-text">
-        <a href="index.html">Li Laboratory</a>
-        <div class="header-affiliation">
-          Department of Physiology and Biophysics<br>
-          Case Western Reserve University
-        </div>
-      </div>
+
+      <a href="index.html" class="brand-name">
+        Li Lab
+      </a>
 
       <a href="https://case.edu/" target="_blank" rel="noopener">
         <img
@@ -208,103 +382,162 @@
           src="CWRU_Two-line%20horizontal%20(Primary)%20logo_White.png"
           alt="Case Western Reserve University">
       </a>
+
     </div>
 
+
     <nav class="site-nav" aria-label="Main navigation">
+
       <a href="index.html" aria-current="page">HOME</a>
+
       <a href="research.html">RESEARCH</a>
+
       <a href="lab-members.html">LAB MEMBERS</a>
+
       <a href="publications.html">PUBLICATIONS</a>
+
       <a href="join-us.html">JOIN US</a>
+
       <a href="contact.html">CONTACT</a>
+
     </nav>
+
   </header>
 
 
-  <main>
+
+  <!-- =====================================================
+       MAIN CONTENT
+       ===================================================== -->
+
+  <main class="home-main">
+
 
     <!-- HERO SECTION -->
+
     <section class="home-hero">
+
       <div class="home-hero-text">
-        <h1>Organoid Intelligence for Translational Medicine</h1>
+
+        <h1>
+          Organoid Intelligence for Translational Medicine
+        </h1>
 
         <p>
-          We integrate human stem cell-derived organoids, flexible
-          nanoelectronics, multimodal electrophysiology, spatial
-          transcriptomics, and artificial intelligence to understand
-          human tissue development, uncover disease mechanisms, and
-          advance therapeutic discovery.
+          We integrate human stem cell-derived organoids,
+          flexible nanoelectronics, multimodal electrophysiology,
+          spatial transcriptomics, and artificial intelligence
+          to understand human tissue development, uncover disease
+          mechanisms, and advance therapeutic discovery.
         </p>
+
       </div>
 
+
       <div class="home-hero-image">
+
         <img
           src="Glowing%20Brain%20Organoid%20on%20Neural%20Chip.png"
           alt="AI-generated visualization of a brain organoid integrated with a neural chip">
+
       </div>
+
     </section>
 
 
+
     <!-- SCIENTIFIC PROGRAMS -->
+
     <section class="home-section">
+
       <h2>Our Scientific Programs</h2>
 
       <p class="section-intro">
-        Our research integrates organoid engineering, bioelectronics,
-        and disease modeling to develop intelligent human organoid
-        systems that advance our understanding of human diseases,
-        uncover disease mechanisms, and accelerate the development
-        of new therapeutic strategies.
+        Our research integrates organoid engineering,
+        bioelectronics, and disease modeling to develop
+        intelligent human organoid systems that advance our
+        understanding of human diseases, uncover disease
+        mechanisms, and accelerate the development of new
+        therapeutic strategies.
       </p>
+
 
       <div class="program-grid">
 
+
         <article class="program-card">
+
           <div class="program-number">01</div>
+
           <h3>Organoid Intelligence</h3>
+
           <p>
             Engineering human stem cell-derived organoids with
             integrated bioelectronic systems to study tissue
             development and functional maturation.
           </p>
+
         </article>
 
+
+
         <article class="program-card">
+
           <div class="program-number">02</div>
+
           <h3>Bioelectronics and Gene-to-Function Mapping</h3>
+
           <p>
-            Combining flexible nanoelectronics, electrophysiology,
-            and spatial molecular profiling to connect gene
-            expression with cellular function.
+            Combining flexible nanoelectronics,
+            electrophysiology, and spatial molecular profiling
+            to connect gene expression with cellular function.
           </p>
+
         </article>
 
+
+
         <article class="program-card">
+
           <div class="program-number">03</div>
+
           <h3>Human Disease Modeling</h3>
+
           <p>
-            Developing human organoid models to investigate disease
-            mechanisms, including Parkinson's disease and other
-            human disorders.
+            Developing human organoid models to investigate
+            disease mechanisms, including Parkinson's disease
+            and other human disorders.
           </p>
+
         </article>
 
+
+
         <article class="program-card">
+
           <div class="program-number">04</div>
+
           <h3>Translational Organoid Medicine</h3>
+
           <p>
-            Integrating human organoid models, animal studies, and
-            computational approaches to advance therapeutic
+            Integrating human organoid models, animal studies,
+            and computational approaches to advance therapeutic
             discovery and translational medicine.
           </p>
+
         </article>
 
+
       </div>
+
     </section>
 
 
+
     <!-- FEATURED PUBLICATIONS -->
+
     <section class="home-section">
+
       <h2>Featured Publications</h2>
 
       <p class="section-intro">
@@ -313,159 +546,226 @@
         translational research.
       </p>
 
+
       <div class="publication-grid">
 
-        <!-- SCIENCE -->
+
+        <!-- SCIENCE 2026 -->
+
         <article class="publication-card">
+
           <a
             class="publication-image-link"
             href="https://www.science.org/doi/10.1126/science.aeb3295"
             target="_blank"
             rel="noopener">
+
             <img
               src="Science.png"
-              alt="Science journal cover">
+              alt="Science publication image">
+
           </a>
 
-          <p class="publication-journal">Science · 2026</p>
+
+          <p class="publication-journal">
+            Science · 2026
+          </p>
+
 
           <h3>
             <a
               href="https://www.science.org/doi/10.1126/science.aeb3295"
               target="_blank"
               rel="noopener">
-              Implanted flexible electronics reveal principles of
-              human islet cell electrical maturation
+
+              Implanted flexible electronics reveal principles
+              of human islet cell electrical maturation
+
             </a>
           </h3>
+
 
           <p>
             Li, Q.#, Liu, R.#, Lin, Z.#, et al.
             <em>Science</em> 391, eaeb3295 (2026).
           </p>
+
         </article>
 
 
-        <!-- NATURE -->
+
+        <!-- NATURE 2025 -->
+
         <article class="publication-card">
+
           <a
             class="publication-image-link"
             href="https://www.nature.com/articles/s41586-025-09106-8"
             target="_blank"
             rel="noopener">
+
             <img
               src="Nature%20cover.png"
               alt="Nature journal cover">
+
           </a>
 
-          <p class="publication-journal">Nature · 2025</p>
+
+          <p class="publication-journal">
+            Nature · 2025
+          </p>
+
 
           <h3>
             <a
               href="https://www.nature.com/articles/s41586-025-09106-8"
               target="_blank"
               rel="noopener">
-              Brain implantation of soft bioelectronics via
-              embryonic development
+
+              Brain implantation of soft bioelectronics
+              via embryonic development
+
             </a>
           </h3>
+
 
           <p>
             Sheng, H.#, Liu, R.#, Li, Q.#, et al.
             <em>Nature</em> 642, 954–964 (2025).
           </p>
+
         </article>
 
 
-        <!-- CELL -->
+
+        <!-- CELL 2023 -->
+
         <article class="publication-card">
+
           <a
             class="publication-image-link"
             href="https://www.cell.com/cell/fulltext/S0092-8674(23)00286-6"
             target="_blank"
             rel="noopener">
+
             <img
               src="Cell%20cover.jpg"
               alt="Cell journal cover">
+
           </a>
 
-          <p class="publication-journal">Cell · 2023</p>
+
+          <p class="publication-journal">
+            Cell · 2023
+          </p>
+
 
           <h3>
             <a
               href="https://www.cell.com/cell/fulltext/S0092-8674(23)00286-6"
               target="_blank"
               rel="noopener">
-              Multimodal charting of molecular and functional cell
-              states via in situ electro-sequencing
+
+              Multimodal charting of molecular and functional
+              cell states via in situ electro-sequencing
+
             </a>
           </h3>
+
 
           <p>
             Li, Q.#, Lin, Z.#, Liu, R.#, et al.
             <em>Cell</em> 186(9), 2002–2017 (2023).
           </p>
+
         </article>
 
 
-        <!-- ADVANCED MATERIALS -->
+
+        <!-- ADVANCED MATERIALS 2022 -->
+
         <article class="publication-card">
+
           <a
             class="publication-image-link"
             href="https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202106829"
             target="_blank"
             rel="noopener">
+
             <img
               src="Brain%20organoids.jpg"
               alt="Brain organoid image associated with the Advanced Materials publication">
+
           </a>
 
-          <p class="publication-journal">Advanced Materials · 2022</p>
+
+          <p class="publication-journal">
+            Advanced Materials · 2022
+          </p>
+
 
           <h3>
             <a
               href="https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202106829"
               target="_blank"
               rel="noopener">
-              Stretchable mesh nanoelectronics for three-dimensional
-              single-cell chronic electrophysiology from developing
-              brain organoids
+
+              Stretchable mesh nanoelectronics for
+              three-dimensional single-cell chronic
+              electrophysiology from developing brain organoids
+
             </a>
           </h3>
 
+
           <p>
-            Le Floch, P.#, Li, Q.#, Lin, Z.#, Zhao, S., Liu, R.,
-            Tasnim, K., Jiang, H., and Liu, J.
+            Le Floch, P.#, Li, Q.#, Lin, Z.#, Zhao, S.,
+            Liu, R., Tasnim, K., Jiang, H., and Liu, J.
             <em>Advanced Materials</em> 34, 2106829 (2022).
           </p>
+
         </article>
+
 
       </div>
 
-      <p style="margin-top: 1.2rem;">
-        <a href="publications.html">View all publications →</a>
+
+      <p class="all-publications-link">
+        <a href="publications.html">
+          View all publications →
+        </a>
       </p>
+
     </section>
 
 
-    <!-- TEAM -->
-    <section class="home-section">
+
+    <!-- MEET THE TEAM -->
+
+    <section class="team-section">
+
       <h2>Meet the Team</h2>
 
-      <p class="section-intro">
-        Our interdisciplinary team brings together expertise in
-        stem cell biology, bioelectronics, electrophysiology,
+      <p>
+        Our interdisciplinary team brings together expertise
+        in stem cell biology, bioelectronics, electrophysiology,
         molecular profiling, and computational science.
       </p>
 
       <p>
-        <a href="lab-members.html">Meet our laboratory members →</a>
+        <a href="lab-members.html">
+          Meet our laboratory members →
+        </a>
       </p>
+
     </section>
 
 
-    <!-- JOIN THE LAB -->
+
+    <!-- JOIN OUR LAB -->
+
     <section class="home-cta">
+
       <h2>Join Our Lab</h2>
 
       <p>
@@ -474,16 +774,27 @@
         modeling, and translational medicine.
       </p>
 
-      <a href="join-us.html">Explore opportunities →</a>
+      <a href="join-us.html">
+        Explore opportunities →
+      </a>
+
     </section>
+
 
   </main>
 
 
-  <!-- ORIGINAL FOOTER -->
+
+  <!-- =====================================================
+       FOOTER
+       ===================================================== -->
+
   <footer class="site-footer">
+
     <p>© Qiang Li</p>
+
   </footer>
+
 
 </body>
 </html>
