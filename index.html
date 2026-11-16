@@ -7,79 +7,212 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <meta name="description"
-        content="The Li Laboratory at Case Western Reserve University investigates organoid intelligence, bioelectronics, stem cell biology, spatial transcriptomics, and translational medicine.">
+        content="The Li Laboratory investigates organoid intelligence for translational medicine through stem cell biology, bioelectronics, spatial multi-omics, and artificial intelligence.">
 
-  <title>Home | Qiang Li, PhD</title>
+  <title>Li Laboratory | Organoid Intelligence for Translational Medicine</title>
 
   <link rel="stylesheet" href="style.css">
 
   <style>
     /* =====================================================
-       HOMEPAGE — PAGE-SPECIFIC STYLES
-       Shared header and navigation remain in style.css
+       LI LABORATORY HOMEPAGE
+       Modern scientific design
+       Shared CWRU header and style.css preserved
        ===================================================== */
 
-    .home-intro {
-      margin: 1rem 0 2.5rem;
+    main {
+      padding-top: 38px;
     }
 
-    .home-intro-text {
+    /* ---------- HERO SECTION ---------- */
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      align-items: center;
+      gap: 38px;
+      padding: 32px;
+      margin-bottom: 45px;
+      background: #ffffff;
+      border: 1px solid #dce7f1;
+      border-radius: 14px;
+      box-shadow: 0 8px 28px rgba(20, 55, 90, 0.07);
+    }
+
+    .hero-eyebrow {
+      display: inline-block;
+      margin-bottom: 16px;
+      color: #28669c;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1.4px;
+      line-height: 1.6;
+      text-transform: uppercase;
+    }
+
+    .hero h1 {
+      margin: 0 0 20px;
+      color: #123b65;
+      font-size: clamp(30px, 3.5vw, 43px);
+      line-height: 1.2;
+      letter-spacing: -0.8px;
+    }
+
+    .hero-description {
+      margin: 0;
+      color: #43576b;
+      font-size: 16px;
+      line-height: 1.9;
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 25px;
+    }
+
+    .hero-button {
+      display: inline-block;
+      padding: 11px 20px;
+      border: 1px solid #174c7e;
+      border-radius: 5px;
+      background: #174c7e;
+      color: #ffffff;
+      font-size: 14px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: background 0.2s ease, transform 0.2s ease;
+    }
+
+    .hero-button:hover {
+      background: #0b3158;
+      transform: translateY(-2px);
+    }
+
+    .hero-button.secondary {
+      background: #ffffff;
+      color: #174c7e;
+    }
+
+    .hero-button.secondary:hover {
+      background: #edf4fa;
+    }
+
+    .hero-image {
       width: 100%;
-      max-width: 1100px;
+      overflow: hidden;
+      border-radius: 10px;
+      background: #e5eff7;
     }
 
-    .home-intro-text h1 {
-      margin-top: 0;
-      margin-bottom: 1rem;
+    .hero-image img {
+      display: block;
+      width: 100%;
+      height: 350px;
+      object-fit: cover;
+      object-position: center;
     }
 
-    .home-intro-text p {
-      line-height: 1.8;
-      margin-bottom: 1rem;
-    }
+    /* ---------- GENERAL SECTIONS ---------- */
 
     .home-section {
-      margin: 2.5rem 0;
+      margin: 48px 0;
     }
 
-    .home-section h2 {
-      margin-bottom: 1.2rem;
+    .section-heading {
+      margin-bottom: 24px;
     }
 
-    /* Research interest layout */
+    .section-eyebrow {
+      display: block;
+      margin-bottom: 7px;
+      color: #3977a8;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1.3px;
+      text-transform: uppercase;
+    }
 
-    .research-interest-grid {
+    .section-heading h2 {
+      margin: 0 0 10px;
+      color: #123b65;
+      font-size: 28px;
+    }
+
+    .section-heading p {
+      max-width: 850px;
+      margin: 0;
+      color: #53677a;
+      line-height: 1.8;
+    }
+
+    /* ---------- RESEARCH CARDS ---------- */
+
+    .research-grid {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 1.25rem;
-      margin-top: 1.25rem;
+      gap: 22px;
+      margin-top: 25px;
     }
 
-    .research-interest {
-      padding: 1.2rem 1.35rem;
-      background: #f1f7fc;
-      border-radius: 5px;
+    .research-card {
+      overflow: hidden;
+      background: #ffffff;
+      border: 1px solid #dce7f1;
+      border-radius: 10px;
+      box-shadow: 0 5px 18px rgba(20, 55, 90, 0.05);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
 
-    .research-interest h3 {
-      margin-top: 0;
-      margin-bottom: 0.6rem;
-      color: #003e6b;
-      font-size: 1.1rem;
+    .research-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 25px rgba(20, 55, 90, 0.11);
     }
 
-    .research-interest p {
+    .research-card img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+      background: #e7f0f7;
+    }
+
+    .research-card-content {
+      padding: 21px 23px 24px;
+    }
+
+    .research-number {
+      display: block;
+      margin-bottom: 8px;
+      color: #4d86b3;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    .research-card h3 {
+      margin: 0 0 10px;
+      color: #153e67;
+      font-size: 19px;
+      line-height: 1.4;
+    }
+
+    .research-card p {
       margin: 0;
-      line-height: 1.7;
+      color: #536477;
+      font-size: 14px;
+      line-height: 1.8;
     }
 
-    /* Section links */
+    /* ---------- TEXT LINKS ---------- */
 
     .section-link {
       display: inline-block;
-      margin-top: 1rem;
-      font-weight: 600;
-      color: #005a9c;
+      margin-top: 23px;
+      color: #155b91;
+      font-size: 14px;
+      font-weight: 700;
       text-decoration: none;
     }
 
@@ -87,51 +220,167 @@
       text-decoration: underline;
     }
 
-    /* Featured publications */
+    /* ---------- PUBLICATIONS ---------- */
 
-    .featured-publication {
-      margin-bottom: 1.2rem;
-      padding-left: 1rem;
-      line-height: 1.75;
-      border: none;
+    .publications-section {
+      padding: 32px;
+      background: #ffffff;
+      border: 1px solid #dce7f1;
+      border-radius: 12px;
     }
 
-    .featured-publication a {
-      color: #005a9c;
+    .publication-list-home {
+      margin-top: 22px;
+    }
+
+    .publication-item-home {
+      padding: 18px 0;
+      border-bottom: 1px solid #e1eaf2;
+      color: #34495d;
+      font-size: 14px;
+      line-height: 1.85;
+    }
+
+    .publication-item-home:last-child {
+      border-bottom: none;
+    }
+
+    .publication-item-home strong {
+      color: #183d63;
+    }
+
+    .publication-item-home em {
+      color: #304e6a;
+    }
+
+    .publication-item-home a {
+      color: #17649c;
+      font-weight: 700;
       text-decoration: none;
+      white-space: nowrap;
     }
 
-    .featured-publication a:hover {
+    .publication-item-home a:hover {
       text-decoration: underline;
     }
 
-    /* Join Us */
+    /* ---------- JOIN US ---------- */
 
     .join-us-section {
-      margin: 2.5rem 0;
-      padding: 1.5rem 1.75rem;
-      background: #f1f7fc;
-      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 25px;
+      margin: 48px 0 10px;
+      padding: 35px 38px;
+      background: #123b68;
+      border-radius: 12px;
+      color: #ffffff;
+    }
+
+    .join-us-text {
+      max-width: 780px;
     }
 
     .join-us-section h2 {
-      margin-top: 0;
+      margin: 0 0 12px;
+      color: #ffffff;
+      font-size: 27px;
     }
 
     .join-us-section p {
-      line-height: 1.8;
+      margin: 0;
+      color: #e1ebf5;
+      line-height: 1.85;
+      font-size: 15px;
     }
 
-    /* Responsive layout */
+    .join-us-button {
+      display: inline-block;
+      flex: 0 0 auto;
+      padding: 12px 21px;
+      border-radius: 5px;
+      background: #ffffff;
+      color: #123b68;
+      font-size: 14px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: background 0.2s ease;
+    }
 
-    @media (max-width: 700px) {
+    .join-us-button:hover {
+      background: #e7f0f8;
+    }
 
-      .research-interest-grid {
+    /* ---------- FOOTER ---------- */
+
+    footer {
+      margin-top: 40px;
+    }
+
+    /* ---------- RESPONSIVE DESIGN ---------- */
+
+    @media (max-width: 850px) {
+
+      .hero {
         grid-template-columns: 1fr;
+        gap: 25px;
+        padding: 25px;
+      }
+
+      .hero-image img {
+        height: auto;
+        aspect-ratio: 16 / 9;
       }
 
       .join-us-section {
-        padding: 1.2rem;
+        align-items: flex-start;
+        flex-direction: column;
+      }
+    }
+
+    @media (max-width: 700px) {
+
+      main {
+        padding-top: 25px;
+      }
+
+      .hero {
+        padding: 20px;
+        gap: 20px;
+      }
+
+      .hero h1 {
+        font-size: 30px;
+      }
+
+      .hero-description {
+        font-size: 15px;
+      }
+
+      .research-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+      }
+
+      .home-section {
+        margin: 36px 0;
+      }
+
+      .section-heading h2 {
+        font-size: 25px;
+      }
+
+      .publications-section {
+        padding: 22px;
+      }
+
+      .join-us-section {
+        padding: 27px 23px;
+      }
+
+      .join-us-section h2 {
+        font-size: 24px;
       }
     }
   </style>
@@ -141,7 +390,7 @@
 <body>
 
   <!-- =====================================================
-       HEADER — ORIGINAL SHARED CWRU HEADER
+       ORIGINAL CWRU HEADER — PRESERVED
        ===================================================== -->
 
   <header class="site-header">
@@ -163,8 +412,6 @@
 
     </a>
 
-    <!-- Main navigation -->
-
     <nav class="site-nav" aria-label="Main navigation">
 
       <a href="index.html" aria-current="page">HOME</a>
@@ -185,15 +432,21 @@
 
   <main>
 
-    <!-- Welcome to the Li Laboratory -->
+    <!-- HERO -->
 
-    <section class="home-intro">
+    <section class="hero">
 
-      <div class="home-intro-text">
+      <div class="hero-text">
 
-        <h1>Welcome to the Li Laboratory</h1>
+        <span class="hero-eyebrow">
+          ORGANOID INTELLIGENCE · BIOELECTRONICS · TRANSLATIONAL MEDICINE
+        </span>
 
-        <p>
+        <h1>
+          Welcome to the Li Laboratory
+        </h1>
+
+        <p class="hero-description">
           The Li Laboratory investigates organoid intelligence for
           translational medicine. We combine human stem cell-derived
           organoids with flexible nanoelectronics, multimodal
@@ -203,158 +456,248 @@
           new therapeutic strategies.
         </p>
 
+        <div class="hero-buttons">
+
+          <a href="research.html" class="hero-button">
+            Explore Our Research &rarr;
+          </a>
+
+          <a href="lab-members.html" class="hero-button secondary">
+            Meet the Lab
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <div class="hero-image">
+
+        <img
+          src="Futuristic%20Organoid%20Bioelectronics%20Lab.png"
+          alt="Scientific illustration of organoid bioelectronics research"
+        >
+
       </div>
 
     </section>
 
 
-    <!-- =====================================================
-         RESEARCH INTERESTS
-         ===================================================== -->
+    <!-- RESEARCH INTERESTS -->
 
     <section class="home-section">
 
-      <h2>Research Interests</h2>
+      <div class="section-heading">
 
-      <p>
-        Our interdisciplinary research integrates stem cell-derived
-        organoids, bioelectronics, spatial omics, and computational
-        approaches to understand and engineer human organoid
-        development and function.
-      </p>
+        <span class="section-eyebrow">OUR SCIENCE</span>
 
+        <h2>Research Interests</h2>
 
-      <div class="research-interest-grid">
+        <p>
+          Our research integrates stem cell biology, bioelectronics,
+          spatial transcriptomics, and computational modeling to
+          understand and engineer the development and functional
+          maturation of human organoids.
+        </p>
 
-        <div class="research-interest">
-
-          <h3>1. Organoid Intelligence</h3>
-
-          <p>
-            Integrating flexible bioelectronics and AI-assisted
-            modeling to monitor, interact with, and promote the
-            functional maturation of developing organoids.
-          </p>
-
-        </div>
+      </div>
 
 
-        <div class="research-interest">
+      <div class="research-grid">
 
-          <h3>2. Bioelectronics and Gene-to-Function Mapping</h3>
+        <!-- 01 -->
 
-          <p>
-            Combining multimodal electrophysiology and spatial
-            transcriptomics to link molecular programs with cellular
-            and tissue-level functions.
-          </p>
+        <article class="research-card">
 
-        </div>
+          <img
+            src="Futuristic%20Organoid%20Bioelectronics%20Lab.png"
+            alt="Organoid intelligence and bioelectronics"
+            loading="lazy"
+          >
+
+          <div class="research-card-content">
+
+            <span class="research-number">01</span>
+
+            <h3>Organoid Intelligence</h3>
+
+            <p>
+              Integrating flexible bioelectronics and AI-assisted
+              modeling to monitor, interact with, and promote the
+              functional maturation of developing organoids.
+            </p>
+
+          </div>
+
+        </article>
 
 
-        <div class="research-interest">
+        <!-- 02 -->
 
-          <h3>3. Human Disease Modeling</h3>
+        <article class="research-card">
 
-          <p>
-            Engineering bioelectronic-integrated organoids to
-            investigate disease mechanisms in neurological,
-            cardiovascular, and metabolic disorders.
-          </p>
+          <img
+            src="Gene-to-Function%20Bioelectronic%20Mapping.png"
+            alt="Bioelectronics and gene-to-function mapping"
+            loading="lazy"
+          >
 
-        </div>
+          <div class="research-card-content">
+
+            <span class="research-number">02</span>
+
+            <h3>Bioelectronics and Gene-to-Function Mapping</h3>
+
+            <p>
+              Combining multimodal electrophysiology and spatial
+              transcriptomics to link molecular programs with
+              cellular and tissue-level functions.
+            </p>
+
+          </div>
+
+        </article>
 
 
-        <div class="research-interest">
+        <!-- 03 -->
 
-          <h3>4. Translational Organoid Medicine</h3>
+        <article class="research-card">
 
-          <p>
-            Developing intelligent organoid platforms for real-time
-            monitoring, closed-loop modulation, therapeutic
-            discovery, and regenerative medicine.
-          </p>
+          <img
+            src="Parkinson%E2%80%99s%20Disease%20Organoid%20Modeling.png"
+            alt="Human organoid modeling of Parkinson's disease"
+            loading="lazy"
+          >
 
-        </div>
+          <div class="research-card-content">
+
+            <span class="research-number">03</span>
+
+            <h3>Human Disease Modeling</h3>
+
+            <p>
+              Engineering bioelectronic-integrated organoids to
+              investigate disease mechanisms in neurological,
+              cardiovascular, and metabolic disorders.
+            </p>
+
+          </div>
+
+        </article>
+
+
+        <!-- 04 -->
+
+        <article class="research-card">
+
+          <img
+            src="Translational%20Organoid%20Medicine%20Workflow.png"
+            alt="Translational organoid medicine with human organoids and mouse models"
+            loading="lazy"
+          >
+
+          <div class="research-card-content">
+
+            <span class="research-number">04</span>
+
+            <h3>Translational Organoid Medicine</h3>
+
+            <p>
+              Developing intelligent organoid platforms for real-time
+              monitoring, closed-loop modulation, therapeutic
+              discovery, and regenerative medicine.
+            </p>
+
+          </div>
+
+        </article>
 
       </div>
 
 
       <a href="research.html" class="section-link">
-        Explore Our Research &rarr;
+        Discover All Research Areas &rarr;
       </a>
 
     </section>
 
 
-    <!-- =====================================================
-         FEATURED PUBLICATIONS
-         ===================================================== -->
+    <!-- FEATURED PUBLICATIONS -->
 
-    <section class="home-section">
+    <section class="home-section publications-section">
 
-      <h2>Featured Publications</h2>
+      <div class="section-heading">
 
+        <span class="section-eyebrow">SELECTED PUBLICATIONS</span>
 
-      <div class="featured-publication">
+        <h2>Featured Publications</h2>
 
-        <strong>
-          Li, Q. <em>et al.</em>
-        </strong>
-
-        Implanted flexible electronics reveal principles of human
-        islet cell electrical maturation.
-
-        <em>Science</em> 391, eaeb3295 (2026).
-
-        <a
-          href="https://www.science.org/doi/10.1126/science.aeb3295"
-          target="_blank"
-          rel="noopener noreferrer">
-          [Article]
-        </a>
+        <p>
+          Selected research contributions in bioelectronics,
+          organoid engineering, and molecular and functional
+          mapping of biological systems.
+        </p>
 
       </div>
 
 
-      <div class="featured-publication">
+      <div class="publication-list-home">
 
-        <strong>
-          Sheng, H. <em>et al.</em>
-        </strong>
+        <div class="publication-item-home">
 
-        Brain implantation of soft bioelectronics via embryonic
-        development.
+          <strong>Li, Q. <em>et al.</em></strong>
 
-        <em>Nature</em> 642, 954–964 (2025).
+          Implanted flexible electronics reveal principles of human
+          islet cell electrical maturation.
 
-        <a
-          href="https://www.nature.com/articles/s41586-025-09106-8"
-          target="_blank"
-          rel="noopener noreferrer">
-          [Article]
-        </a>
+          <em>Science</em> 391, eaeb3295 (2026).
 
-      </div>
+          <a
+            href="https://www.science.org/doi/10.1126/science.aeb3295"
+            target="_blank"
+            rel="noopener noreferrer">
+            [Article]
+          </a>
+
+        </div>
 
 
-      <div class="featured-publication">
+        <div class="publication-item-home">
 
-        <strong>
-          Li, Q. <em>et al.</em>
-        </strong>
+          <strong>Sheng, H. <em>et al.</em></strong>
 
-        Multimodal charting of molecular and functional cell states
-        via in situ electro-sequencing.
+          Brain implantation of soft bioelectronics via embryonic
+          development.
 
-        <em>Cell</em> 186(9), 2002–2017 (2023).
+          <em>Nature</em> 642, 954–964 (2025).
 
-        <a
-          href="https://www.cell.com/cell/fulltext/S0092-8674(23)00286-6"
-          target="_blank"
-          rel="noopener noreferrer">
-          [Article]
-        </a>
+          <a
+            href="https://www.nature.com/articles/s41586-025-09106-8"
+            target="_blank"
+            rel="noopener noreferrer">
+            [Article]
+          </a>
+
+        </div>
+
+
+        <div class="publication-item-home">
+
+          <strong>Li, Q. <em>et al.</em></strong>
+
+          Multimodal charting of molecular and functional cell states
+          via in situ electro-sequencing.
+
+          <em>Cell</em> 186(9), 2002–2017 (2023).
+
+          <a
+            href="https://www.cell.com/cell/fulltext/S0092-8674(23)00286-6"
+            target="_blank"
+            rel="noopener noreferrer">
+            [Article]
+          </a>
+
+        </div>
 
       </div>
 
@@ -366,30 +709,27 @@
     </section>
 
 
-    <!-- =====================================================
-         JOIN US
-         ===================================================== -->
+    <!-- JOIN US -->
 
     <section class="join-us-section">
 
-      <h2>Join Us</h2>
+      <div class="join-us-text">
 
-      <p>
-        We welcome motivated and curious individuals who are
-        interested in interdisciplinary research at the interface
-        of stem cell biology, organoid engineering, neuroscience,
-        biomedical engineering, bioelectronics, molecular biology,
-        and computational science.
-      </p>
+        <h2>Join Us</h2>
 
-      <p>
-        If you are interested in joining our team, please visit
-        our recruitment page to learn more about opportunities
-        in the Li Laboratory.
-      </p>
+        <p>
+          We welcome motivated and curious individuals interested
+          in interdisciplinary research at the interface of stem
+          cell biology, organoid engineering, neuroscience,
+          biomedical engineering, bioelectronics, molecular biology,
+          and computational science.
+        </p>
 
-      <a href="join-us.html" class="section-link">
-        Learn More About Joining Us &rarr;
+      </div>
+
+
+      <a href="join-us.html" class="join-us-button">
+        Explore Opportunities &rarr;
       </a>
 
     </section>
@@ -397,9 +737,7 @@
   </main>
 
 
-  <!-- =====================================================
-       FOOTER
-       ===================================================== -->
+  <!-- FOOTER -->
 
   <footer>
     <p>&copy; Qiang Li</p>
