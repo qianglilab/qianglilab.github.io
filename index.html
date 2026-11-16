@@ -14,8 +14,7 @@
        LI LABORATORY HOMEPAGE
        ===================================================== */
 
-
-    /* ---------- HEADER: MATCH RESEARCH PAGE ---------- */
+    /* ---------- HEADER ---------- */
 
     .site-header {
       background: #073575 !important;
@@ -53,15 +52,21 @@
       filter: none !important;
     }
 
+    /* Navigation: explicitly left-aligned */
+
     .site-header .site-nav {
       display: flex !important;
       flex-direction: row !important;
       align-items: center;
       justify-content: flex-start !important;
+      align-self: stretch !important;
+      width: 100% !important;
       flex-wrap: wrap;
       gap: 27px;
       margin-top: 24px;
-      padding: 0;
+      margin-left: 0 !important;
+      padding: 0 !important;
+      text-align: left !important;
     }
 
     .site-header .site-nav a {
@@ -69,6 +74,7 @@
       text-decoration: none;
       font-weight: 700;
       padding-bottom: 8px;
+      margin-left: 0;
     }
 
     .site-header .site-nav a:hover {
@@ -189,7 +195,7 @@
       min-width: 0;
     }
 
-    /* Taller images, with the top of each image prioritized */
+    /* Taller images; preserve journal names at the top */
 
     .publication-image-link {
       display: block;
@@ -254,7 +260,7 @@
 
     /* ---------- JOIN OUR LAB ---------- */
 
-    /* No white card or background box */
+    /* Transparent background: remove white square */
 
     .home-cta {
       background: transparent !important;
@@ -288,7 +294,6 @@
     /* ---------- TABLET ---------- */
 
     @media (max-width: 900px) {
-
       .program-grid,
       .publication-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -297,14 +302,12 @@
       .home-hero {
         gap: 1.5rem;
       }
-
     }
 
 
     /* ---------- MOBILE ---------- */
 
     @media (max-width: 700px) {
-
       .site-header {
         min-height: auto;
         padding: 22px 5% 24px !important;
@@ -323,16 +326,18 @@
       }
 
       .site-header .site-nav {
+        justify-content: flex-start !important;
+        align-self: stretch !important;
+        width: 100% !important;
         flex-wrap: wrap;
         gap: 15px 20px;
         margin-top: 24px;
+        text-align: left !important;
       }
-
     }
 
 
     @media (max-width: 600px) {
-
       .home-hero {
         grid-template-columns: 1fr;
         padding: 1.8rem 0;
@@ -354,7 +359,6 @@
       .home-section {
         padding: 1.3rem 0;
       }
-
     }
 
   </style>
@@ -363,10 +367,7 @@
 
 <body>
 
-
-  <!-- =====================================================
-       HEADER
-       ===================================================== -->
+  <!-- HEADER -->
 
   <header class="site-header">
 
@@ -405,13 +406,9 @@
   </header>
 
 
-
-  <!-- =====================================================
-       MAIN CONTENT
-       ===================================================== -->
+  <!-- MAIN CONTENT -->
 
   <main class="home-main">
-
 
     <!-- HERO SECTION -->
 
@@ -445,7 +442,6 @@
     </section>
 
 
-
     <!-- SCIENTIFIC PROGRAMS -->
 
     <section class="home-section">
@@ -464,74 +460,52 @@
 
       <div class="program-grid">
 
-
         <article class="program-card">
-
           <div class="program-number">01</div>
-
           <h3>Organoid Intelligence</h3>
-
           <p>
             Engineering human stem cell-derived organoids with
             integrated bioelectronic systems to study tissue
             development and functional maturation.
           </p>
-
         </article>
 
 
-
         <article class="program-card">
-
           <div class="program-number">02</div>
-
           <h3>Bioelectronics and Gene-to-Function Mapping</h3>
-
           <p>
             Combining flexible nanoelectronics,
             electrophysiology, and spatial molecular profiling
             to connect gene expression with cellular function.
           </p>
-
         </article>
 
 
-
         <article class="program-card">
-
           <div class="program-number">03</div>
-
           <h3>Human Disease Modeling</h3>
-
           <p>
             Developing human organoid models to investigate
             disease mechanisms, including Parkinson's disease
             and other human disorders.
           </p>
-
         </article>
 
 
-
         <article class="program-card">
-
           <div class="program-number">04</div>
-
           <h3>Translational Organoid Medicine</h3>
-
           <p>
             Integrating human organoid models, animal studies,
             and computational approaches to advance therapeutic
             discovery and translational medicine.
           </p>
-
         </article>
-
 
       </div>
 
     </section>
-
 
 
     <!-- FEATURED PUBLICATIONS -->
@@ -549,7 +523,6 @@
 
       <div class="publication-grid">
 
-
         <!-- SCIENCE 2026 -->
 
         <article class="publication-card">
@@ -566,24 +539,19 @@
 
           </a>
 
-
           <p class="publication-journal">
             Science · 2026
           </p>
-
 
           <h3>
             <a
               href="https://www.science.org/doi/10.1126/science.aeb3295"
               target="_blank"
               rel="noopener">
-
               Implanted flexible electronics reveal principles
               of human islet cell electrical maturation
-
             </a>
           </h3>
-
 
           <p>
             Li, Q.#, Liu, R.#, Lin, Z.#, et al.
@@ -591,7 +559,6 @@
           </p>
 
         </article>
-
 
 
         <!-- NATURE 2025 -->
@@ -610,24 +577,19 @@
 
           </a>
 
-
           <p class="publication-journal">
             Nature · 2025
           </p>
-
 
           <h3>
             <a
               href="https://www.nature.com/articles/s41586-025-09106-8"
               target="_blank"
               rel="noopener">
-
               Brain implantation of soft bioelectronics
               via embryonic development
-
             </a>
           </h3>
-
 
           <p>
             Sheng, H.#, Liu, R.#, Li, Q.#, et al.
@@ -635,7 +597,6 @@
           </p>
 
         </article>
-
 
 
         <!-- CELL 2023 -->
@@ -654,24 +615,19 @@
 
           </a>
 
-
           <p class="publication-journal">
             Cell · 2023
           </p>
-
 
           <h3>
             <a
               href="https://www.cell.com/cell/fulltext/S0092-8674(23)00286-6"
               target="_blank"
               rel="noopener">
-
               Multimodal charting of molecular and functional
               cell states via in situ electro-sequencing
-
             </a>
           </h3>
-
 
           <p>
             Li, Q.#, Lin, Z.#, Liu, R.#, et al.
@@ -679,7 +635,6 @@
           </p>
 
         </article>
-
 
 
         <!-- ADVANCED MATERIALS 2022 -->
@@ -698,25 +653,20 @@
 
           </a>
 
-
           <p class="publication-journal">
             Advanced Materials · 2022
           </p>
-
 
           <h3>
             <a
               href="https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202106829"
               target="_blank"
               rel="noopener">
-
               Stretchable mesh nanoelectronics for
               three-dimensional single-cell chronic
               electrophysiology from developing brain organoids
-
             </a>
           </h3>
-
 
           <p>
             Le Floch, P.#, Li, Q.#, Lin, Z.#, Zhao, S.,
@@ -725,7 +675,6 @@
           </p>
 
         </article>
-
 
       </div>
 
@@ -737,7 +686,6 @@
       </p>
 
     </section>
-
 
 
     <!-- MEET THE TEAM -->
@@ -761,7 +709,6 @@
     </section>
 
 
-
     <!-- JOIN OUR LAB -->
 
     <section class="home-cta">
@@ -780,19 +727,13 @@
 
     </section>
 
-
   </main>
 
 
-
-  <!-- =====================================================
-       FOOTER
-       ===================================================== -->
+  <!-- FOOTER -->
 
   <footer class="site-footer">
-
     <p>© Qiang Li</p>
-
   </footer>
 
 
