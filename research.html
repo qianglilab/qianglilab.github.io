@@ -1,36 +1,271 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Research | Qiang Li, PhD</title>
+
+  <meta name="description"
+        content="Research at the Li Laboratory focuses on organoid intelligence, bioelectronics, stem cell-derived organoids, spatial transcriptomics, and translational medicine.">
+
+  <title>Research | Li Lab</title>
+
   <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* =========================================
+       RESEARCH PAGE
+       ========================================= */
+
+    .research-page {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 40px 30px 50px;
+      line-height: 1.75;
+    }
+
+    .research-page h1 {
+      color: #003e7e;
+      font-size: 2rem;
+      line-height: 1.3;
+      margin: 0 0 25px;
+      text-align: left;
+    }
+
+    .research-page p {
+      margin: 0 0 20px;
+      text-align: justify;
+    }
+
+    /* Research vision image */
+
+    .research-vision {
+      width: 100%;
+      max-width: 1050px;
+      margin: 32px auto 38px;
+      text-align: center;
+    }
+
+    .research-vision-image {
+      display: block;
+      width: 100%;
+      height: auto;
+      margin: 0 auto;
+      border-radius: 4px;
+    }
+
+    .figure-caption {
+      margin-top: 12px;
+      margin-bottom: 0;
+      font-size: 0.9rem;
+      color: #666;
+      line-height: 1.5;
+      text-align: center;
+    }
+
+    /* Research questions */
+
+    .research-questions {
+      margin: 25px 0 30px;
+    }
+
+    .research-question {
+      margin-bottom: 22px;
+      line-height: 1.75;
+      text-align: justify;
+    }
+
+    .research-question strong {
+      color: #003e7e;
+    }
+
+    /* Closing paragraph */
+
+    .research-conclusion {
+      margin-top: 30px;
+    }
+
+    /* Responsive layout */
+
+    @media (max-width: 700px) {
+      .research-page {
+        padding: 28px 18px 40px;
+      }
+
+      .research-page h1 {
+        font-size: 1.65rem;
+      }
+
+      .research-page p,
+      .research-question {
+        text-align: left;
+      }
+
+      .research-vision {
+        margin: 22px auto 28px;
+      }
+
+      .figure-caption {
+        font-size: 0.85rem;
+      }
+    }
+  </style>
 </head>
+
 <body>
-<header class="site-header">
-  <a class="brand" href="index.html">Li Lab</a>
 
-  <a class="header-affiliation" href="https://case.edu/medicine/"
-     target="_blank" rel="noopener noreferrer"
-     aria-label="Case Western Reserve University School of Medicine">
-    <img class="cwru-logo"
-         src="CWRU_Two-line%20horizontal%20(Primary)%20logo_White.png"
-         alt="Case Western Reserve University">
-  </a>
+  <!-- =========================================
+       HEADER AND NAVIGATION
+       ========================================= -->
 
-  <nav class="site-nav" aria-label="Main navigation">
-    <a href="index.html">HOME</a>
-    <a href="research.html" aria-current="page">RESEARCH</a>
-    <a href="lab-members.html">LAB MEMBERS</a>
-    <a href="publications.html">PUBLICATIONS</a>
-    <a href="join-us.html">JOIN US</a>
-    <a href="contact.html">CONTACT</a>
-  </nav>
-</header>
-<main>
-  <h1>Research</h1>
-  <p>Research information coming soon.</p>
-</main>
-<footer>© Qiang Li</footer>
+  <header class="site-header">
+
+    <a class="brand" href="index.html">Li Lab</a>
+
+    <a class="header-affiliation"
+       href="https://case.edu/medicine/"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="Case Western Reserve University School of Medicine">
+
+      <img class="cwru-logo"
+           src="CWRU_Two-line%20horizontal%20(Primary)%20logo_White.png"
+           alt="Case Western Reserve University">
+    </a>
+
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="index.html">HOME</a>
+      <a href="research.html" aria-current="page">RESEARCH</a>
+      <a href="lab-members.html">LAB MEMBERS</a>
+      <a href="publications.html">PUBLICATIONS</a>
+      <a href="join-us.html">JOIN US</a>
+      <a href="contact.html">CONTACT</a>
+    </nav>
+
+  </header>
+
+
+  <!-- =========================================
+       MAIN RESEARCH CONTENT
+       ========================================= -->
+
+  <main class="research-page">
+
+    <h1>Organoid Intelligence for Translational Medicine</h1>
+
+    <p>
+      Our research program aims to develop next-generation
+      bioelectronic-integrated organoids to advance our understanding
+      of human tissue development, elucidate disease mechanisms, and
+      enable translational medicine. By integrating human stem
+      cell-derived organoids with flexible nanoelectronics, spatial
+      transcriptomics, multi-omics, and artificial intelligence (AI),
+      we seek to uncover and engineer the molecular and
+      electrophysiological processes that govern organoid development
+      and functional maturation. Ultimately, our goal is to establish
+      more physiologically relevant human models for disease research,
+      therapeutic discovery, and regenerative medicine.
+    </p>
+
+
+    <!-- RESEARCH VISION FIGURE -->
+
+    <div class="research-vision">
+
+      <img
+        src="Research%20Vision.jpg"
+        alt="Research vision of the Li Laboratory, integrating organoid intelligence, bioelectronics, spatial transcriptomics, and AI for translational medicine."
+        class="research-vision-image">
+
+      <p class="figure-caption">
+        Research vision: Integrating organoid intelligence,
+        multimodal bioelectronics, spatial transcriptomics,
+        and AI for translational medicine.
+      </p>
+
+    </div>
+
+
+    <p>
+      Despite significant advances in human pluripotent stem cell
+      (hPSC)-derived organoids, incomplete functional maturation,
+      cellular heterogeneity, and limited recapitulation of native
+      tissue architecture and function remain major challenges.
+      Furthermore, the interplay between molecular programs and
+      electrophysiological activities during organoid development
+      and maturation remains poorly understood. Our research seeks
+      to address the following fundamental questions:
+    </p>
+
+
+    <!-- FUNDAMENTAL RESEARCH QUESTIONS -->
+
+    <section class="research-questions"
+             aria-label="Fundamental research questions">
+
+      <div class="research-question">
+        <strong>(1) Organoid Intelligence and Functional Maturation:</strong>
+        How can flexible bioelectronics and AI-assisted modeling be
+        integrated to monitor, interact with, and stimulate developing
+        organoids, thereby promoting their functional maturation?
+      </div>
+
+      <div class="research-question">
+        <strong>(2) Gene-to-Function Relationships:</strong>
+        How are single-cell gene expression programs linked to
+        electrophysiological activities during organoid development,
+        maturation, and disease progression?
+      </div>
+
+      <div class="research-question">
+        <strong>(3) Human Disease Modeling:</strong>
+        To what extent can bioelectronic-integrated organoids
+        recapitulate human diseases, including neurodegenerative
+        disorders, cardiovascular diseases, and diabetes, to reveal
+        underlying disease mechanisms and identify potential
+        therapeutic strategies?
+      </div>
+
+      <div class="research-question">
+        <strong>(4) Translational Organoid Medicine:</strong>
+        Can we engineer mature, intelligent organoids capable of
+        real-time, closed-loop monitoring and modulation of biological
+        processes to advance disease modeling, therapeutic discovery,
+        and regenerative medicine?
+      </div>
+
+    </section>
+
+
+    <!-- RESEARCH APPROACH AND LONG-TERM VISION -->
+
+    <p class="research-conclusion">
+      To address these questions, we employ interdisciplinary
+      approaches spanning stem cell biology, organoid engineering,
+      flexible nanoelectronics, electrophysiology, spatial
+      transcriptomics, advanced microscopy, molecular biology, and
+      computational modeling. Our long-term vision is to integrate
+      stem cell-derived organoids, multimodal bioelectronics,
+      single-cell spatial omics, and AI-driven modeling to
+      characterize, monitor, and engineer organoid development and
+      functional maturation under physiological and pathological
+      conditions. Through this integrated approach, we aim to bridge
+      fundamental discoveries in human biology with innovative
+      bioengineered platforms for disease modeling, therapeutic
+      discovery, and translational medicine.
+    </p>
+
+  </main>
+
+
+  <!-- =========================================
+       FOOTER
+       ========================================= -->
+
+  <footer>
+    © Qiang Li
+  </footer>
+
 </body>
 </html>
