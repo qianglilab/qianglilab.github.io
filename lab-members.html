@@ -1,59 +1,327 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description"
+        content="Meet the Principal Investigator and research team of the Li Laboratory at Case Western Reserve University.">
+
   <title>Lab Members | Qiang Li, PhD</title>
+
+  <!-- Shared stylesheet -->
   <link rel="stylesheet" href="style.css">
+
+  <!-- Lab Members page-specific styles -->
+  <style>
+
+    /* Main page title */
+    .members-page-title {
+      text-align: center;
+      margin-bottom: 36px;
+    }
+
+    /* Principal Investigator section */
+    .pi-section {
+      margin-bottom: 45px;
+    }
+
+    .pi-section-title {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    /* PI photo and profile */
+    .pi-profile-layout {
+      display: grid;
+      grid-template-columns: 220px minmax(0, 1fr);
+      gap: 38px;
+      align-items: start;
+      max-width: 1100px;
+      margin: 0 auto 35px;
+    }
+
+    .pi-profile-portrait {
+      display: block;
+      width: 200px;
+      height: 250px;
+      object-fit: cover;
+      object-position: center top;
+      border: 4px solid #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 4px 18px rgba(22, 59, 101, 0.12);
+    }
+
+    .pi-profile-text h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      color: #163b65;
+      font-size: 28px;
+    }
+
+    .pi-profile-text .pi-affiliation {
+      margin-top: 0;
+      margin-bottom: 20px;
+      color: #526171;
+      font-size: 17px;
+      line-height: 1.7;
+    }
+
+    .pi-profile-text p {
+      line-height: 1.85;
+    }
+
+    .pi-profile-text .profile-link {
+      color: #163b65;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .pi-profile-text .profile-link:hover {
+      text-decoration: underline;
+    }
+
+    /* Education and contact information */
+    .pi-details-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .pi-details-grid h3 {
+      margin-top: 0;
+      margin-bottom: 16px;
+      color: #163b65;
+    }
+
+    .pi-details-grid ul {
+      padding-left: 22px;
+    }
+
+    .pi-details-grid li {
+      margin-bottom: 10px;
+    }
+
+    .pi-details-grid p {
+      margin-bottom: 12px;
+    }
+
+    .pi-details-grid a {
+      color: #163b65;
+      text-decoration: none;
+    }
+
+    .pi-details-grid a:hover {
+      text-decoration: underline;
+    }
+
+    /* Lab member subsections */
+    .member-section {
+      margin-bottom: 28px;
+    }
+
+    .member-section h2 {
+      margin-bottom: 12px;
+    }
+
+    .member-section p {
+      line-height: 1.7;
+    }
+
+    /* Mobile layout */
+    @media (max-width: 700px) {
+
+      .pi-profile-layout {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        text-align: left;
+      }
+
+      .pi-profile-portrait {
+        margin: 0 auto;
+      }
+
+      .pi-profile-text h3 {
+        font-size: 25px;
+      }
+
+      .pi-details-grid {
+        grid-template-columns: 1fr;
+        gap: 28px;
+      }
+
+    }
+
+  </style>
 </head>
 
 <body>
 
-<header class="site-header">
-  <a class="brand" href="index.html">Li Lab</a>
+  <!-- Shared website header -->
+  <header class="site-header">
 
-  <a class="header-affiliation" href="https://case.edu/medicine/"
-     target="_blank" rel="noopener noreferrer"
-     aria-label="Case Western Reserve University School of Medicine">
-    <img class="cwru-logo"
-         src="CWRU_Two-line%20horizontal%20(Primary)%20logo_White.png"
-         alt="Case Western Reserve University">
-  </a>
+    <a class="brand" href="index.html">Li Lab</a>
 
-  <nav class="site-nav" aria-label="Main navigation">
-    <a href="index.html">HOME</a>
-    <a href="research.html">RESEARCH</a>
-    <a href="qiang-li.html">QIANG LI</a>
-    <a href="lab-members.html" aria-current="page">LAB MEMBERS</a>
-    <a href="publications.html">PUBLICATIONS</a>
-    <a href="join-us.html">JOIN US</a>
-    <a href="contact.html">CONTACT</a>
-  </nav>
-</header>
+    <a class="header-affiliation"
+       href="https://case.edu/medicine/"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="Case Western Reserve University School of Medicine">
 
-<main>
+      <img class="cwru-logo"
+           src="CWRU_Two-line%20horizontal%20(Primary)%20logo_White.png"
+           alt="Case Western Reserve University">
 
-  <h1>Lab Members</h1>
+    </a>
 
-  <section>
-    <h2>Postdoctoral Researchers</h2>
-    <p>Information about our postdoctoral researchers coming soon.</p>
-  </section>
+    <nav class="site-nav" aria-label="Main navigation">
 
-  <section>
-    <h2>Graduate Students</h2>
-    <p>Information about our graduate students coming soon.</p>
-  </section>
+      <a href="index.html">HOME</a>
+      <a href="research.html">RESEARCH</a>
+      <a href="lab-members.html" aria-current="page">LAB MEMBERS</a>
+      <a href="publications.html">PUBLICATIONS</a>
+      <a href="join-us.html">JOIN US</a>
+      <a href="contact.html">CONTACT</a>
 
-  <section>
-    <h2>Undergraduate Students and Research Interns</h2>
-    <p>Information about our undergraduate students and research interns coming soon.</p>
-  </section>
+    </nav>
 
-</main>
+  </header>
 
-<footer>© Qiang Li</footer>
+
+  <main>
+
+    <h1 class="members-page-title">Lab Members</h1>
+
+
+    <!-- Principal Investigator -->
+    <section class="pi-section">
+
+      <h2 class="pi-section-title">Principal Investigator</h2>
+
+      <div class="pi-profile-layout">
+
+        <img class="pi-profile-portrait"
+             src="Qiang%20Li_CWRU.jpg"
+             alt="Qiang Li">
+
+        <div class="pi-profile-text">
+
+          <h3>Qiang Li, Ph.D.</h3>
+
+          <p class="pi-affiliation">
+            Assistant Professor<br>
+            Department of Physiology and Biophysics<br>
+            School of Medicine<br>
+            Case Western Reserve University
+          </p>
+
+          <p>
+            <a class="profile-link"
+               href="https://scholar.google.com/citations?user=mFPQe-MAAAAJ&amp;hl=en"
+               target="_blank"
+               rel="noopener noreferrer">
+              Google Scholar Profile
+            </a>
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <!-- Education and Contact Information -->
+      <div class="pi-details-grid">
+
+        <div>
+
+          <h3>Education</h3>
+
+          <ul>
+
+            <li>
+              <strong>Ph.D.</strong>,
+              University of Nebraska–Lincoln, 2018
+            </li>
+
+            <li>
+              <strong>Postdoctoral Fellow</strong>,
+              Harvard University, 2026
+            </li>
+
+          </ul>
+
+        </div>
+
+
+        <div>
+
+          <h3>Contact Information</h3>
+
+          <p>
+            <strong>Email:</strong>
+            <a href="mailto:qxl465@case.edu">
+              qxl465@case.edu
+            </a>
+          </p>
+
+          <p>
+            <strong>Phone:</strong>
+            <a href="tel:+16173085658">
+              617-308-5658
+            </a>
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- Lab Members -->
+
+    <section class="member-section">
+
+      <h2>Postdoctoral Researchers</h2>
+
+      <p>
+        Information about our postdoctoral researchers coming soon.
+      </p>
+
+    </section>
+
+
+    <section class="member-section">
+
+      <h2>Graduate Students</h2>
+
+      <p>
+        Information about our graduate students coming soon.
+      </p>
+
+    </section>
+
+
+    <section class="member-section">
+
+      <h2>Undergraduate Students and Research Interns</h2>
+
+      <p>
+        Information about our undergraduate students and research interns coming soon.
+      </p>
+
+    </section>
+
+  </main>
+
+
+  <footer>
+    © Qiang Li
+  </footer>
 
 </body>
 </html>
