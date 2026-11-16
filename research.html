@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <meta name="description"
-        content="Research at the Li Laboratory focuses on organoid intelligence, bioelectronics, stem cell-derived organoids, spatial transcriptomics, and translational medicine.">
+        content="Research at the Li Laboratory focuses on organoid intelligence, bioelectronics, gene-to-function mapping, human disease modeling, and translational organoid medicine.">
 
   <title>Research | Li Lab</title>
 
@@ -21,7 +21,7 @@
     .research-page {
       max-width: 1100px;
       margin: 0 auto;
-      padding: 40px 30px 50px;
+      padding: 40px 30px 55px;
       line-height: 1.75;
     }
 
@@ -38,41 +38,75 @@
       text-align: justify;
     }
 
-    /* Research vision image */
+    /* Research area sections */
 
-    .research-vision {
+    .research-areas {
+      margin-top: 38px;
+    }
+
+    .research-area {
+      margin: 0 0 48px;
+      padding-bottom: 38px;
+      border-bottom: 1px solid #d5e2ef;
+    }
+
+    .research-area:last-child {
+      border-bottom: none;
+      margin-bottom: 20px;
+    }
+
+    .research-area h2 {
+      color: #003e7e;
+      font-size: 1.5rem;
+      line-height: 1.4;
+      margin: 0 0 15px;
+      text-align: left;
+    }
+
+    .research-area h2 span {
+      color: #5b91c7;
+      margin-right: 8px;
+    }
+
+    .research-area p {
+      margin-bottom: 18px;
+    }
+
+    /* Research illustrations */
+
+    .research-figure {
       width: 100%;
-      max-width: 1050px;
-      margin: 32px auto 38px;
+      max-width: 950px;
+      margin: 25px auto 0;
       text-align: center;
     }
 
-    .research-vision-image {
+    .research-figure img {
       display: block;
       width: 100%;
       height: auto;
       margin: 0 auto;
-      border-radius: 4px;
+      border-radius: 8px;
+      border: 1px solid #e0e8f1;
     }
 
     .figure-caption {
-      margin-top: 12px;
-      margin-bottom: 0;
-      font-size: 0.9rem;
+      margin-top: 10px !important;
+      margin-bottom: 0 !important;
+      font-size: 0.88rem;
       color: #666;
       line-height: 1.5;
-      text-align: center;
+      text-align: center !important;
     }
 
-    /* Research questions */
-
-    .research-questions {
-      margin: 25px 0 30px;
-    }
+    /* Research question */
 
     .research-question {
-      margin-bottom: 22px;
-      line-height: 1.75;
+      margin-top: 18px;
+      padding: 15px 18px;
+      background: #f1f6fb;
+      border-left: 3px solid #5b91c7;
+      line-height: 1.7;
       text-align: justify;
     }
 
@@ -83,12 +117,13 @@
     /* Closing paragraph */
 
     .research-conclusion {
-      margin-top: 30px;
+      margin-top: 35px;
     }
 
     /* Responsive layout */
 
     @media (max-width: 700px) {
+
       .research-page {
         padding: 28px 18px 40px;
       }
@@ -102,16 +137,27 @@
         text-align: left;
       }
 
-      .research-vision {
-        margin: 22px auto 28px;
+      .research-area {
+        margin-bottom: 35px;
+        padding-bottom: 30px;
+      }
+
+      .research-area h2 {
+        font-size: 1.3rem;
+      }
+
+      .research-figure {
+        margin-top: 20px;
       }
 
       .figure-caption {
-        font-size: 0.85rem;
+        font-size: 0.82rem;
       }
     }
+
   </style>
 </head>
+
 
 <body>
 
@@ -168,25 +214,6 @@
       therapeutic discovery, and regenerative medicine.
     </p>
 
-
-    <!-- RESEARCH VISION FIGURE -->
-
-    <div class="research-vision">
-
-      <img
-        src="Research%20Vision.jpg"
-        alt="Research vision of the Li Laboratory, integrating organoid intelligence, bioelectronics, spatial transcriptomics, and AI for translational medicine."
-        class="research-vision-image">
-
-      <p class="figure-caption">
-        Research vision: Integrating organoid intelligence,
-        multimodal bioelectronics, spatial transcriptomics,
-        and AI for translational medicine.
-      </p>
-
-    </div>
-
-
     <p>
       Despite significant advances in human pluripotent stem cell
       (hPSC)-derived organoids, incomplete functional maturation,
@@ -199,46 +226,185 @@
     </p>
 
 
-    <!-- FUNDAMENTAL RESEARCH QUESTIONS -->
+    <!-- =========================================
+         01. ORGANOID INTELLIGENCE
+         ========================================= -->
 
-    <section class="research-questions"
-             aria-label="Fundamental research questions">
+    <section class="research-areas">
 
-      <div class="research-question">
-        <strong>(1) Organoid Intelligence and Functional Maturation:</strong>
-        How can flexible bioelectronics and AI-assisted modeling be
-        integrated to monitor, interact with, and stimulate developing
-        organoids, thereby promoting their functional maturation?
-      </div>
+      <article class="research-area">
 
-      <div class="research-question">
-        <strong>(2) Gene-to-Function Relationships:</strong>
-        How are single-cell gene expression programs linked to
-        electrophysiological activities during organoid development,
-        maturation, and disease progression?
-      </div>
+        <h2>
+          <span>01</span> Organoid Intelligence
+        </h2>
 
-      <div class="research-question">
-        <strong>(3) Human Disease Modeling:</strong>
-        To what extent can bioelectronic-integrated organoids
-        recapitulate human diseases, including neurodegenerative
-        disorders, cardiovascular diseases, and diabetes, to reveal
-        underlying disease mechanisms and identify potential
-        therapeutic strategies?
-      </div>
+        <p>
+          We integrate human stem cell-derived organoids with flexible
+          bioelectronics and AI-assisted modeling to monitor, interact
+          with, and stimulate developing organoids. This approach aims
+          to promote functional maturation and establish intelligent
+          organoid platforms with real-time sensing and adaptive control
+          capabilities.
+        </p>
 
-      <div class="research-question">
-        <strong>(4) Translational Organoid Medicine:</strong>
-        Can we engineer mature, intelligent organoids capable of
-        real-time, closed-loop monitoring and modulation of biological
-        processes to advance disease modeling, therapeutic discovery,
-        and regenerative medicine?
-      </div>
+        <div class="research-figure">
+
+          <img
+            src="Futuristic%20Organoid%20Bioelectronics%20Lab.png"
+            alt="Organoid intelligence integrating human organoids, bioelectronics, and intelligent monitoring.">
+
+          <p class="figure-caption">
+            Integrating human organoids, flexible bioelectronics,
+            and AI-assisted modeling to advance organoid intelligence.
+          </p>
+
+        </div>
+
+        <div class="research-question">
+          <strong>Research question:</strong>
+          How can flexible bioelectronics and AI-assisted modeling be
+          integrated to monitor, interact with, and stimulate developing
+          organoids, thereby promoting their functional maturation?
+        </div>
+
+      </article>
+
+
+      <!-- =========================================
+           02. BIOELECTRONICS AND GENE-TO-FUNCTION
+           ========================================= -->
+
+      <article class="research-area">
+
+        <h2>
+          <span>02</span> Bioelectronics and Gene-to-Function Mapping
+        </h2>
+
+        <p>
+          We combine multimodal bioelectronic recording and stimulation
+          with spatial transcriptomics and molecular profiling to
+          investigate the relationships between gene expression
+          programs and electrophysiological activities. By integrating
+          molecular and functional measurements, we aim to understand
+          how cellular and tissue functions emerge during organoid
+          development and maturation.
+        </p>
+
+        <div class="research-figure">
+
+          <img
+            src="Gene-to-Function%20Bioelectronic%20Mapping.png"
+            alt="Bioelectronic mapping integrating electrophysiological measurements and gene expression analysis.">
+
+          <p class="figure-caption">
+            Connecting molecular programs with electrophysiological
+            activities through bioelectronics and spatial transcriptomics.
+          </p>
+
+        </div>
+
+        <div class="research-question">
+          <strong>Research question:</strong>
+          How are single-cell gene expression programs linked to
+          electrophysiological activities during organoid development,
+          maturation, and disease progression?
+        </div>
+
+      </article>
+
+
+      <!-- =========================================
+           03. HUMAN DISEASE MODELING
+           ========================================= -->
+
+      <article class="research-area">
+
+        <h2>
+          <span>03</span> Human Disease Modeling
+        </h2>
+
+        <p>
+          We engineer bioelectronic-integrated human organoids to
+          investigate disease mechanisms and identify potential
+          therapeutic strategies. Our research explores neurological
+          diseases, including Parkinson's disease, as well as
+          cardiovascular diseases and metabolic disorders such as
+          diabetes.
+        </p>
+
+        <div class="research-figure">
+
+          <img
+            src="Parkinson%E2%80%99s%20Disease%20Organoid%20Modeling.png"
+            alt="Human organoid-based Parkinson's disease modeling, highlighting dopaminergic neurons, disease mechanisms, and therapeutic strategies.">
+
+          <p class="figure-caption">
+            Modeling Parkinson's disease using human organoids
+            and integrated bioelectronic approaches.
+          </p>
+
+        </div>
+
+        <div class="research-question">
+          <strong>Research question:</strong>
+          To what extent can bioelectronic-integrated organoids
+          recapitulate human diseases, including neurodegenerative
+          disorders, cardiovascular diseases, and diabetes, to reveal
+          underlying disease mechanisms and identify potential
+          therapeutic strategies?
+        </div>
+
+      </article>
+
+
+      <!-- =========================================
+           04. TRANSLATIONAL ORGANOID MEDICINE
+           ========================================= -->
+
+      <article class="research-area">
+
+        <h2>
+          <span>04</span> Translational Organoid Medicine
+        </h2>
+
+        <p>
+          We aim to develop mature and intelligent organoid platforms
+          that integrate real-time monitoring, bioelectronic modulation,
+          and AI-driven analysis. By combining in vitro human organoid
+          systems with in vivo mouse models, we seek to advance disease
+          modeling, preclinical evaluation, therapeutic discovery,
+          and regenerative medicine.
+        </p>
+
+        <div class="research-figure">
+
+          <img
+            src="Translational%20Organoid%20Medicine%20Workflow.png"
+            alt="Translational organoid medicine workflow integrating real-time monitoring, closed-loop control, human organoids, and mouse models.">
+
+          <p class="figure-caption">
+            Integrating intelligent organoids, bioelectronics,
+            and in vivo mouse models to advance translational medicine.
+          </p>
+
+        </div>
+
+        <div class="research-question">
+          <strong>Research question:</strong>
+          Can we engineer mature, intelligent organoids capable of
+          real-time, closed-loop monitoring and modulation of biological
+          processes to advance disease modeling, therapeutic discovery,
+          and regenerative medicine?
+        </div>
+
+      </article>
 
     </section>
 
 
-    <!-- RESEARCH APPROACH AND LONG-TERM VISION -->
+    <!-- =========================================
+         RESEARCH APPROACH AND LONG-TERM VISION
+         ========================================= -->
 
     <p class="research-conclusion">
       To address these questions, we employ interdisciplinary
