@@ -1,43 +1,462 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="The Li Laboratory at Case Western Reserve University studies organoid intelligence and translational medicine.">
+
+  <meta name="description"
+        content="The Li Laboratory at Case Western Reserve University investigates organoid intelligence, bioelectronics, stem cell biology, spatial transcriptomics, and translational medicine.">
+
   <title>Home | Qiang Li, PhD</title>
+
   <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* =====================================================
+       HOME PAGE — PAGE-SPECIFIC STYLES
+       ===================================================== */
+
+    .home-intro {
+      display: flex;
+      align-items: flex-start;
+      gap: 2rem;
+      margin: 1.5rem 0 2.5rem;
+    }
+
+    .home-profile {
+      flex: 0 0 260px;
+      text-align: center;
+    }
+
+    .home-profile img {
+      display: block;
+      width: 100%;
+      max-width: 260px;
+      height: auto;
+      margin: 0 auto 1rem;
+      border-radius: 4px;
+    }
+
+    .home-profile h2 {
+      margin: 0.5rem 0 0.35rem;
+      font-size: 1.35rem;
+    }
+
+    .home-profile p {
+      margin: 0.25rem 0;
+      line-height: 1.5;
+    }
+
+    .home-intro-text {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .home-intro-text h1 {
+      margin-top: 0;
+      margin-bottom: 1rem;
+    }
+
+    .home-intro-text p {
+      line-height: 1.8;
+      margin-bottom: 1rem;
+    }
+
+    .home-section {
+      margin: 2.5rem 0;
+    }
+
+    .home-section h2 {
+      margin-bottom: 1.2rem;
+    }
+
+    .research-interest-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1.25rem;
+      margin-top: 1.25rem;
+    }
+
+    .research-interest {
+      padding: 1.2rem 1.35rem;
+      background: #f1f7fc;
+      border-radius: 5px;
+    }
+
+    .research-interest h3 {
+      margin-top: 0;
+      margin-bottom: 0.6rem;
+      color: #003e6b;
+      font-size: 1.1rem;
+    }
+
+    .research-interest p {
+      margin: 0;
+      line-height: 1.7;
+    }
+
+    .section-link {
+      display: inline-block;
+      margin-top: 1rem;
+      font-weight: 600;
+      color: #005a9c;
+      text-decoration: none;
+    }
+
+    .section-link:hover {
+      text-decoration: underline;
+    }
+
+    .featured-publication {
+      margin-bottom: 1.2rem;
+      padding-left: 1rem;
+      line-height: 1.75;
+      border: none;
+    }
+
+    .featured-publication a {
+      color: #005a9c;
+      text-decoration: none;
+    }
+
+    .featured-publication a:hover {
+      text-decoration: underline;
+    }
+
+    .join-us-section {
+      margin: 2.5rem 0;
+      padding: 1.5rem 1.75rem;
+      background: #f1f7fc;
+      border-radius: 5px;
+    }
+
+    .join-us-section h2 {
+      margin-top: 0;
+    }
+
+    .join-us-section p {
+      line-height: 1.8;
+    }
+
+    @media (max-width: 700px) {
+      .home-intro {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+      }
+
+      .home-profile {
+        flex-basis: auto;
+        width: 100%;
+      }
+
+      .home-profile img {
+        max-width: 240px;
+      }
+
+      .home-intro-text {
+        width: 100%;
+      }
+
+      .research-interest-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .join-us-section {
+        padding: 1.2rem;
+      }
+    }
+  </style>
 </head>
+
 <body>
-<header class="site-header">
-  <a class="brand" href="index.html">Li Lab</a>
 
-  <a class="header-affiliation" href="https://case.edu/medicine/"
-     target="_blank" rel="noopener noreferrer"
-     aria-label="Case Western Reserve University School of Medicine">
-    <img class="cwru-logo"
-         src="CWRU_Two-line%20horizontal%20(Primary)%20logo_White.png"
-         alt="Case Western Reserve University">
-  </a>
+  <!-- =====================================================
+       HEADER
+       ===================================================== -->
 
-  <nav class="site-nav" aria-label="Main navigation">
+  <header class="site-header">
+
+    <div class="header-inner">
+
+      <a href="index.html" class="site-brand">
+        <span class="site-title">Li Laboratory</span>
+      </a>
+
+      <img
+        src="CWRU_Two-line%20horizontal%20(Primary)%20logo_White.png"
+        alt="Case Western Reserve University"
+        class="university-logo"
+      >
+
+    </div>
+
+  </header>
+
+
+  <!-- =====================================================
+       NAVIGATION
+       ===================================================== -->
+
+  <nav class="main-nav" aria-label="Main navigation">
+
     <a href="index.html" aria-current="page">HOME</a>
     <a href="research.html">RESEARCH</a>
     <a href="lab-members.html">LAB MEMBERS</a>
     <a href="publications.html">PUBLICATIONS</a>
     <a href="join-us.html">JOIN US</a>
     <a href="contact.html">CONTACT</a>
+
   </nav>
-</header>
-<main>
 
 
-  <section class="welcome-section">
-    <h2>Welcome to the Li Laboratory</h2>
-    <p>
-      The Li Laboratory investigates organoid intelligence for translational medicine. We combine induced pluripotent stem cell (iPSC)-derived organoids with flexible nanoelectronics, multimodal electrophysiological recording and stimulation, spatial multi-omics, and AI-assisted analysis to understand disease development and progression and guide new therapeutic strategies.
-    </p>
-  </section>
-</main>
-<footer>© Qiang Li</footer>
+  <!-- =====================================================
+       MAIN CONTENT
+       ===================================================== -->
+
+  <main class="main-content">
+
+    <!-- Welcome and PI profile -->
+
+    <section class="home-intro">
+
+      <div class="home-profile">
+
+        <img
+          src="Qiang%20Li_CWRU.jpg"
+          alt="Qiang Li"
+        >
+
+        <h2>Qiang Li, PhD</h2>
+
+        <p>Assistant Professor</p>
+
+        <p>
+          Department of Physiology and Biophysics<br>
+          School of Medicine<br>
+          Case Western Reserve University
+        </p>
+
+      </div>
+
+
+      <div class="home-intro-text">
+
+        <h1>Welcome to the Li Laboratory</h1>
+
+        <p>
+          The Li Laboratory investigates organoid intelligence for
+          translational medicine. We combine induced pluripotent stem
+          cell (iPSC)-derived organoids with flexible nanoelectronics,
+          multimodal electrophysiological recording and stimulation,
+          spatial multi-omics, and AI-assisted analysis to understand
+          disease development and progression and guide new therapeutic
+          strategies.
+        </p>
+
+        <p>
+          Our research combines stem cell biology, bioelectronics,
+          spatial transcriptomics, and computational modeling to
+          investigate and engineer the development and functional
+          maturation of human organoids.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- Research Interests -->
+
+    <section class="home-section">
+
+      <h2>Research Interests</h2>
+
+      <p>
+        Our interdisciplinary research integrates stem cell-derived
+        organoids, bioelectronics, spatial omics, and computational
+        approaches to understand and engineer human organoid development
+        and function.
+      </p>
+
+      <div class="research-interest-grid">
+
+        <div class="research-interest">
+
+          <h3>1. Organoid Intelligence</h3>
+
+          <p>
+            Integrating flexible bioelectronics and AI-assisted modeling
+            to monitor, interact with, and promote the functional
+            maturation of developing organoids.
+          </p>
+
+        </div>
+
+
+        <div class="research-interest">
+
+          <h3>2. Bioelectronics and Gene-to-Function Mapping</h3>
+
+          <p>
+            Combining multimodal electrophysiology and spatial
+            transcriptomics to link molecular programs with cellular
+            and tissue-level functions.
+          </p>
+
+        </div>
+
+
+        <div class="research-interest">
+
+          <h3>3. Human Disease Modeling</h3>
+
+          <p>
+            Engineering bioelectronic-integrated organoids to investigate
+            disease mechanisms in neurological, cardiovascular, and
+            metabolic disorders.
+          </p>
+
+        </div>
+
+
+        <div class="research-interest">
+
+          <h3>4. Translational Organoid Medicine</h3>
+
+          <p>
+            Developing intelligent organoid platforms for real-time
+            monitoring, closed-loop modulation, therapeutic discovery,
+            and regenerative medicine.
+          </p>
+
+        </div>
+
+      </div>
+
+      <a href="research.html" class="section-link">
+        Explore Our Research &rarr;
+      </a>
+
+    </section>
+
+
+    <!-- Featured Publications -->
+
+    <section class="home-section">
+
+      <h2>Featured Publications</h2>
+
+
+      <div class="featured-publication">
+
+        <strong>
+          Li, Q.
+          <em>et al.</em>
+        </strong>
+
+        Implanted flexible electronics reveal principles of human
+        islet cell electrical maturation.
+
+        <em>Science</em> 391, eaeb3295 (2026).
+
+        <a href="https://www.science.org/doi/10.1126/science.aeb3295"
+           target="_blank"
+           rel="noopener noreferrer">
+          [Article]
+        </a>
+
+      </div>
+
+
+      <div class="featured-publication">
+
+        <strong>
+          Sheng, H.
+          <em>et al.</em>
+        </strong>
+
+        Brain implantation of soft bioelectronics via embryonic
+        development.
+
+        <em>Nature</em> 642, 954–964 (2025).
+
+        <a href="https://www.nature.com/articles/s41586-025-09106-8"
+           target="_blank"
+           rel="noopener noreferrer">
+          [Article]
+        </a>
+
+      </div>
+
+
+      <div class="featured-publication">
+
+        <strong>
+          Li, Q.
+          <em>et al.</em>
+        </strong>
+
+        Multimodal charting of molecular and functional cell states
+        via in situ electro-sequencing.
+
+        <em>Cell</em> 186(9), 2002–2017 (2023).
+
+        <a href="https://www.cell.com/cell/fulltext/S0092-8674(23)00286-6"
+           target="_blank"
+           rel="noopener noreferrer">
+          [Article]
+        </a>
+
+      </div>
+
+
+      <a href="publications.html" class="section-link">
+        View All Publications &rarr;
+      </a>
+
+    </section>
+
+
+    <!-- Join Us -->
+
+    <section class="join-us-section">
+
+      <h2>Join Us</h2>
+
+      <p>
+        We welcome motivated and curious individuals who are interested
+        in interdisciplinary research at the interface of stem cell
+        biology, organoid engineering, neuroscience, biomedical
+        engineering, bioelectronics, molecular biology, and computational
+        science.
+      </p>
+
+      <p>
+        If you are interested in joining our team, please visit our
+        recruitment page to learn more about opportunities in the
+        Li Laboratory.
+      </p>
+
+      <a href="join-us.html" class="section-link">
+        Learn More About Joining Us &rarr;
+      </a>
+
+    </section>
+
+  </main>
+
+
+  <!-- =====================================================
+       FOOTER
+       ===================================================== -->
+
+  <footer class="site-footer">
+    <p>&copy; Qiang Li</p>
+  </footer>
+
+
 </body>
 </html>
