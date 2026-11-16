@@ -17,60 +17,64 @@
   <!-- Lab Members page-specific styles -->
   <style>
 
-    /* Main page title */
-    .members-page-title {
-      text-align: center;
-      margin-bottom: 36px;
-    }
-
     /* Principal Investigator section */
     .pi-section {
       margin-bottom: 45px;
     }
 
     .pi-section-title {
-      text-align: center;
-      margin-bottom: 30px;
+      text-align: left;
+      margin-bottom: 28px;
     }
 
     /* PI photo and profile */
     .pi-profile-layout {
       display: grid;
-      grid-template-columns: 220px minmax(0, 1fr);
-      gap: 38px;
+      grid-template-columns: 300px minmax(0, 1fr);
+      gap: 42px;
       align-items: start;
       max-width: 1100px;
-      margin: 0 auto 35px;
+      margin: 0 0 35px;
     }
 
+    /* PI portrait */
     .pi-profile-portrait {
       display: block;
-      width: 200px;
-      height: 250px;
+      width: 280px;
+      height: 350px;
       object-fit: cover;
       object-position: center top;
       border: 4px solid #ffffff;
       border-radius: 12px;
       box-shadow: 0 4px 18px rgba(22, 59, 101, 0.12);
+      margin: 0;
+    }
+
+    /* PI information */
+    .pi-profile-text {
+      text-align: left;
     }
 
     .pi-profile-text h3 {
       margin-top: 0;
-      margin-bottom: 10px;
+      margin-bottom: 12px;
       color: #163b65;
-      font-size: 28px;
+      font-size: 30px;
+      text-align: left;
     }
 
     .pi-profile-text .pi-affiliation {
       margin-top: 0;
-      margin-bottom: 20px;
+      margin-bottom: 15px;
       color: #526171;
       font-size: 17px;
-      line-height: 1.7;
+      line-height: 1.8;
+      text-align: left;
     }
 
     .pi-profile-text p {
-      line-height: 1.85;
+      line-height: 1.7;
+      text-align: left;
     }
 
     .pi-profile-text .profile-link {
@@ -83,23 +87,24 @@
       text-decoration: underline;
     }
 
-    /* Education and contact information */
+    /* Education and Contact Information */
     .pi-details-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 50px;
-      max-width: 1100px;
-      margin: 0 auto;
+      gap: 25px;
+      margin-top: 25px;
+      text-align: left;
     }
 
     .pi-details-grid h3 {
       margin-top: 0;
-      margin-bottom: 16px;
+      margin-bottom: 12px;
       color: #163b65;
+      text-align: left;
     }
 
     .pi-details-grid ul {
-      padding-left: 22px;
+      padding-left: 20px;
     }
 
     .pi-details-grid li {
@@ -107,7 +112,8 @@
     }
 
     .pi-details-grid p {
-      margin-bottom: 12px;
+      margin-bottom: 10px;
+      text-align: left;
     }
 
     .pi-details-grid a {
@@ -122,14 +128,17 @@
     /* Lab member subsections */
     .member-section {
       margin-bottom: 28px;
+      text-align: left;
     }
 
     .member-section h2 {
       margin-bottom: 12px;
+      text-align: left;
     }
 
     .member-section p {
       line-height: 1.7;
+      text-align: left;
     }
 
     /* Mobile layout */
@@ -138,20 +147,21 @@
       .pi-profile-layout {
         grid-template-columns: 1fr;
         gap: 24px;
-        text-align: left;
       }
 
       .pi-profile-portrait {
-        margin: 0 auto;
+        width: 240px;
+        height: 300px;
+        margin: 0;
       }
 
       .pi-profile-text h3 {
-        font-size: 25px;
+        font-size: 26px;
       }
 
       .pi-details-grid {
         grid-template-columns: 1fr;
-        gap: 28px;
+        gap: 24px;
       }
 
     }
@@ -194,7 +204,6 @@
 
   <main>
 
-
     <!-- Principal Investigator -->
     <section class="pi-section">
 
@@ -202,19 +211,19 @@
 
       <div class="pi-profile-layout">
 
+        <!-- Left: PI photograph -->
         <img class="pi-profile-portrait"
              src="Qiang%20Li_CWRU.jpg"
              alt="Qiang Li">
 
+        <!-- Right: PI information -->
         <div class="pi-profile-text">
 
           <h3>Qiang Li, Ph.D.</h3>
 
           <p class="pi-affiliation">
             Assistant Professor<br>
-            Department of Physiology and Biophysics<br>
-            School of Medicine<br>
-            Case Western Reserve University
+            Department of Physiology and Biophysics, School of Medicine
           </p>
 
           <p>
@@ -226,52 +235,52 @@
             </a>
           </p>
 
-        </div>
 
-      </div>
+          <!-- Education and Contact Information -->
+          <div class="pi-details-grid">
 
+            <div>
 
-      <!-- Education and Contact Information -->
-      <div class="pi-details-grid">
+              <h3>Education</h3>
 
-        <div>
+              <ul>
 
-          <h3>Education</h3>
+                <li>
+                  <strong>Ph.D.</strong>,
+                  University of Nebraska–Lincoln, 2018
+                </li>
 
-          <ul>
+                <li>
+                  <strong>Postdoctoral Fellow</strong>,
+                  Harvard University, 2026
+                </li>
 
-            <li>
-              <strong>Ph.D.</strong>,
-              University of Nebraska–Lincoln, 2018
-            </li>
+              </ul>
 
-            <li>
-              <strong>Postdoctoral Fellow</strong>,
-              Harvard University, 2026
-            </li>
-
-          </ul>
-
-        </div>
+            </div>
 
 
-        <div>
+            <div>
 
-          <h3>Contact Information</h3>
+              <h3>Contact Information</h3>
 
-          <p>
-            <strong>Email:</strong>
-            <a href="mailto:qxl465@case.edu">
-              qxl465@case.edu
-            </a>
-          </p>
+              <p>
+                <strong>Email:</strong>
+                <a href="mailto:qxl465@case.edu">
+                  qxl465@case.edu
+                </a>
+              </p>
 
-          <p>
-            <strong>Phone:</strong>
-            <a href="tel:+16173085658">
-              617-308-5658
-            </a>
-          </p>
+              <p>
+                <strong>Phone:</strong>
+                <a href="tel:+16173085658">
+                  617-308-5658
+                </a>
+              </p>
+
+            </div>
+
+          </div>
 
         </div>
 
