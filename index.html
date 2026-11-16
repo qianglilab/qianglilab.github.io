@@ -9,25 +9,31 @@
   <meta name="description"
         content="The Li Laboratory at Case Western Reserve University investigates organoid intelligence, bioelectronics, stem cell biology, spatial transcriptomics, and translational medicine.">
 
-  <title>Home | Li Laboratory</title>
+  <title>Home | Qiang Li, PhD</title>
 
   <link rel="stylesheet" href="style.css">
 
   <style>
     /* =====================================================
-       HOME PAGE — PAGE-SPECIFIC STYLES
+       HOMEPAGE — PAGE-SPECIFIC STYLES
+       Shared header and navigation remain in style.css
        ===================================================== */
 
     .home-intro {
-      margin: 1.5rem 0 2.5rem;
+      margin: 1rem 0 2.5rem;
     }
 
-    .home-intro h1 {
+    .home-intro-text {
+      width: 100%;
+      max-width: 1100px;
+    }
+
+    .home-intro-text h1 {
       margin-top: 0;
       margin-bottom: 1rem;
     }
 
-    .home-intro p {
+    .home-intro-text p {
       line-height: 1.8;
       margin-bottom: 1rem;
     }
@@ -39,6 +45,8 @@
     .home-section h2 {
       margin-bottom: 1.2rem;
     }
+
+    /* Research interest layout */
 
     .research-interest-grid {
       display: grid;
@@ -65,6 +73,8 @@
       line-height: 1.7;
     }
 
+    /* Section links */
+
     .section-link {
       display: inline-block;
       margin-top: 1rem;
@@ -76,6 +86,8 @@
     .section-link:hover {
       text-decoration: underline;
     }
+
+    /* Featured publications */
 
     .featured-publication {
       margin-bottom: 1.2rem;
@@ -93,6 +105,8 @@
       text-decoration: underline;
     }
 
+    /* Join Us */
+
     .join-us-section {
       margin: 2.5rem 0;
       padding: 1.5rem 1.75rem;
@@ -108,7 +122,10 @@
       line-height: 1.8;
     }
 
+    /* Responsive layout */
+
     @media (max-width: 700px) {
+
       .research-interest-grid {
         grid-template-columns: 1fr;
       }
@@ -118,73 +135,82 @@
       }
     }
   </style>
+
 </head>
 
 <body>
 
   <!-- =====================================================
-       HEADER
+       HEADER — ORIGINAL SHARED CWRU HEADER
        ===================================================== -->
 
   <header class="site-header">
 
-    <div class="header-inner">
+    <a href="index.html" class="brand">
+      Li Laboratory
+    </a>
 
-      <a href="index.html" class="site-brand">
-        <span class="site-title">Li Laboratory</span>
-      </a>
+    <a href="https://case.edu/"
+       class="header-affiliation"
+       target="_blank"
+       rel="noopener noreferrer">
 
       <img
         src="CWRU_Two-line%20horizontal%20(Primary)%20logo_White.png"
         alt="Case Western Reserve University"
-        class="university-logo"
+        class="cwru-logo"
       >
 
-    </div>
+    </a>
+
+    <!-- Main navigation -->
+
+    <nav class="site-nav" aria-label="Main navigation">
+
+      <a href="index.html" aria-current="page">HOME</a>
+      <a href="research.html">RESEARCH</a>
+      <a href="lab-members.html">LAB MEMBERS</a>
+      <a href="publications.html">PUBLICATIONS</a>
+      <a href="join-us.html">JOIN US</a>
+      <a href="contact.html">CONTACT</a>
+
+    </nav>
 
   </header>
-
-
-  <!-- =====================================================
-       NAVIGATION
-       ===================================================== -->
-
-  <nav class="main-nav" aria-label="Main navigation">
-    <a href="index.html" aria-current="page">HOME</a>
-    <a href="research.html">RESEARCH</a>
-    <a href="lab-members.html">LAB MEMBERS</a>
-    <a href="publications.html">PUBLICATIONS</a>
-    <a href="join-us.html">JOIN US</a>
-    <a href="contact.html">CONTACT</a>
-  </nav>
 
 
   <!-- =====================================================
        MAIN CONTENT
        ===================================================== -->
 
-  <main class="main-content">
+  <main>
 
     <!-- Welcome to the Li Laboratory -->
 
     <section class="home-intro">
 
-      <h1>Welcome to the Li Laboratory</h1>
+      <div class="home-intro-text">
 
-      <p>
-        The Li Laboratory investigates organoid intelligence for
-        translational medicine. We combine human stem cell-derived
-        organoids with flexible nanoelectronics, multimodal
-        electrophysiological recording and stimulation, spatial
-        multi-omics, and AI-assisted analysis to understand human
-        tissue development, uncover disease mechanisms, and guide
-        new therapeutic strategies.
-      </p>
+        <h1>Welcome to the Li Laboratory</h1>
+
+        <p>
+          The Li Laboratory investigates organoid intelligence for
+          translational medicine. We combine human stem cell-derived
+          organoids with flexible nanoelectronics, multimodal
+          electrophysiological recording and stimulation, spatial
+          multi-omics, and AI-assisted analysis to understand human
+          tissue development, uncover disease mechanisms, and guide
+          new therapeutic strategies.
+        </p>
+
+      </div>
 
     </section>
 
 
-    <!-- Research Interests -->
+    <!-- =====================================================
+         RESEARCH INTERESTS
+         ===================================================== -->
 
     <section class="home-section">
 
@@ -193,9 +219,10 @@
       <p>
         Our interdisciplinary research integrates stem cell-derived
         organoids, bioelectronics, spatial omics, and computational
-        approaches to understand and engineer human organoid development
-        and function.
+        approaches to understand and engineer human organoid
+        development and function.
       </p>
+
 
       <div class="research-interest-grid">
 
@@ -204,9 +231,9 @@
           <h3>1. Organoid Intelligence</h3>
 
           <p>
-            Integrating flexible bioelectronics and AI-assisted modeling
-            to monitor, interact with, and promote the functional
-            maturation of developing organoids.
+            Integrating flexible bioelectronics and AI-assisted
+            modeling to monitor, interact with, and promote the
+            functional maturation of developing organoids.
           </p>
 
         </div>
@@ -230,9 +257,9 @@
           <h3>3. Human Disease Modeling</h3>
 
           <p>
-            Engineering bioelectronic-integrated organoids to investigate
-            disease mechanisms in neurological, cardiovascular, and
-            metabolic disorders.
+            Engineering bioelectronic-integrated organoids to
+            investigate disease mechanisms in neurological,
+            cardiovascular, and metabolic disorders.
           </p>
 
         </div>
@@ -244,13 +271,14 @@
 
           <p>
             Developing intelligent organoid platforms for real-time
-            monitoring, closed-loop modulation, therapeutic discovery,
-            and regenerative medicine.
+            monitoring, closed-loop modulation, therapeutic
+            discovery, and regenerative medicine.
           </p>
 
         </div>
 
       </div>
+
 
       <a href="research.html" class="section-link">
         Explore Our Research &rarr;
@@ -259,7 +287,9 @@
     </section>
 
 
-    <!-- Featured Publications -->
+    <!-- =====================================================
+         FEATURED PUBLICATIONS
+         ===================================================== -->
 
     <section class="home-section">
 
@@ -269,8 +299,7 @@
       <div class="featured-publication">
 
         <strong>
-          Li, Q.
-          <em>et al.</em>
+          Li, Q. <em>et al.</em>
         </strong>
 
         Implanted flexible electronics reveal principles of human
@@ -278,9 +307,10 @@
 
         <em>Science</em> 391, eaeb3295 (2026).
 
-        <a href="https://www.science.org/doi/10.1126/science.aeb3295"
-           target="_blank"
-           rel="noopener noreferrer">
+        <a
+          href="https://www.science.org/doi/10.1126/science.aeb3295"
+          target="_blank"
+          rel="noopener noreferrer">
           [Article]
         </a>
 
@@ -290,8 +320,7 @@
       <div class="featured-publication">
 
         <strong>
-          Sheng, H.
-          <em>et al.</em>
+          Sheng, H. <em>et al.</em>
         </strong>
 
         Brain implantation of soft bioelectronics via embryonic
@@ -299,9 +328,10 @@
 
         <em>Nature</em> 642, 954–964 (2025).
 
-        <a href="https://www.nature.com/articles/s41586-025-09106-8"
-           target="_blank"
-           rel="noopener noreferrer">
+        <a
+          href="https://www.nature.com/articles/s41586-025-09106-8"
+          target="_blank"
+          rel="noopener noreferrer">
           [Article]
         </a>
 
@@ -311,8 +341,7 @@
       <div class="featured-publication">
 
         <strong>
-          Li, Q.
-          <em>et al.</em>
+          Li, Q. <em>et al.</em>
         </strong>
 
         Multimodal charting of molecular and functional cell states
@@ -320,9 +349,10 @@
 
         <em>Cell</em> 186(9), 2002–2017 (2023).
 
-        <a href="https://www.cell.com/cell/fulltext/S0092-8674(23)00286-6"
-           target="_blank"
-           rel="noopener noreferrer">
+        <a
+          href="https://www.cell.com/cell/fulltext/S0092-8674(23)00286-6"
+          target="_blank"
+          rel="noopener noreferrer">
           [Article]
         </a>
 
@@ -336,24 +366,26 @@
     </section>
 
 
-    <!-- Join Us -->
+    <!-- =====================================================
+         JOIN US
+         ===================================================== -->
 
     <section class="join-us-section">
 
       <h2>Join Us</h2>
 
       <p>
-        We welcome motivated and curious individuals who are interested
-        in interdisciplinary research at the interface of stem cell
-        biology, organoid engineering, neuroscience, biomedical
-        engineering, bioelectronics, molecular biology, and computational
-        science.
+        We welcome motivated and curious individuals who are
+        interested in interdisciplinary research at the interface
+        of stem cell biology, organoid engineering, neuroscience,
+        biomedical engineering, bioelectronics, molecular biology,
+        and computational science.
       </p>
 
       <p>
-        If you are interested in joining our team, please visit our
-        recruitment page to learn more about opportunities in the
-        Li Laboratory.
+        If you are interested in joining our team, please visit
+        our recruitment page to learn more about opportunities
+        in the Li Laboratory.
       </p>
 
       <a href="join-us.html" class="section-link">
@@ -369,7 +401,7 @@
        FOOTER
        ===================================================== -->
 
-  <footer class="site-footer">
+  <footer>
     <p>&copy; Qiang Li</p>
   </footer>
 
