@@ -1,8 +1,8 @@
 
 /* =========================================================
    LI LAB WEBSITE — SHARED STYLESHEET
+   Unified page margins and content alignment
    Full-width CWRU blue header
-   Unified light blue content background
    ========================================================= */
 
 * {
@@ -16,9 +16,10 @@ html {
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 0 28px;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0;
   line-height: 1.7;
   color: #263238;
   background: #EAF3FA;
@@ -38,19 +39,16 @@ a {
   grid-template-areas:
     "brand affiliation"
     "nav nav";
-
   align-items: center;
   column-gap: 28px;
   row-gap: 14px;
 
-  /* Extend header beyond the centered body container */
   position: relative;
   left: 50%;
   width: 100vw;
   max-width: none;
   margin-left: -50vw;
 
-  /* Preserve the wider and taller blue header */
   padding: 32px clamp(22px, 4vw, 56px) 26px;
 
   color: #ffffff;
@@ -94,8 +92,12 @@ a {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: flex-start;
   gap: 7px 25px;
+  width: 100%;
   margin-top: 7px;
+  padding: 0;
+  text-align: left;
 }
 
 .site-nav a {
@@ -120,12 +122,16 @@ a {
 }
 
 /* =========================================================
-   GLOBAL CONTENT AREA
+   GLOBAL CONTENT AREA — SAME WIDTH ON ALL SIX PAGES
    ========================================================= */
 
 main {
+  display: block;
+  width: 100%;
+  max-width: 1280px;
   min-height: 58vh;
-  padding: 42px 0 48px;
+  margin: 0 auto;
+  padding: 42px 40px 48px;
   background: #EAF3FA;
 }
 
@@ -230,6 +236,7 @@ section + section {
 
 /* =========================================================
    CONTACT PAGE
+   Use the same main content boundaries
    ========================================================= */
 
 .contact-layout {
@@ -237,8 +244,9 @@ section + section {
   grid-template-columns: .8fr 1.2fr;
   gap: 40px;
   align-items: start;
-  max-width: 1200px;
-  margin: 15px auto 0;
+  width: 100%;
+  max-width: none;
+  margin: 15px 0 0;
 }
 
 .contact-info {
@@ -344,8 +352,6 @@ section h3 {
   color: #245b8f;
 }
 
-/* Remove subsection background boxes */
-
 .postdoc,
 .graduate,
 .undergraduate,
@@ -365,6 +371,7 @@ section h3 {
    ========================================================= */
 
 footer {
+  width: 100%;
   border-top: 1px solid #c5d8e8;
   padding: 22px 0;
   color: #526171;
@@ -378,20 +385,14 @@ footer {
 
 @media (max-width: 760px) {
 
-  body {
-    padding: 0 20px;
-  }
-
   .site-header {
     grid-template-columns: 1fr;
     grid-template-areas:
       "brand"
       "affiliation"
       "nav";
-
     row-gap: 12px;
 
-    /* Keep the header full-width on mobile too */
     left: 50%;
     width: 100vw;
     margin-left: -50vw;
@@ -412,6 +413,7 @@ footer {
   }
 
   .site-nav {
+    justify-content: flex-start;
     gap: 7px 17px;
     margin-top: 3px;
   }
@@ -421,7 +423,7 @@ footer {
   }
 
   main {
-    padding: 32px 0 38px;
+    padding: 32px 20px 38px;
   }
 
   h1 {
@@ -457,7 +459,6 @@ footer {
 }
 
 @media (max-width: 380px) {
-
   .site-nav {
     column-gap: 12px;
   }
