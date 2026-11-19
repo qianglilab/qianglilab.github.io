@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,78 +12,6 @@
     /* =====================================================
        LI LABORATORY HOMEPAGE
        ===================================================== */
-
-    /* ---------- HEADER ---------- */
-
-    .site-header {
-      background: #073575 !important;
-      color: #ffffff !important;
-      min-height: 153px;
-      padding: 25px 3.5% 24px !important;
-      display: flex !important;
-      flex-direction: column !important;
-      justify-content: space-between;
-      box-sizing: border-box;
-    }
-
-    .site-header .brand {
-      display: flex !important;
-      flex-direction: row !important;
-      justify-content: space-between !important;
-      align-items: center !important;
-      width: 100%;
-      gap: 20px;
-    }
-
-    .site-header .brand-name {
-      color: #ffffff !important;
-      font-size: 27px;
-      font-weight: 700;
-      text-decoration: none;
-      line-height: 1.2;
-    }
-
-    .site-header .cwru-logo {
-      display: block;
-      width: 400px;
-      max-width: 100%;
-      height: auto;
-      filter: none !important;
-    }
-
-    /* Navigation: explicitly left-aligned */
-
-    .site-header .site-nav {
-      display: flex !important;
-      flex-direction: row !important;
-      align-items: center;
-      justify-content: flex-start !important;
-      align-self: stretch !important;
-      width: 100% !important;
-      flex-wrap: wrap;
-      gap: 27px;
-      margin-top: 24px;
-      margin-left: 0 !important;
-      padding: 0 !important;
-      text-align: left !important;
-    }
-
-    .site-header .site-nav a {
-      color: #ffffff !important;
-      text-decoration: none;
-      font-weight: 700;
-      padding-bottom: 8px;
-      margin-left: 0;
-    }
-
-    .site-header .site-nav a:hover {
-      color: #dcecff !important;
-    }
-
-    .site-header .site-nav a[aria-current="page"] {
-      border-bottom: 2px solid #ffffff;
-    }
-
 
     /* ---------- MAIN CONTENT ---------- */
 
@@ -307,36 +234,6 @@
 
     /* ---------- MOBILE ---------- */
 
-    @media (max-width: 700px) {
-      .site-header {
-        min-height: auto;
-        padding: 22px 5% 24px !important;
-      }
-
-      .site-header .brand {
-        gap: 15px;
-      }
-
-      .site-header .brand-name {
-        font-size: 23px;
-      }
-
-      .site-header .cwru-logo {
-        width: 220px;
-      }
-
-      .site-header .site-nav {
-        justify-content: flex-start !important;
-        align-self: stretch !important;
-        width: 100% !important;
-        flex-wrap: wrap;
-        gap: 15px 20px;
-        margin-top: 24px;
-        text-align: left !important;
-      }
-    }
-
-
     @media (max-width: 600px) {
       .home-hero {
         grid-template-columns: 1fr;
@@ -367,40 +264,30 @@
 
 <body>
 
-  <!-- HEADER -->
+  <!-- HEADER AND NAVIGATION -->
 
   <header class="site-header">
 
-    <div class="brand">
+    <a class="brand" href="index.html">Li Lab</a>
 
-      <a href="index.html" class="brand-name">
-        Li Lab
-      </a>
+    <a class="header-affiliation"
+       href="https://case.edu/medicine/"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="Case Western Reserve University School of Medicine">
 
-      <a href="https://case.edu/" target="_blank" rel="noopener">
-        <img
-          class="cwru-logo"
-          src="CWRU_Two-line%20horizontal%20(Primary)%20logo_White.png"
-          alt="Case Western Reserve University">
-      </a>
-
-    </div>
-
+      <img class="cwru-logo"
+           src="CWRU_Two-line%20horizontal%20(Primary)%20logo_White.png"
+           alt="Case Western Reserve University">
+    </a>
 
     <nav class="site-nav" aria-label="Main navigation">
-
       <a href="index.html" aria-current="page">HOME</a>
-
       <a href="research.html">RESEARCH</a>
-
       <a href="lab-members.html">LAB MEMBERS</a>
-
       <a href="publications.html">PUBLICATIONS</a>
-
       <a href="join-us.html">JOIN US</a>
-
       <a href="contact.html">CONTACT</a>
-
     </nav>
 
   </header>
@@ -461,7 +348,7 @@
       <div class="program-grid">
 
         <article class="program-card">
-          
+
           <h3>Organoid Intelligence</h3>
           <p>
             Engineering human stem cell-derived organoids with
@@ -472,7 +359,7 @@
 
 
         <article class="program-card">
-         
+
           <h3>Bioelectronics and Gene-to-Function Mapping</h3>
           <p>
             Combining flexible nanoelectronics,
@@ -483,7 +370,7 @@
 
 
         <article class="program-card">
-       
+
           <h3>Human Disease Modeling</h3>
           <p>
             Developing human organoid models to investigate
@@ -494,7 +381,7 @@
 
 
         <article class="program-card">
-    
+
           <h3>Translational Organoid Medicine</h3>
           <p>
             Integrating human organoid models, animal studies,
