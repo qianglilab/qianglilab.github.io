@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,7 +15,7 @@
       line-height: 1.7;
     }
 
-    /* Force the exact white navigation style used on QIANG LI page */
+    /* White navigation links */
     body .site-header nav.site-nav a,
     body .site-header nav.site-nav a:link,
     body .site-header nav.site-nav a:visited,
@@ -31,64 +30,25 @@
       border-bottom-color: #ffffff !important;
     }
 
-    /* Featured publications */
-    .featured-publications {
-      margin: 35px 0 45px;
+    /* Selected publications */
+    .selected-publications {
+      margin: 2rem 0 3rem;
     }
 
-    .featured-publications h2 {
+    .selected-publications h2,
+    .all-publications-title {
       color: #153a63;
       font-size: 1.5rem;
-      margin-bottom: 22px;
+      margin: 0 0 1.25rem;
       padding-bottom: 8px;
       border-bottom: 2px solid #dce5ee;
     }
 
-    .featured-grid {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 22px;
+    .selected-publications .publication-item {
+      margin-bottom: 1rem;
     }
 
-    .featured-card {
-      background: #ffffff;
-      border: 1px solid #e2e8ef;
-      border-radius: 10px;
-      padding: 14px;
-      text-align: center;
-      transition: transform .25s ease, box-shadow .25s ease;
-    }
-
-    .featured-card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 8px 22px rgba(20, 50, 80, .12);
-    }
-
-    .featured-card a {
-      text-decoration: none;
-    }
-
-    .featured-card img {
-      display: block;
-      width: 100%;
-      height: 340px;
-      object-fit: contain;
-      margin: 0 auto;
-    }
-
-    .featured-card h3 {
-      color: #1d5f91;
-      font-size: 1.15rem;
-      margin: 14px 0 5px;
-    }
-
-    .featured-card p {
-      color: #64748b;
-      font-size: .9rem;
-      margin: 0;
-    }
-
-    /* Original publication list styling */
+    /* Publication year headings */
     .publication-year {
       margin: 2.2rem 0 1rem;
       padding-bottom: .45rem;
@@ -103,14 +63,11 @@
       padding: 0;
     }
 
-   
-.publication-item {
-  margin: 0 0 1.15rem;
-  padding: 0 0 0 1rem;
-  border: none;
-  line-height: 1.7;
-}
-
+    .publication-item {
+      margin: 0 0 1.15rem;
+      padding: 0 0 0 1rem;
+      border: none;
+      line-height: 1.7;
     }
 
     .publication-item strong {
@@ -136,27 +93,13 @@
       .publication-item {
         padding-left: .75rem;
       }
-
-      .featured-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-      }
-    }
-
-    @media (max-width: 550px) {
-      .featured-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .featured-card img {
-        height: 380px;
-      }
     }
   </style>
 </head>
 
 <body>
 
-  <!-- CWRU header: same structure as QIANG LI page -->
+  <!-- CWRU header -->
   <header class="site-header">
 
     <a class="brand" href="index.html">Li Lab</a>
@@ -186,7 +129,6 @@
 
   </header>
 
-
   <main>
 
     <h1>Publications</h1>
@@ -202,62 +144,86 @@
       <sup>#</sup> Equal contribution.
     </p>
 
+    <!-- Selected Publications -->
+    <section class="selected-publications">
 
-    <!-- Featured Publications -->
-    <section class="featured-publications">
+      <h2>Selected Publications</h2>
 
-      <h2>Featured Publications</h2>
+      <ul class="publication-list">
 
-      <div class="featured-grid">
+        <li class="publication-item">
+          <strong>Li, Q.</strong>, et al.
+          Implanted flexible electronics reveal principles of human islet cell electrical maturation.
+          <strong><em>Science</em> 391</strong>, eaeb3295 (2026).
+          [<a href="https://www.science.org/doi/10.1126/science.aeb3295"
+              target="_blank" rel="noopener noreferrer">Article</a>];
+          Perspective highlight in <strong><em>Science</em></strong>
+          [<a href="https://www.science.org/doi/10.1126/science.aef2219"
+              target="_blank" rel="noopener noreferrer">Cyborg pancreatic islet organoids</a>].
+        </li>
 
-        <!-- Science -->
-        <div class="featured-card">
-          <a href="https://www.science.org/doi/10.1126/science.aeb3295"
-             target="_blank"
-             rel="noopener noreferrer">
+        <li class="publication-item">
+          Lee, J., et al.
+          <em>In situ</em> graphene-seq: spatial transcriptomics and chronic electrophysiological characterization of tissue microenvironments.
+          <strong><em>Nature Communications</em> 17</strong>, 8382 (2026).
+          [<a href="https://www.nature.com/articles/s41467-026-73883-7"
+              target="_blank" rel="noopener noreferrer">Article</a>]
+        </li>
 
-            <img src="Science.png"
-                 alt="First page of Science publication">
+        <li class="publication-item">
+          Sheng, H., et al.
+          Brain implantation of soft bioelectronics via embryonic development.
+          <strong><em>Nature</em> 642</strong>, 954–964 (2025).
+          [<a href="https://www.nature.com/articles/s41586-025-09106-8"
+              target="_blank" rel="noopener noreferrer">Article</a>];
+          Cover highlight in <strong><em>Nature</em></strong>
+          [<a href="https://www.nature.com/nature/volumes/642/issues/8069"
+              target="_blank" rel="noopener noreferrer">Issue cover</a>].
+        </li>
 
-            <h3>Science</h3>
-            <p>Science, 2026</p>
+        <li class="publication-item">
+          Lin, Z., et al.
+          Cyborg organoids integrated with stretchable nanoelectronics can be functionally mapped during development.
+          <strong><em>Nature Protocols</em></strong> (2025).
+          [<a href="https://www.nature.com/articles/s41596-025-01147-7#citeas"
+              target="_blank" rel="noopener noreferrer">Article</a>]
+        </li>
 
-          </a>
-        </div>
+        <li class="publication-item">
+          <strong>Li, Q.</strong>, et al.
+          Multimodal charting of molecular and functional cell states via <em>in situ</em> electro-sequencing.
+          <strong><em>Cell</em> 186</strong>(9), 2002–2017 (2023).
+          [<a href="https://www.cell.com/cell/fulltext/S0092-8674(23)00286-6"
+              target="_blank" rel="noopener noreferrer">Article</a>];
+          Cover highlight in <strong><em>Cell</em></strong>
+          [<a href="https://www.cell.com/cell/issue?pii=S0092-8674(22)X0010-X"
+              target="_blank" rel="noopener noreferrer">Issue</a>];
+          Perspective highlight in <strong><em>Nature Methods</em></strong>
+          [<a href="https://www.nature.com/articles/s41592-023-01922-y"
+              target="_blank" rel="noopener noreferrer">Perspective</a>].
+        </li>
 
-        <!-- Cell -->
-        <div class="featured-card">
-          <a href="https://www.cell.com/cell/fulltext/S0092-8674(23)00286-6"
-             target="_blank"
-             rel="noopener noreferrer">
+        <li class="publication-item">
+          Ren, J., et al.
+          Spatiotemporally resolved transcriptomics reveals the subcellular RNA kinetic landscape.
+          <strong><em>Nature Methods</em> 20</strong>, 695–705 (2023).
+          [<a href="https://www.nature.com/articles/s41592-023-01829-8"
+              target="_blank" rel="noopener noreferrer">Article</a>]
+        </li>
 
-            <img src="Cell%20cover.jpg"
-                 alt="Cell journal cover">
+        <li class="publication-item">
+          Lin, Z., et al.
+          Tissue-embedded stretchable nanoelectronics reveal endothelial cell-mediated electrical maturation of human 3D cardiac microtissues.
+          <strong><em>Science Advances</em> 9</strong>(10), eade8513 (2023).
+          [<a href="https://www.science.org/doi/10.1126/sciadv.ade8513"
+              target="_blank" rel="noopener noreferrer">Article</a>]
+        </li>
 
-            <h3>Cell</h3>
-            <p>Cell, 2023</p>
-
-          </a>
-        </div>
-
-        <!-- Nature -->
-        <div class="featured-card">
-          <a href="https://www.nature.com/articles/s41586-025-09106-8"
-             target="_blank"
-             rel="noopener noreferrer">
-
-            <img src="Nature%20cover.png"
-                 alt="Nature journal cover">
-
-            <h3>Nature</h3>
-            <p>Nature, 2025</p>
-
-          </a>
-        </div>
-
-      </div>
+      </ul>
     </section>
 
+    <!-- All Publications -->
+    <h2 class="all-publications-title">All Publications</h2>
 
     <!-- 2026 -->
     <h2 class="publication-year">2026</h2>
@@ -269,7 +235,7 @@
         Toward adaptive cyborg tissues.
         <strong><em>Trends in Biotechnology</em></strong>,
         September 30, 2026.
-                [<a href="https://www.cell.com/trends/biotechnology/abstract/S0167-7799(26)00379-3?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0167779926003793%3Fshowall%3Dtrue"
+        [<a href="https://www.cell.com/trends/biotechnology/abstract/S0167-7799(26)00379-3?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0167779926003793%3Fshowall%3Dtrue"
             target="_blank" rel="noopener noreferrer">Article</a>]
       </li>
 
@@ -290,19 +256,19 @@
               target="_blank" rel="noopener noreferrer">Cyborg pancreatic islet organoids</a>].
         </span>
       </li>
-      
- <li class="publication-item">
+
+      <li class="publication-item">
         Lee, J.<sup>#</sup>, Wang, W.<sup>#</sup>,
         <strong>Li, Q.</strong>, Lin, Z., Liu, R., Tang, Z.,
         Aoyama, J., Lee, RT., Wang, X., Liu, J.
         <em>In situ</em> graphene-seq: spatial transcriptomics and chronic
         electrophysiological characterization of tissue microenvironments.
-   <strong><em>Nature Communications</em> 17</strong>, 8382 (2026).
+        <strong><em>Nature Communications</em> 17</strong>, 8382 (2026).
         [<a href="https://www.nature.com/articles/s41467-026-73883-7"
             target="_blank" rel="noopener noreferrer">Article</a>]
       </li>
-    </ul>
 
+    </ul>
 
     <!-- 2025 -->
     <h2 class="publication-year">2025</h2>
@@ -351,14 +317,13 @@
             target="_blank" rel="noopener noreferrer">Preprint</a>]
       </li>
 
-
     </ul>
-
 
     <!-- 2024 -->
     <h2 class="publication-year">2024</h2>
 
     <ul class="publication-list">
+
       <li class="publication-item">
         Liu, R.<sup>#</sup>, Ren, Z.<sup>#</sup>,
         Zhang, X.<sup>#</sup>, <strong>Li, Q.</strong>,
@@ -369,8 +334,8 @@
         [<a href="https://www.biorxiv.org/content/10.1101/2024.12.07.627355v1.abstract"
             target="_blank" rel="noopener noreferrer">Preprint</a>]
       </li>
-    </ul>
 
+    </ul>
 
     <!-- 2023 -->
     <h2 class="publication-year">2023</h2>
@@ -421,7 +386,6 @@
 
     </ul>
 
-
     <!-- 2022 -->
     <h2 class="publication-year">2022</h2>
 
@@ -462,7 +426,6 @@
 
     </ul>
 
-
     <!-- 2019 -->
     <h2 class="publication-year">2019</h2>
 
@@ -502,7 +465,7 @@
       </li>
 
       <li class="publication-item">
-        Lin, H., Du, Q., <strong>Li, Q.</strong>, Wang, O.,
+        Lin, H., Du, Q, <strong>Li, Q.</strong>, Wang, O.,
         Wang, Z., Liu, K., Akert, L., Zhang, C., Chung, S.,
         Duan, B., et al.
         Differentiating human pluripotent stem cells into vascular
@@ -534,7 +497,6 @@
       </li>
 
     </ul>
-
 
     <!-- 2018 -->
     <h2 class="publication-year">2018</h2>
@@ -619,7 +581,6 @@
 
     </ul>
 
-
     <!-- 2017 -->
     <h2 class="publication-year">2017</h2>
 
@@ -647,7 +608,6 @@
 
     </ul>
 
-
     <!-- 2016 -->
     <h2 class="publication-year">2016</h2>
 
@@ -666,7 +626,6 @@
 
     </ul>
 
-
     <!-- 2010 -->
     <h2 class="publication-year">2010</h2>
 
@@ -683,7 +642,6 @@
       </li>
 
     </ul>
-
 
     <!-- 2009 -->
     <h2 class="publication-year">2009</h2>
